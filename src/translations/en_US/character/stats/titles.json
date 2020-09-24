@@ -1,0 +1,16 @@
+{
+  "character.stats.titles.name": "Name",
+  "character.stats.titles.class": "Class",
+  "character.stats.titles.hp": "HP",
+  "character.stats.titles.omens": "Omens",
+
+  "character.stats.titles.strength": "Strength",
+  "character.stats.titles.agility": "Agility",
+  "character.stats.titles.presence": "Presence",
+  "character.stats.titles.toughness": "Toughness",
+
+  "character.stats.titles.abilities": "Abilities",
+  "character.stats.titles.introduction": "You are {name}",
+  "character.stats.titles.powers": "{class}",
+  "character.stats.titles.equipment": "Equipment"
+}

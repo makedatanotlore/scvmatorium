@@ -1,0 +1,12 @@
+{
+  "content.makedatanotlore.scvmatorium": "SCVMATORIUM",
+
+  "content.makedatanotlore.scvmatorium.smallContainer.title": "{container, select, knapsack {Knapsack} saddlebags {Saddlebags} satchel {Satchel} basket {Basket} rucksack {Rucksack} leatherBag {Leather bag} woodenBucket {Wooden bucket} metalBucket {Metal bucket}}",
+  "content.makedatanotlore.scvmatorium.smallContainer.description": "with space for 7 normal-sized items",
+  "content.makedatanotlore.scvmatorium.largeContainer.title": "{container, select, fishNet {Fish net} largeBrownSack {Large brown sack} gunnySack {Gunny sack}}",
+  "content.makedatanotlore.scvmatorium.largeContainer.description": "with space for 10 normal-sized items",
+  "content.makedatanotlore.scvmatorium.vehicle.title": "{vehicle, select, wheelbarrow {Wheelbarrow} corpseCart {Corpse-cart}}",
+  "content.makedatanotlore.scvmatorium.vehicle.description": "{vehicle, select, corpseCart {{corpses, plural, =0 {empty} one {with one corpse} other {with # corpses}}} other { }}",
+  "content.makedatanotlore.scvmatorium.beast.title": "{beast, select, mule {Mule} ox {Ox} goat {Goat}}",
+  "content.makedatanotlore.scvmatorium.beast.description": " "
+}

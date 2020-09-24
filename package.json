@@ -1,19 +1,20 @@
 {
-  "name": "scvmthirder",
+  "name": "scvmatorium",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
+    "lodash": "^4.17.15",
+    "react-intl": "^3.11.0",
+    "react-intl-redux": "^2.2.0",
+    "react-redux": "^7.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "react-to-print": "^2.9.0",
+    "redux": "^4.0.5",
+    "styled-components": "^5.0.0",
+    "tslint": "^6.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +36,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/lodash": "^4.14.150",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-intl-redux": "^0.1.14",
+    "@types/react-redux": "^7.1.9",
+    "@types/styled-components": "^4.4.2",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

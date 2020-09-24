@@ -1,0 +1,7 @@
+{
+  "character.stats.standard.name": "{name}",
+  "character.stats.standard.hp": "{hp}/{hp}",
+  "character.stats.standard.omens": "{omens} (d{die})",
+
+  "character.stats.standard.ability": "{ability}"
+}

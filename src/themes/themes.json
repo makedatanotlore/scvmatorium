@@ -1,0 +1,20 @@
+{
+  "default": {
+    "faded": "#dfdfdf",
+    "background": {
+      "primary": "#000000",
+      "secondary": "#ff6ce7",
+      "inverted": "#ffffff"
+    },
+    "text": {
+      "primary": "#ffffff",
+      "secondary": "#ff6ce7",
+      "inverted": "#000000"
+    },
+    "highlight": {
+      "primary": "#ff6ce7",
+      "secondary": "#ffffff",
+      "inverted": "#000000"
+    }
+  }
+}
