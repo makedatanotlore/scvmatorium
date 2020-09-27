@@ -2,6 +2,7 @@ import React from 'react';
 import { Big } from 'types/character';
 import AbilityList from './AbilityList';
 import EquipmentList from './EquipmentList';
+import Introduction from './Introduction';
 import { FlexWrapper, BigWrapper } from './styled';
 
 type Props = {
@@ -10,11 +11,13 @@ type Props = {
 
 const Bigs = ({ content }: Props) => {
   const getComponent = (big: Big) => {
-    switch (big.component) {
-      case 'ability-list':
+    switch (big.component.id) {
+      case 'abilityList':
         return <AbilityList header={big.header} content={big.content} />;
-      case 'equipment-list':
+      case 'equipmentList':
         return <EquipmentList header={big.header} content={big.content} />;
+      case 'introduction':
+        return <Introduction header={big.header} content={big.content} />;
       default:
         return <>helloworld</>;
     }

@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
 
     margin: 0;
-    font-size: 1em;
+    font-size: ${({ theme }) => theme.text.size};
     font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,6 +28,34 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar-thumb {
       background-color: ${({ theme }) => theme.text.secondary};
       outline: none;
+    }
+
+    a {
+      color: ${({ theme }) => theme.button.text.hover};
+      background-color: ${({ theme }) => theme.button.background.hover};
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-left: 0.25em;
+      padding-right: 0.25em;
+    }
+
+    a:hover {
+      color: ${({ theme }) => theme.button.text.active};
+      background-color: ${({ theme }) => theme.button.background.active};
+    }
+
+    a:active {
+      color: ${({ theme }) => theme.button.text.color};
+      background-color: ${({ theme }) => theme.button.background.color};
+    }
+
+    a:visited {
+      color: ${({ theme }) => theme.button.text.hover};
+      background-color: ${({ theme }) => theme.button.background.hover};
+      :hover {
+      color: ${({ theme }) => theme.button.text.active};
+      background-color: ${({ theme }) => theme.button.background.active};
+    }
     }
   }
 `;

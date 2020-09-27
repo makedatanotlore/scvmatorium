@@ -3,5 +3,6 @@
   "character.stats.standard.hp": "{hp}/{hp}",
   "character.stats.standard.omens": "{omens} (d{die})",
 
-  "character.stats.standard.ability": "{ability}"
+  "character.stats.standard.ability": "{ability}",
+  "character.stats.standard.traits": "{traitOne} and {traitTwo}."
 }

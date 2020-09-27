@@ -1,9 +1,33 @@
 {
   "app.name": "SCVMATORIUM",
   "app.url": "https://makedatanotlore.itch.io/scvmatorium",
-  "app.print": "PRINT THIS",
-  "app.introduction": "An unofficial character generator for",
-  "app.reroll": "Click to banish this one",
-  "app.version": "v1.0.0 - \"third time's the charm\"",
-  "app.copyright": "MÖRK BORG is ©2020 Ockult Örtmästare Games and Stockholm Kartell. Web app by Karl Druid."
+  "app.print": "Go print yourself",
+  "app.subtitle": "A third party <span>character generator</span> for MÖRK BORG",
+
+  "app.version": "v0.1.0 - \"just getting started\"",
+  "app.copyright": "SCVMATORIUM is an independent production by Karl Druid and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License. MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell. Other content is the copyright of their respective authors.",
+
+  "app.reroll.1": "Drink the poison",
+  "app.reroll.2": "Take the leap",
+  "app.reroll.3": "Calm the lich",
+  "app.reroll.4": "Pull the lever",
+  "app.reroll.5": "Face the music",
+  "app.reroll.6": "Greet the stranger",
+  "app.reroll.7": "Jump the pit",
+  "app.reroll.8": "Cut the rope",
+  "app.reroll.9": "Run away",
+  "app.reroll.10": "Say your final words",
+  "app.reroll.11": "Resist disease",
+  "app.reroll.12": "Bleed out",
+  "app.reroll.13": "Read the scroll",
+  "app.reroll.14": "Pet the wyvern",
+  "app.reroll.15": "Disarm the trap",
+  "app.reroll.16": "Fight the bandits",
+  "app.reroll.17": "Defame Anthelia",
+  "app.reroll.18": "Wake the troll",
+  "app.reroll.19": "Stand in the fire",
+  "app.reroll.20": "Fall on your sword",
+
+  "app.author": "<a href=\"{url}\" target=\"_blank\">{name}</a>",
+  "app.attribution": "<a href=\"{url}\" target=\"_blank\">{title}</a> by "
 }

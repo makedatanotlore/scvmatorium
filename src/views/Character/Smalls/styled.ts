@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const FlexWrapper = styled.div`
+  color: ${({ theme }) => theme.text.primary};
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  border-top: dashed white 1px;
-  border-bottom: dashed white 1px;
+  border-top: dashed ${({ theme }) => theme.text.primary} 1px;
+  border-bottom: dashed ${({ theme }) => theme.text.primary} 1px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 `;

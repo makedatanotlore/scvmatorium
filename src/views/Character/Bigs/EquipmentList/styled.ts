@@ -6,7 +6,7 @@ export const FlexWrapper = styled.div`
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
-  max-width: 320px;
+  flex-grow: 1;
 `;
 
 export const ListWrapper = styled.ul`

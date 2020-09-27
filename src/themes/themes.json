@@ -7,14 +7,58 @@
       "inverted": "#ffffff"
     },
     "text": {
+      "size": "1em",
       "primary": "#ffffff",
       "secondary": "#ff6ce7",
       "inverted": "#000000"
     },
     "highlight": {
       "primary": "#ff6ce7",
+      "secondary": "#000000",
+      "inverted": "#ffffff"
+    },
+    "button": {
+      "text": {
+        "color": "#000000",
+        "hover": "#ffffff",
+        "active": "#ffffff"
+      },
+      "background": {
+        "color": "#ffffff",
+        "hover": "#ff6ce7",
+        "active": "#000000"
+      }
+    }
+  },
+  "print": {
+    "faded": "#dfdfdf",
+    "background": {
+      "primary": "#ffffff",
       "secondary": "#ffffff",
       "inverted": "#000000"
+    },
+    "text": {
+      "size": "0.5rem",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "inverted": "#ffffff"
+    },
+    "highlight": {
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "inverted": "#000000"
+    },
+    "button": {
+      "text": {
+        "color": "#000000",
+        "hover": "#ffffff",
+        "active": "#ffffff"
+      },
+      "background": {
+        "color": "#ffffff",
+        "hover": "#000000",
+        "active": "#000000"
+      }
     }
   }
 }

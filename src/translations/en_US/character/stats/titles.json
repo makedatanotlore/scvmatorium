@@ -10,7 +10,7 @@
   "character.stats.titles.toughness": "Toughness",
 
   "character.stats.titles.abilities": "Abilities",
-  "character.stats.titles.introduction": "You are {name}",
+  "character.stats.titles.introduction": "This is you",
   "character.stats.titles.powers": "{class}",
   "character.stats.titles.equipment": "Equipment"
 }

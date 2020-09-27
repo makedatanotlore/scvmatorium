@@ -1,3 +1,6 @@
+import { formatBody } from './../shared/bodies';
+import { formatHabit } from './../shared/habits';
+import { formatTrait } from './../shared/traits';
 import { rollStandardEquipment } from './../shared/equipment';
 import { random, drop, sum, sampleSize, sample } from 'lodash/fp';
 import { threeD6, scores, formatAbility } from 'rng/shared/abilities';
@@ -14,7 +17,7 @@ const fourD6DropLowest = () => {
   return scores.find(({ numbers }) => numbers.includes(result))?.value || 0;
 };
 
-export const roll = (): Character => {
+export const classless = (): Character => {
   const abilities = ['strength', 'agility', 'presence', 'toughness'];
   const strongAbilities = sampleSize(2, abilities);
 
@@ -26,7 +29,12 @@ export const roll = (): Character => {
   const hp = rollHp(1, 8, toughness.score);
   const omens = rollOmens(1, 2);
 
-  const equipment = rollStandardEquipment();
+  const equipment = rollStandardEquipment({
+    presence: presence.score,
+    armor: 'd4',
+    weapon: 'd10',
+    money: { min: 20, max: 120 },
+  });
 
   return {
     tags: ['classless'],
@@ -37,7 +45,18 @@ export const roll = (): Character => {
     ],
     bigs: [
       {
-        component: 'ability-list',
+        component: {
+          id: 'introduction',
+        },
+        header: { id: 'character.stats.titles.introduction', values: {} },
+        content: [
+          ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
+          formatBody(sample(tables.bodies)!),
+          formatHabit(sample(tables.habits)!),
+        ],
+      },
+      {
+        component: { id: 'abilityList' },
         header: { id: 'character.stats.titles.abilities', values: {} },
         content: [
           formatAbility(strength),
@@ -47,14 +66,9 @@ export const roll = (): Character => {
         ],
       },
       {
-        component: 'equipment-list',
+        component: { id: 'equipmentList' },
         header: { id: 'character.stats.titles.equipment', values: {} },
         content: equipment,
-      },
-      {
-        component: 'equipment-list',
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: rollStandardEquipment(),
       },
     ],
   };

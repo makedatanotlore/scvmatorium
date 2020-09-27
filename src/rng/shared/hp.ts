@@ -2,6 +2,7 @@ import { random } from 'lodash/fp';
 import { Small } from 'types/character';
 
 export const formatHp = (hp: number): Small => ({
+  tags: ['hp'],
   title: { id: 'character.stats.titles.hp', values: {} },
   description: { id: 'character.stats.standard.hp', values: { hp } },
 });

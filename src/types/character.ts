@@ -9,15 +9,18 @@ export type Character = {
 export type Small = {
   title: Message;
   description: Message;
+  tags: string[];
 };
 
 export type Big = {
   header: Message;
   content: Small[];
-  component: 'ability-list' | 'plain-box' | 'equipment-list';
+  component: {
+    id: 'abilityList' | 'plainBox' | 'equipmentList' | 'introduction';
+  };
 };
 
-export type Message = { id: string; values?: Values };
+export type Message = { id: string; values?: Values; format?: Message };
 
 export type Author = {
   name: string;
@@ -36,10 +39,19 @@ export type TableEntry = {
   tags: string[];
   attribution: Attribution;
   content: Small | Big;
-  generateValues?: () => Values;
+  generateValues?: GenerateValuesFn;
 };
 
 export type Equipment = {
   id: string;
-  generateValues?: () => Values;
+  generateValues?: GenerateValuesFn;
 };
+
+export type GenerateValuesProps = {
+  presence: number;
+  armor: 'd2' | 'd3' | 'd4';
+  weapon: 'd4' | 'd6' | 'd8' | 'd10';
+  money: { min: number; max: number };
+};
+
+export type GenerateValuesFn = (input: GenerateValuesProps) => Values;

@@ -9,6 +9,7 @@ declare module 'styled-components' {
       inverted: string;
     };
     text: {
+      size: string;
       primary: string;
       secondary: string;
       inverted: string;
@@ -17,6 +18,18 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       inverted: string;
+    };
+    button: {
+      text: {
+        color: string;
+        hover: string;
+        active: string;
+      };
+      background: {
+        color: string;
+        hover: string;
+        active: string;
+      };
     };
   }
 }

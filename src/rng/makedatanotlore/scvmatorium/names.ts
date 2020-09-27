@@ -1,18 +1,19 @@
 import { scvmatorium } from 'rng/attributions';
 import { TableEntry } from 'types/character';
 
-const entry = (input: string): TableEntry => ({
-  id: `scvmatorium-${input}`,
-  tags: ['makedatanotlore', 'scvmatorium', 'name'],
+const entry = (id: string): TableEntry => ({
+  id: `scvmatorium-${id}`,
+  tags: ['makedatanotlore', 'scvmatorium', 'name', id],
   attribution: scvmatorium,
   content: {
+    tags: ['makedatanotlore', 'scvmatorium', 'name', id],
     title: {
       id: 'character.stats.titles.name',
       values: {},
     },
     description: {
       id: 'character.stats.standard.name',
-      values: { name: input },
+      values: { name: id },
     },
   },
 });
@@ -62,4 +63,7 @@ export const names = [
   'Amuk',
   'Gerkun',
   'Revel',
+  'Geghard',
+  'Detfel',
+  'Hardeknud',
 ].map((name) => entry(name));

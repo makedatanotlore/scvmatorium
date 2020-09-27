@@ -8,7 +8,9 @@ export const FlexWrapper = styled.div`
 
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-
+  > div {
+    flex-basis: 50%;
+  }
   ${mediaQuery.phone} {
     > div {
       flex-basis: 100%;

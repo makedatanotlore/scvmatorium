@@ -34,6 +34,7 @@ const formatScore = (score: number) => {
 };
 
 export const formatAbility = ({ name, score }: Ability): Small => ({
+  tags: ['ability', name],
   title: { id: `character.stats.titles.${name}`, values: {} },
   description: {
     id: `character.stats.standard.ability`,

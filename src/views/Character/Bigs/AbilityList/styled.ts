@@ -25,6 +25,7 @@ export const TitleWrapper = styled.div`
   font-weight: 700;
   display: inline-block;
   min-width: 100px;
+  color: ${({ theme }) => theme.text.primary};
 `;
 
 export const DescriptionWrapper = styled.div`
