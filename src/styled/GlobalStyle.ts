@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 320px;
     max-width: 100%;
 
     ::-webkit-scrollbar {
