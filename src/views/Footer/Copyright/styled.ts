@@ -5,8 +5,8 @@ export const FlexWrapper = styled.div`
   justify-content: center;
   text-align: center;
   font-size: 0.75rem;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
   font-style: italic;
 `;

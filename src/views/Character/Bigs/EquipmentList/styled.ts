@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export { HeaderWrapper } from '../styled';
 
 export const FlexWrapper = styled.div`
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 0.5rem;
   flex-grow: 1;
 `;
@@ -14,13 +14,13 @@ export const ListWrapper = styled.ul`
 
   list-style: disc;
   text-indent: 0em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 12px;
+  padding-right: 12px;
 `;
 
 export const SmallWrapper = styled.li`
-  line-height: 1.25rem;
-  margin-left: 1rem;
+  line-height: 1.5rem;
+  margin-left: 12px;
 `;
 
 export const TitleWrapper = styled.span`

@@ -6,8 +6,8 @@ export const FlexWrapper = styled.div`
   width: 100%;
   min-height: 100vmin;
   background-size: cover;
-  font-size: 0.85rem;
   align-items: start;
+  font-size: 10px;
 
   grid-template-columns: 1fr 80% 1fr;
   grid-template-rows: min-content min-content 1fr;

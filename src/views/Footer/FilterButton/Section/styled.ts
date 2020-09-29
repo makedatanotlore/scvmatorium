@@ -4,7 +4,7 @@ export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: column;
   color: ${({ theme }) => theme.text.inverted};
-  padding: 1rem;
+  padding: 6px;
 `;
 
 export const Header = styled.div`

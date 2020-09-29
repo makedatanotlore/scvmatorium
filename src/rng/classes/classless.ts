@@ -31,8 +31,8 @@ export const classless = (): Character => {
 
   const equipment = rollStandardEquipment({
     presence: presence.score,
-    armor: 'd4',
-    weapon: 'd10',
+    armor: 4,
+    weapon: 10,
     money: { min: 20, max: 120 },
   });
 

@@ -15,7 +15,7 @@ export const FlexWrapper = styled.div`
 export const SmallWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 6px;
 `;
 
 export const TitleWrapper = styled.div`

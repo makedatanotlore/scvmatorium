@@ -6,16 +6,16 @@ export const FlexWrapper = styled.div`
   justify-content: center;
   text-align: center;
   font-size: 0.75rem;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
 `;
 
 export const StyledButton = styled.button`
   text-align: center;
   font-size: 1rem;
   color: ${({ theme }) => theme.button.text.color};
-  margin-bottom: 0.5rem;
+  margin-bottom: 6px;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -56,3 +56,5 @@ export const StyledButton = styled.button`
     font-size: 1rem;
   }
 `;
+
+export const PrintWrapper = styled.div``;

@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
 
     margin: 0;
-    font-size: ${({ theme }) => theme.text.size};
+    font-size: 1rem;
     font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

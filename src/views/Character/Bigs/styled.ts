@@ -6,8 +6,8 @@ export const FlexWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
 
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
   > div {
     flex-basis: 50%;
   }
@@ -19,7 +19,7 @@ export const FlexWrapper = styled.div`
 `;
 
 export const HeaderWrapper = styled.span`
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: 'Germania One', cursive;
   color: ${({ theme }) => theme.text.primary};
 `;

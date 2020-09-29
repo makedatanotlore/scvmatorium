@@ -10,7 +10,7 @@ export const FlexWrapper = styled.div`
 
   align-items: start;
 
-  grid-template-columns: 1fr 50% 1fr;
+  grid-template-columns: 1fr 40% 1fr;
   grid-template-rows: min-content min-content 1fr min-content;
   grid-template-areas:
     '. header .'
@@ -22,7 +22,7 @@ export const FlexWrapper = styled.div`
     grid-template-columns: 1fr 65% 1fr;
   }
   ${mediaQuery.laptop} {
-    grid-template-columns: 1fr 65% 1fr;
+    grid-template-columns: 1fr 80% 1fr;
   }
   ${mediaQuery.tablet} {
     grid-template-rows: min-content min-content 1fr min-content;

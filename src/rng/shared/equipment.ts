@@ -1,5 +1,7 @@
-import { sample } from 'lodash/fp';
+import { sample, sampleSize, random } from 'lodash/fp';
 import tables from 'rng/tables';
+import { uncredited } from 'rng/attributions';
+
 import { TableEntry, Small, GenerateValuesProps } from 'types/character';
 
 export const formatEquipment = (
@@ -22,26 +24,113 @@ const hasScroll = (equipment: TableEntry[]) =>
       item.tags.includes('uncleanScroll') || item.tags.includes('sacredScroll')
   );
 
-export const rollStandardEquipment = (input: GenerateValuesProps) => {
-  const foodAndWater = sample(tables.equipment.foodAndWater)!;
-  const equipmentI = sample(tables.equipment.listI)!;
-  const equipmentII = sample(tables.equipment.listII)!;
-  const equipmentIII = sample(tables.equipment.listIII)!;
-  const armorDie = hasScroll([equipmentII, equipmentIII]) ? 'd2' : input.armor;
+const sharedEntry = (id: string): TableEntry => ({
+  id: `${id}`,
+  tags: [id],
+  attribution: uncredited,
+  content: {
+    tags: [`${id}`],
+    title: {
+      id: `content.shared.uncredited.${id}.title`,
+      values: {},
+    },
+    description: {
+      id: `content.shared.uncredited.${id}.description`,
+      values: {},
+    },
+  },
+});
 
-  const armor = sample(tables.equipment.armor[armorDie])!;
-  const weapon = sample(tables.equipment.weapons[input.weapon])!;
-  const monies = sample(tables.equipment.monies)!;
+const blankEntry = (): TableEntry => ({
+  id: `_blank`,
+  tags: [],
+  attribution: uncredited,
+  content: {
+    tags: [],
+    title: {
+      id: `content.shared.uncredited.blank`,
+      values: {},
+    },
+    description: {
+      id: `content.shared.uncredited.blank`,
+      values: {},
+    },
+  },
+});
+
+const rollBags = (): TableEntry => {
+  const roll = random(0, 5);
 
   return [
+    blankEntry(),
+    blankEntry(),
+    sample(tables.equipment.bags.small)!,
+    sample(tables.equipment.bags.large)!,
+    sample([
+      sample([...tables.equipment.bags.large, ...tables.equipment.bags.small])!,
+      sample(tables.equipment.bags.vehicle)!,
+    ])!,
+    sample([
+      sample([
+        ...tables.equipment.bags.large,
+        ...tables.equipment.bags.small,
+        ...tables.equipment.bags.vehicle,
+      ])!,
+      sample(tables.equipment.bags.beast),
+    ])!,
+  ][roll];
+};
+
+const rollArmor = (armor: number, scroll: boolean): TableEntry => {
+  const roll = random(0, scroll ? 1 : armor - 1);
+
+  return [
+    blankEntry(),
+    sample(tables.equipment.armor.light)!,
+    sample(tables.equipment.armor.medium)!,
+    sample(tables.equipment.armor.heavy)!,
+  ][roll];
+};
+
+const rollWeapon = (weapon: number): TableEntry => {
+  const roll = random(0, weapon - 1);
+
+  return [
+    sample(tables.equipment.weapons.d4)!,
+    sample(tables.equipment.weapons.d4)!,
+    sample(tables.equipment.weapons.d4)!,
+    sample(tables.equipment.weapons.d4)!,
+    sample(tables.equipment.weapons.d6)!,
+    sample(tables.equipment.weapons.d6)!,
+    sample(tables.equipment.weapons.d8)!,
+    sample(tables.equipment.weapons.d8)!,
+    sample(tables.equipment.weapons.d10)!,
+    sample(tables.equipment.weapons.d10)!,
+  ][roll];
+};
+
+export const rollStandardEquipment = (input: GenerateValuesProps) => {
+  const foodAndWater = sample(tables.equipment.foodAndWater)!;
+  const generalEquipment = sampleSize(3, [
+    ...sampleSize(22, tables.equipment.general),
+    sharedEntry('uncleanScroll'),
+    sharedEntry('sacredScroll'),
+  ])!;
+
+  const bags = rollBags();
+  const armor = rollArmor(input.armor, hasScroll(generalEquipment));
+  const weapon = rollWeapon(input.weapon);
+  const silver = sample(tables.equipment.silver)!;
+
+  console.log('equipment', [
     foodAndWater,
     weapon,
     armor,
-    equipmentI,
-    equipmentII,
-    equipmentIII,
-    monies,
-  ]
-    .filter((item) => item.id !== 'blank')
+    bags,
+    ...generalEquipment,
+    silver,
+  ]);
+  return [foodAndWater, weapon, armor, bags, ...generalEquipment, silver]
+    .filter((item) => item.id !== '_blank')
     .map((item) => formatEquipment(item, input));
 };

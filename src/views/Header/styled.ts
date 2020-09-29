@@ -4,7 +4,7 @@ export const FlexWrapper = styled.div`
   grid-area: header;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 6px;
   flex-direction: column;
   text-align: center;
   line-height: 2rem;

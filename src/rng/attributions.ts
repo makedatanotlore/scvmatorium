@@ -1,6 +1,13 @@
 import { Attribution } from 'types/character';
 import { makedatanotlore } from 'rng/authors';
 
+export const uncredited: Attribution = {
+  title: { id: 'content.shared.uncredited' },
+  id: 'uncredited',
+  authors: [],
+  url: '',
+};
+
 export const scvmatorium: Attribution = {
   title: { id: 'content.makedatanotlore.scvmatorium' },
   id: 'scvmatorium',

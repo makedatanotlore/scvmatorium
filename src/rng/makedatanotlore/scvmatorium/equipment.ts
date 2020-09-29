@@ -21,223 +21,204 @@ const entry = (id: string, generateValues?: GenerateValuesFn): TableEntry => ({
   generateValues,
 });
 
-const smallContainer = entry('smallContainer', () => ({
-  container: sample([
-    'knapsack',
-    'saddlebags',
-    'satchel',
-    'basket',
-    'rucksack',
-    'leatherBag',
-    sample(['woodenBucket', 'metalBucket']),
-  ])!,
-}));
+const bagEntry = (
+  id: string,
+  size: 'small' | 'large',
+  generateValues?: GenerateValuesFn
+): TableEntry => ({
+  id: `scvmatorium-${id}`,
+  tags: ['makedatanotlore', 'scvmatorium', 'equipment', id],
+  attribution: scvmatorium,
+  content: {
+    tags: ['makedatanotlore', 'scvmatorium', 'equipment', id],
+    title: {
+      id: `content.makedatanotlore.scvmatorium.${id}.title`,
+      values: {},
+    },
+    description: {
+      id: `content.makedatanotlore.scvmatorium.${size}Container.description`,
+      values: {},
+    },
+  },
+  generateValues,
+});
 
-const largeContainer = entry('largeContainer', () => ({
-  container: sample(['fishNet', 'largeBrownSack', 'gunnySack'])!,
-}));
+const bags = () => {
+  const small = [
+    bagEntry('knapsack', 'small'),
+    bagEntry('saddlebags', 'small'),
+    bagEntry('satchel', 'small'),
+    bagEntry('basket', 'small'),
+    bagEntry('rucksack', 'small'),
+  ];
 
-const vehicle = entry('vehicle', () => ({
-  ...sample([
-    { vehicle: 'wheelbarrow' },
-    { vehicle: 'corpseCart', corpses: random(0, 4) },
-  ]),
-}));
+  const large = [bagEntry('fishNet', 'large'), bagEntry('gunnySack', 'large')];
 
-const beast = entry('beast', () => ({
-  beast: sample(['mule', 'goat', 'ox'])!,
-}));
+  const vehicle = [
+    entry('wheelBarrow'),
+    entry('corpseCart', () => ({ corpses: random(0, 4) })),
+  ];
 
-const listI = [
-  smallContainer,
-  largeContainer,
-  smallContainer,
-  largeContainer,
-  vehicle,
-  smallContainer,
-  largeContainer,
-  vehicle,
-  beast,
-];
+  const beast = [entry('mule'), entry('ox'), entry('goat')];
 
-const listII = [
-  entry('rope', () => ({
-    rope: sample(['braidedIntestines', 'rustedChain'])!,
-  })),
-  entry('torches', ({ presence }) => ({
-    torches: sample(['oilWrappedBones', 'candles'])!,
+  return {
+    small,
+    large,
+    vehicle,
+    beast,
+  };
+};
+
+const general = [
+  entry('braidedIntestines'),
+  entry('rustedChain'),
+  entry('oilWrappedBones', ({ presence }) => ({
     amount: max([random(1, 4) + presence, 1])!,
   })),
-  entry('lamp', ({ presence }) => ({
-    lamp: sample(['rustyLamp'])!,
+  entry('candles', ({ presence }) => ({
+    amount: max([random(1, 4) + presence, 1])!,
+  })),
+  entry('rustyLamp', ({ presence }) => ({
     hours: max([random(1, 4) + presence, 1])!,
   })),
-  entry('metal', () => ({
-    metal: sample(['quicksilver'])!,
-  })),
-  entry('uncleanScroll'),
-  entry('utensil', () => ({
-    utensil: sample(['earwaxPicker', 'soap', 'charcoal', 'drinkingHorn'])!,
-  })),
-  entry('medicine', () => ({
-    medicine: sample(['bandages'])!,
+  entry('quicksilver'),
+  entry('earwaxPicker'),
+  entry('soap'),
+  entry('charcoal'),
+  entry('drinkingHorn'),
+  entry('bloodiedBandages', () => ({
     uses: random(1, 4),
   })),
-  entry('tool', () => ({
-    tool: sample(['flint', 'horseShoes'])!,
-    horseShoes: random(1, 4),
+  entry('flintAndTinder'),
+  entry('horseshoes', () => ({
+    amount: random(1, 4),
   })),
-  entry('thing', () => ({
-    thing: sample(['ballAndChain', 'handcuffs'])!,
+  entry('ballAndChain'),
+  entry('handcuffs', () => ({
+    key: sample(['key', 'noKey'])!,
   })),
-  entry('comfort', () => ({
-    comfort: sample(['pillowcase', 'blanket', 'cloak'])!,
-  })),
-  entry('instrument', () => ({
-    instrument: sample(['lute', 'flute', 'mouthHarp'])!,
+  entry('hayPillowcase'),
+  entry('crunchyBlanket'),
+  entry('curtainTurnedCloak'),
+  entry('lute', () => ({
     strings: random(0, 12),
   })),
-  entry('trap', () => ({
-    trap: sample(['grease', 'locusts', 'liquidRot'])!,
+  entry('flute'),
+  entry('mouthHarp'),
+  entry('jarOfGrease'),
+  entry('boxOfLocusts'),
+  entry('liquidRot'),
+  entry('trollBlood', () => ({
+    doses: random(1, 4),
   })),
+  entry('scabbyCat', () => ({ hp: random(1, 4) + 1 })),
+  entry('tinyCobra'),
+  entry('warRooster', () => ({ hp: random(1, 2) + 1 })),
+  entry('vampreyLamprey'),
+  entry('boneDice', () => ({ amount: random(1, 4) })),
+  entry('deckOfCards', () => ({ amount: random(0, 6) })),
+  entry('rulebook'),
+  entry('chessPieces', () => ({ amount: random(10, 20) })),
+  entry('marbles', () => ({ amount: random(6, 16) })),
+  entry('mirror', () => ({ worth: random(10, 50) })),
+  entry('ruby', () => ({ worth: random(20, 60) })),
+  entry('fineWine', () => ({ worth: random(5, 25) })),
+  entry('sewingKit'),
+  entry('cookware'),
+  entry('cartographyKit'),
+  entry('ropeLadder'),
+  entry('woodenPole'),
+  entry('pitons'),
+  entry('rottenShield'),
+  entry('rustyShield'),
+  entry('shinyShield'),
+  entry('brokenBottle'),
+  entry('ironRod'),
+  entry('potatoes'),
+  entry('molderingGrains'),
+  entry('southwester'),
+  entry('overcoat'),
+  entry('moleskinMoccasins'),
+  entry('moldskinMoccasins'),
+  entry('goblinGloves'),
+  entry('tentPegs'),
 ];
 
-const listIII = [
-  entry('potion', () => ({
-    potion: sample(['trollBlood'])!,
-    doses: random(1, 4)!,
-  })),
-  entry('sacredScroll'),
-  entry(
-    'pet',
-    () =>
-      sample([
-        { pet: 'scabbyCat', hp: random(1, 4) + 1 },
-        { pet: 'tinyCobra', hp: 1 },
-        { pet: 'warRooster', hp: random(1, 4) },
-        { pet: 'lamprey', hp: 1 },
-      ])!
-  ),
-  entry(
-    'gambling',
-    () =>
-      sample([
-        { gambling: 'boneDice', amount: random(1, 4) },
-        { gambling: 'cards', amount: random(1, 6) },
-        { gambling: 'rulebook', amount: 0 },
-        { gambling: 'chessPieces', amount: random(1, 20) },
-        { gambling: 'marbles', amount: random(1, 6) + 10 },
-      ])!
-  ),
-  entry('luxury', () => ({
-    luxury: sample(['mirror', 'ruby', 'fineWine'])!,
-    worth: random(10, 60),
-  })),
-  entry('crafting', () => ({
-    crafting: sample(['sewingKit', 'cookware', 'cartographyKit'])!,
-  })),
-  entry('chain', () => ({
-    chain: sample(['ropeLadder'])!,
-  })),
-  entry('travel', () => ({
-    travel: sample(['pole', 'pitons'])!,
-  })),
-  entry('shield', () => ({
-    shield: sample(['smallShield', 'largeShield'])!,
-  })),
-  entry('improvisedWeapon', () => ({
-    improvisedWeapon: sample(['hammer', 'brokenBottle', 'ironRod'])!,
-  })),
-  entry('edible', () => ({
-    edible: sample(['potatoes'])!,
-  })),
-  entry('survival', () => ({
-    survival: sample([
-      'southwester',
-      'overcoat',
-      'moccasins',
-      'gloves',
-      'tentPegs',
-    ])!,
-  })),
-];
+const weapons = () => {
+  const d4 = [
+    entry('shiv'),
+    entry('quarterStaff'),
+    entry('bludgeon'),
+    entry('dirk'),
+  ];
 
-const weapons = [
-  entry('femur', () => ({
-    weapon: sample(['shiv'])!,
-  })),
-  entry('staff', () => ({
-    weapon: sample(['quarterstaff'])!,
-  })),
-  entry('shortsword', () => ({
-    weapon: sample(['bludgeon'])!,
-  })),
-  entry('knife', () => ({
-    weapon: sample(['dirk'])!,
-  })),
-  entry('warhammer', () => ({
-    weapon: sample(['morningstar'])!,
-  })),
-  entry('sword', () => ({
-    weapon: sample(['broadsword'])!,
-  })),
-  entry('bow', ({ presence }) => ({
-    weapon: sample(['throwingAxe'])!,
-    ammunition: max([2 + presence, 1])!,
-  })),
-  entry('flail', () => ({
-    weapon: sample(['longsword'])!,
-  })),
-  entry('crossbow', ({ presence }) => ({
-    weapon: sample(['arbalest'])!,
-    ammunition: max([10 + presence, 1])!,
-  })),
-  entry('zweihander', () => ({
-    weapon: sample(['estoc'])!,
-  })),
-];
+  const d6 = [entry('morningStar'), entry('broadsword')];
 
-const armor = [
-  entry('light', () => ({
-    armor: sample(['gambeson', 'boiledLeather', 'quiltedJacket'])!,
-  })),
-  entry('medium', () => ({
-    armor: sample(['lamellar', 'chainmail', 'steelBreastplate'])!,
-  })),
-  entry('heavy', () => ({
-    armor: sample(['brigandine', 'platemail'])!,
-  })),
-];
+  const d8 = [
+    entry('throwingAxes', ({ presence }) => ({
+      amount: max([2 + presence, 1])!,
+    })),
+    entry('longsword'),
+  ];
+
+  const d10 = [
+    entry('arbalest', ({ presence }) => ({
+      bolts: max([10 + presence, 1])!,
+    })),
+    entry('dreihander'),
+  ];
+
+  return {
+    d4,
+    d6,
+    d8,
+    d10,
+  };
+};
+
+const armor = () => {
+  const light = [
+    entry('gambeson'),
+    entry('boiledLeather'),
+    entry('quiltedJacket'),
+  ];
+
+  const medium = [
+    entry('lamellar'),
+    entry('rustyChainmail'),
+    entry('steelBreastplate'),
+  ];
+
+  const heavy = [
+    entry('buckledPlate'),
+    entry('stainedPlate'),
+    entry('rustyPlate'),
+  ];
+
+  return {
+    light,
+    medium,
+    heavy,
+  };
+};
 
 const foodAndWater = [
   entry('foodAndWater', () => ({
-    foodAndWater: sample(['foodAndWater'])!,
     days: random(1, 4)!,
   })),
 ];
 
-const monies = [
-  entry('money', ({ money }) => ({
-    money: sample(['silver'])!,
+const silver = [
+  entry('silver', ({ money }) => ({
     coins: random(money.min, money.max)!,
   })),
 ];
 
 export const equipment = {
-  listI,
-  listII,
-  listIII,
-  weapons: {
-    d4: weapons.slice(0, 4),
-    d6: weapons.slice(0, 6),
-    d8: weapons.slice(0, 8),
-    d10: weapons,
-  },
-  armor: {
-    d2: armor.slice(0, 1),
-    d3: armor.slice(0, 2),
-    d4: armor.slice(0, 3),
-  },
+  general,
+  bags: bags(),
+  weapons: weapons(),
+  armor: armor(),
   foodAndWater,
-  monies,
+  silver,
 };

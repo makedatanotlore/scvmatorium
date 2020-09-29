@@ -4,12 +4,12 @@ export const FlexWrapper = styled.div`
   grid-area: roller;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 12px;
   flex-direction: column;
-  line-height: 2rem;
 `;
 
 export const StyledButton = styled.button`
+  font-family: Roboto mono, monospace;
   margin-left: auto;
   margin-right: auto;
   border: none;
@@ -24,8 +24,8 @@ export const StyledButton = styled.button`
   font-style: normal;
   font-size: 1em;
   min-width: 160px;
-  max-width: 250px;
-
+  padding-left: 1rem;
+  padding-right: 1rem;
   :active {
     background-color: ${({ theme }) => theme.button.background.active};
     color: ${({ theme }) => theme.button.text.active};

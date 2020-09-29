@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { FormattedMessage } from 'react-intl';
-import { FlexWrapper, StyledButton } from './styled';
+import { FlexWrapper, StyledButton, PrintWrapper } from './styled';
 import Print from 'views/Print';
 
 export const PrintButton: React.FC = () => {
@@ -17,9 +17,9 @@ export const PrintButton: React.FC = () => {
         <FormattedMessage id={'app.print'} />
       </StyledButton>
       <div style={{ display: 'none' }}>
-        <div ref={ref}>
+        <PrintWrapper ref={ref}>
           <Print />
-        </div>
+        </PrintWrapper>
       </div>
     </FlexWrapper>
   );

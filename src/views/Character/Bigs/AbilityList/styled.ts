@@ -3,22 +3,23 @@ import styled from 'styled-components';
 export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 0.5rem;
+  flex-grow: 1;
 `;
 
 export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 3px;
 `;
 
 export const SmallWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  line-height: 1.25rem;
-  margin-left: 1rem;
+  line-height: 1.5rem;
+  margin-left: 6px;
 `;
 
 export const TitleWrapper = styled.div`

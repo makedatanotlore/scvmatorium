@@ -1,33 +1,15 @@
 import { equipment as scvmatoriumEquipment } from 'rng/makedatanotlore/scvmatorium/equipment';
-import { scvmatorium } from 'rng/attributions';
-import { TableEntry } from 'types/character';
 
-const blankEntry = (): TableEntry => ({
-  id: `blank`,
-  tags: ['blank'],
-  attribution: scvmatorium,
-  content: {
-    tags: ['blank'],
-    title: {
-      id: ``,
-      values: {},
-    },
-    description: {
-      id: ``,
-      values: {},
-    },
-  },
-});
+const bags = {
+  small: [...scvmatoriumEquipment.bags.small],
+  large: [...scvmatoriumEquipment.bags.large],
+  vehicle: [...scvmatoriumEquipment.bags.vehicle],
+  beast: [...scvmatoriumEquipment.bags.beast],
+};
 
 export const foodAndWater = [...scvmatoriumEquipment.foodAndWater];
-export const monies = [...scvmatoriumEquipment.monies];
-export const listI = [
-  blankEntry(),
-  blankEntry(),
-  ...scvmatoriumEquipment.listI,
-];
-export const listII = [...scvmatoriumEquipment.listII];
-export const listIII = [...scvmatoriumEquipment.listIII];
+export const silver = [...scvmatoriumEquipment.silver];
+export const general = [...scvmatoriumEquipment.general];
 export const weapons = {
   d4: [...scvmatoriumEquipment.weapons.d4],
   d6: [...scvmatoriumEquipment.weapons.d6],
@@ -36,17 +18,16 @@ export const weapons = {
 };
 
 export const armor = {
-  d2: [blankEntry(), ...scvmatoriumEquipment.armor.d2],
-  d3: [blankEntry(), ...scvmatoriumEquipment.armor.d3],
-  d4: [blankEntry(), ...scvmatoriumEquipment.armor.d4],
+  light: [...scvmatoriumEquipment.armor.light],
+  medium: [...scvmatoriumEquipment.armor.medium],
+  heavy: [...scvmatoriumEquipment.armor.heavy],
 };
 
 export default {
   foodAndWater,
-  listI,
-  listII,
-  listIII,
+  bags,
+  general,
   weapons,
   armor,
-  monies,
+  silver,
 };

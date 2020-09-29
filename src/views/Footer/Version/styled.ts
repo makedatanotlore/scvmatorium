@@ -5,9 +5,9 @@ export const FlexWrapper = styled.div`
   justify-content: center;
   text-align: center;
   font-size: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 12px;
   color: ${({ theme }) => theme.text.primary};
   opacity: 0.5;
 `;

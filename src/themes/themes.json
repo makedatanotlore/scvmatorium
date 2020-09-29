@@ -7,7 +7,6 @@
       "inverted": "#ffffff"
     },
     "text": {
-      "size": "1em",
       "primary": "#ffffff",
       "secondary": "#ff6ce7",
       "inverted": "#000000"
@@ -38,7 +37,6 @@
       "inverted": "#000000"
     },
     "text": {
-      "size": "0.5rem",
       "primary": "#000000",
       "secondary": "#000000",
       "inverted": "#ffffff"

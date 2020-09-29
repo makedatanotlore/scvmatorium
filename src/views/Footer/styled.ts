@@ -4,7 +4,6 @@ export const FlexWrapper = styled.div`
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  grid-row: 4;
   justify-content: center;
   align-self: end;
 `;
@@ -12,8 +11,8 @@ export const FlexWrapper = styled.div`
 export const Menu = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
   align-self: center;
 `;
