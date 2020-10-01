@@ -18,7 +18,7 @@ const Section = ({ label, attributions }: Props) => {
         const title = formatMessage(attribution.title);
 
         return (
-          <AttributionWrapper>
+          <AttributionWrapper key={attribution.id}>
             <FormattedHTMLMessage
               id='app.attribution'
               values={{
@@ -28,6 +28,7 @@ const Section = ({ label, attributions }: Props) => {
             />
             {attribution.authors.map((author, index) => (
               <FormattedHTMLMessage
+                key={author.name}
                 id='app.author'
                 values={{
                   url: author.url,

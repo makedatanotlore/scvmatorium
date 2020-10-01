@@ -21,6 +21,7 @@ export const armor = {
   light: [...scvmatoriumEquipment.armor.light],
   medium: [...scvmatoriumEquipment.armor.medium],
   heavy: [...scvmatoriumEquipment.armor.heavy],
+  shields: [...scvmatoriumEquipment.armor.shields],
 };
 
 export default {

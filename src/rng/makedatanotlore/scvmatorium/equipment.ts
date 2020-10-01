@@ -129,9 +129,6 @@ const general = [
   entry('ropeLadder'),
   entry('woodenPole'),
   entry('pitons'),
-  entry('rottenShield'),
-  entry('rustyShield'),
-  entry('shinyShield'),
   entry('brokenBottle'),
   entry('ironRod'),
   entry('potatoes'),
@@ -195,10 +192,12 @@ const armor = () => {
     entry('rustyPlate'),
   ];
 
+  const shields = [entry('rottenShield'), entry('rustyShield')];
   return {
     light,
     medium,
     heavy,
+    shields,
   };
 };
 

@@ -1,7 +1,15 @@
 import { formatBody } from './../shared/bodies';
 import { formatHabit } from './../shared/habits';
 import { formatTrait } from './../shared/traits';
-import { rollStandardEquipment } from './../shared/equipment';
+import {
+  rollArmor,
+  rollWeapon,
+  hasScroll,
+  rollSilver,
+  rollStandardEquipment,
+  formatEquipment,
+  rollFoodAndWater,
+} from './../shared/equipment';
 import { random, drop, sum, sampleSize, sample } from 'lodash/fp';
 import { threeD6, scores, formatAbility } from 'rng/shared/abilities';
 import { rollHp, formatHp } from 'rng/shared/hp';
@@ -29,12 +37,17 @@ export const classless = (): Character => {
   const hp = rollHp(1, 8, toughness.score);
   const omens = rollOmens(1, 2);
 
-  const equipment = rollStandardEquipment({
+  const generalEquipment = rollStandardEquipment({
     presence: presence.score,
-    armor: 4,
-    weapon: 10,
     money: { min: 20, max: 120 },
   });
+
+  const weapon = rollWeapon(10);
+  const armor = rollArmor(4, hasScroll(generalEquipment));
+  const silver = rollSilver();
+  const foodAndWater = rollFoodAndWater();
+
+  const equipment = [foodAndWater, weapon, armor, ...generalEquipment, silver];
 
   return {
     tags: ['classless'],
@@ -68,7 +81,14 @@ export const classless = (): Character => {
       {
         component: { id: 'equipmentList' },
         header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment,
+        content: equipment
+          .filter((item) => item.id !== '_blank')
+          .map((item) =>
+            formatEquipment(item, {
+              presence: presence.score,
+              money: { min: 20, max: 120 },
+            })
+          ),
       },
     ],
   };

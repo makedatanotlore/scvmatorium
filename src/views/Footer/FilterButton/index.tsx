@@ -13,6 +13,7 @@ const Filter = () => {
         Who is responsible?
       </StyledButton>
       <Drawer anchor='top' open={open} onClose={() => setOpen(!open)}>
+        <Section label='Classes' attributions={classAttributions} />
         <Section
           label='Additional content'
           attributions={contentAttributions}

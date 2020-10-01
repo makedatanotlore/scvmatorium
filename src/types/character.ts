@@ -49,8 +49,6 @@ export type Equipment = {
 
 export type GenerateValuesProps = {
   presence: number;
-  armor: number;
-  weapon: number;
   money: { min: number; max: number };
 };
 

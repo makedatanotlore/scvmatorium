@@ -1,10 +1,11 @@
 import { Character } from 'types/character';
 import { Action } from 'types/ducks';
-import { classless } from 'rng/classes/classless';
+import { sample } from 'lodash/fp';
+import { classes } from 'rng/classes/';
 import { SET_CHARACTER } from './actions';
 
 const getInitialState = () => ({
-  ...classless(),
+  ...sample(classes)!(),
 });
 
 export const reducer = (

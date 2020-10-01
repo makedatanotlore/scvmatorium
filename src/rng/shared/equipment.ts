@@ -18,7 +18,7 @@ export const formatEquipment = (
   };
 };
 
-const hasScroll = (equipment: TableEntry[]) =>
+export const hasScroll = (equipment: TableEntry[]) =>
   equipment.some(
     (item) =>
       item.tags.includes('uncleanScroll') || item.tags.includes('sacredScroll')
@@ -41,7 +41,7 @@ const sharedEntry = (id: string): TableEntry => ({
   },
 });
 
-const blankEntry = (): TableEntry => ({
+export const blankEntry = (): TableEntry => ({
   id: `_blank`,
   tags: [],
   attribution: uncredited,
@@ -81,7 +81,7 @@ const rollBags = (): TableEntry => {
   ][roll];
 };
 
-const rollArmor = (armor: number, scroll: boolean): TableEntry => {
+export const rollArmor = (armor: number, scroll: boolean): TableEntry => {
   const roll = random(0, scroll ? 1 : armor - 1);
 
   return [
@@ -92,7 +92,7 @@ const rollArmor = (armor: number, scroll: boolean): TableEntry => {
   ][roll];
 };
 
-const rollWeapon = (weapon: number): TableEntry => {
+export const rollWeapon = (weapon: number): TableEntry => {
   const roll = random(0, weapon - 1);
 
   return [
@@ -109,28 +109,27 @@ const rollWeapon = (weapon: number): TableEntry => {
   ][roll];
 };
 
+export const rollSilver = () => {
+  return sample(tables.equipment.silver)!;
+};
+
+export const rollFoodAndWater = () => {
+  return sample(tables.equipment.foodAndWater)!;
+};
+
 export const rollStandardEquipment = (input: GenerateValuesProps) => {
-  const foodAndWater = sample(tables.equipment.foodAndWater)!;
   const generalEquipment = sampleSize(3, [
-    ...sampleSize(22, tables.equipment.general),
+    ...sampleSize(21, tables.equipment.general),
     sharedEntry('uncleanScroll'),
     sharedEntry('sacredScroll'),
+    sharedEntry('shield'),
   ])!;
 
   const bags = rollBags();
-  const armor = rollArmor(input.armor, hasScroll(generalEquipment));
-  const weapon = rollWeapon(input.weapon);
-  const silver = sample(tables.equipment.silver)!;
 
-  console.log('equipment', [
-    foodAndWater,
-    weapon,
-    armor,
-    bags,
-    ...generalEquipment,
-    silver,
-  ]);
-  return [foodAndWater, weapon, armor, bags, ...generalEquipment, silver]
-    .filter((item) => item.id !== '_blank')
-    .map((item) => formatEquipment(item, input));
+  return [bags, ...generalEquipment]
+    .map((item) =>
+      item.id === 'shield' ? sample(tables.equipment.armor.shields)! : item
+    )
+    .filter((item) => item.id !== '_blank');
 };

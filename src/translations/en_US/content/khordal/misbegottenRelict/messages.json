@@ -1,0 +1,25 @@
+{
+  "content.khordal.misbegottenRelict": "Misbegotten Relict",
+
+  "content.khordal.misbegottenRelict.blurb": "You should not exist in this era, a being from the antediluvian past, one who should have died millenia ago. But the cruel wheels of fate have preserved and awakened you amongst the death spasms of the world. You should be forgotten, a distant primal memory, and for this you must inflict yourself upon the world to remind it why some things should remain dead.",
+
+  "content.khordal.misbegottenRelict.chiselledFromAmber": "Chiselled from amber at the heart of a dead forest.",
+  "content.khordal.misbegottenRelict.frozenAndThawed": "Frozen amongst the Howling Glaciers, now thawed.",
+  "content.khordal.misbegottenRelict.spasmInTime": "A spasm in time hurled you from your era to the present.",
+  "content.khordal.misbegottenRelict.chronoWizards": "Summoned by cruel chrono-wizards.",
+  "content.khordal.misbegottenRelict.tarpits": "Dredged from the endless tarpits of the Maw.",
+  "content.khordal.misbegottenRelict.necromancer": "Pulled from a restful death by a spiteful Necromancer.",
+
+  "content.khordal.misbegottenRelict.childeOfThunderLizard.title": "Childe of the Thunder Lizards",
+  "content.khordal.misbegottenRelict.childeOfThunderLizard.description": "You are covered in the thick scales, counting as Medium armor (may not wear armor). You may not eat normal food, instead only the raw flesh of warm-blooded mammals.",
+  "content.khordal.misbegottenRelict.redBirthOfMan.title": "Red Birth of Man",
+  "content.khordal.misbegottenRelict.redBirthOfMan.description": "Squat and heavy-boned, you are of the First Men. You may not speak, only gesticulate and grunt.",
+  "content.khordal.misbegottenRelict.stygianSon.title": "Stygian Son",
+  "content.khordal.misbegottenRelict.stygianSon.description": "You stalked the lands in a time of stygian gloom, you suffer no penalties to Presence in darkness. Bright light causes d2 damage on exposure.",
+  "content.khordal.misbegottenRelict.tickDynasty.title": "Tick Dynasty",
+  "content.khordal.misbegottenRelict.tickDynasty.description": "Scion of the parasitic kingdoms eons ago, you may heal d4 HP upon a successful attack. After feeding in this manner you become bloated and sluggish, -1 Agility. ",
+  "content.khordal.misbegottenRelict.interstellarExile.title": "Interstellar Exile",
+  "content.khordal.misbegottenRelict.interstellarExile.description": "Banished, you fled across the cosmic void. Your alien metabolism and form ensures no need for mortal sustenance, but also ensures you are shunned wherever you go.",
+  "content.khordal.misbegottenRelict.spawnOfUnknownColour.title": "Spawn of Unknown Colour",
+  "content.khordal.misbegottenRelict.spawnOfUnknownColour.description": "A roiling humanoid mass of unknown and terrible colours, add +1 to your defence roll. Your mere presence may inflict infection on your companions if they fail a DR12 toughness save once per day."
+}

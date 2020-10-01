@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
-import { random } from 'lodash/fp';
+import { random, sample } from 'lodash/fp';
 import { useDispatch } from 'react-redux';
 import { FormattedHTMLMessage } from 'react-intl';
-import { FlexWrapper, StyledButton } from './styled';
+import { FlexWrapper, StyledButton, StyledText, ButtonWrapper } from './styled';
 import { setCharacter } from 'ducks/character/actions';
-import { classless } from 'rng/classes/classless';
+import { classes } from 'rng/classes';
 
 const Roller = () => {
   const dispatch = useDispatch();
   const [message, setMessage] = useState(`app.reroll.1`);
 
   const updateCharacter = () => {
-    dispatch(setCharacter(classless()));
+    dispatch(setCharacter(sample(classes)!()));
     setMessage(`app.reroll.${random(1, 20)}`);
   };
 
   return (
     <FlexWrapper>
-      <StyledButton onClick={updateCharacter}>
-        <FormattedHTMLMessage id={message} />
-      </StyledButton>
+      <ButtonWrapper>
+        <StyledButton onClick={updateCharacter}>
+          <FormattedHTMLMessage id={message} />
+        </StyledButton>
+        <StyledText>(and die)</StyledText>
+      </ButtonWrapper>
     </FlexWrapper>
   );
 };

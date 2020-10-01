@@ -33,7 +33,7 @@ const Introduction = ({ content, header }: Props) => {
           <FormattedHTMLMessage
             id={small.description.id}
             values={small.description.values}
-          />{' '}
+          />
         </p>
       ))}
       <p>
