@@ -37,10 +37,7 @@ export const classless = (): Character => {
   const hp = rollHp(1, 8, toughness.score);
   const omens = rollOmens(1, 2);
 
-  const generalEquipment = rollStandardEquipment({
-    presence: presence.score,
-    money: { min: 20, max: 120 },
-  });
+  const generalEquipment = rollStandardEquipment();
 
   const weapon = rollWeapon(10);
   const armor = rollArmor(4, hasScroll(generalEquipment));

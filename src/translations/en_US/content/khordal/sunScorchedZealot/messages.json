@@ -1,0 +1,27 @@
+{
+  "content.khordal.sunScorchedZealot": "Sun Scorched Zealot",
+
+  "content.khordal.sunScorchedZealot.blurb": "You have been Illuminated, amidst the shrouded darkness you glimpsed the gestating Sun-Childe, and have been scorched by the <strong>LIGHT</strong>.  You reject the coming end of all; instead you shall help herald in the birth of a new dawn. Hated and hunted by those of the Basilisk, and tortured by dreams of a howling solar birth, you shall find no respite or succour till all are burnt by the lambent glory of a new god.",
+
+  "content.khordal.sunScorchedZealot.glimpseOfTheSun": "On a windswept peak, a parted gap in the choking clouds, a glimpse of the <strong>SUN</strong>.",
+  "content.khordal.sunScorchedZealot.crucified": "Crucified before the foetal Sun-Childe, beyond Bergen Chrypt.",
+  "content.khordal.sunScorchedZealot.burnt": "Burnt as a Wytch in Galgenbeck, resurrected in radiance.",
+  "content.khordal.sunScorchedZealot.radiantWords": "Radiant words whispered by a wretched Gull of the Endless Sea.",
+  "content.khordal.sunScorchedZealot.scrabblingInMud": "Scrabbling in the mud, uncovered a tablet of Solar Wisdom.",
+  "content.khordal.sunScorchedZealot.wickheadProphet": "Listening to the blasphemies of a Wickhead prophet.",
+
+  "content.khordal.sunScorchedZealot.blessings": "The Sun's Blessings",
+  "content.khordal.sunScorchedZealot.tableDescription": "You may use scrolls, but your speech scorches and burns its very essence, and you may not use it again. Each dawn roll for a blessing from <strong>THE SUN</strong> (d6), replacing the previous one.",
+  "content.khordal.sunScorchedZealot.heavenlyFury.title": "And thine hands shall burn with Heavenly Fury",
+  "content.khordal.sunScorchedZealot.heavenlyFury.description": "Afflicted by raging solar stigmata, you cannot wield weapons and  set flammable objects ablaze with your touch. Your unarmed attacks do d6 damage.",
+  "content.khordal.sunScorchedZealot.empyrealVisage.title": "The Heretic and the Apostate shall tremble beneath his Empyreal Visage",
+  "content.khordal.sunScorchedZealot.empyrealVisage.description": "Your head is replaced by a burning mote of the <strong>SUN</strong>, and thine enemies must avert their gaze before your glory. You gain +2 to defence rolls.",
+  "content.khordal.sunScorchedZealot.castIntoLight.title": "All under thine gaze will be Cast into Light",
+  "content.khordal.sunScorchedZealot.castIntoLight.description": "Your eyes bloom with the judging light of the stars, allowing you to see in the pitch black and discern the false from truth. You may not hide, or disguise yourself as their unearthly glow betrays you.",
+  "content.khordal.sunScorchedZealot.radiance.title": "Armoured in radiance, none shall impede them",
+  "content.khordal.sunScorchedZealot.radiance.description": "You are clad in a luminescent mantle of furious starlight. If you are hit by an attack, your attacker takes d4 damage as they are scorched by vengeful radiance.",
+  "content.khordal.sunScorchedZealot.radiantSpeech.title": "By their Radiant Speech shall ye know THEM",
+  "content.khordal.sunScorchedZealot.radiantSpeech.description": "You speak the tongue of long dead stars, and your words cast their brilliance in the air, warming the masses. Gain +2 to rolls during conversation. Drives those of the Basilisk into apoplexies of rage.",
+  "content.khordal.sunScorchedZealot.thesun.title": "THESUN THESUN THESUN THESUN",
+  "content.khordal.sunScorchedZealot.thesun.description": "Once per day your flesh transfigures and a <strong>SUN</strong> walks the earth. All creatures in 10ft are scorched by your stellar fury and take 2d10 damage. Mortal flesh is not meant to contain such power, so afterwards you may not wear armour and HP is halved, until the next dawn."
+}

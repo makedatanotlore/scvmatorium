@@ -16,7 +16,7 @@ export type Big = {
   header: Message;
   content: Small[];
   component: {
-    id: 'abilityList' | 'plainBox' | 'equipmentList' | 'introduction';
+    id: 'abilityList' | 'plainBox' | 'equipmentList' | 'introduction' | 'table';
   };
 };
 
@@ -39,6 +39,14 @@ export type TableEntry = {
   tags: string[];
   attribution: Attribution;
   content: Small | Big;
+  generateValues?: GenerateValuesFn;
+};
+
+export type TableEntryBig = {
+  id: string;
+  tags: string[];
+  attribution: Attribution;
+  content: Big;
   generateValues?: GenerateValuesFn;
 };
 

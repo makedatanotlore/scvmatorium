@@ -4,26 +4,26 @@ import { mediaQuery } from 'utils/mediaQueries';
 export const FlexWrapper = styled.div`
   display: grid;
   width: 100%;
-  min-height: 100vmin;
+  height: 100%;
   background-size: cover;
   align-items: start;
-  font-size: 12px;
+  font-size: ${({ theme }) => theme.fontSize.body};
 
-  grid-template-columns: 1fr 80% 1fr;
-  grid-template-rows: min-content min-content 1fr;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-rows: min-content 1fr max-content;
   grid-template-areas:
     '. header .'
-    '. roller .'
-    '. sheet .';
+    '. sheet .'
+    '. footer .';
+`;
 
-  ${mediaQuery.laptop} {
-    grid-template-columns: 1fr 80% 1fr;
-  }
-  ${mediaQuery.tablet} {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      'header'
-      'roller'
-      'sheet';
-  }
+export const Footer = styled.div`
+  color: ${({ theme }) => theme.text.primary};
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: end;
+  margin-bottom: 12px;
+  font-size: 10px;
 `;

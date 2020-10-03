@@ -8,6 +8,10 @@ declare module 'styled-components' {
       secondary: string;
       inverted: string;
     };
+    fontSize: {
+      body: string;
+      header: string;
+    };
     text: {
       primary: string;
       secondary: string;

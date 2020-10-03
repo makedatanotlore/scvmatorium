@@ -1,0 +1,27 @@
+{
+  "content.makedatanotlore.landlockedBuccaneer": "Landlocked Buccaneer",
+  "content.makedatanotlore.landlockedBuccaneer.blurb": "Once a seafaring, deck swabbing, swashbuckling rover. Now, a defanged murderwhale, a barnacle torn from hull. In your dreams, you feel the salt in your eyes, the savory taste of the ship rats, and the pull of the monsters below. In your nightmares, <strong>the very same things</strong>.",
+
+  "content.makedatanotlore.landlockedBuccaneer.fightinDirty.title": "Fightin' Dirty",
+  "content.makedatanotlore.landlockedBuccaneer.fightinDirty.description": "Prior to a melee attack, you may describe how you gain a sneaky advantage and add 1d6 to the total result. Should you still miss, the enemy gets a free attack.",
+
+  "content.makedatanotlore.landlockedBuccaneer.quarantined": "Stranded since your ship was quarantined and scuttled outside Grift.",
+  "content.makedatanotlore.landlockedBuccaneer.plank": "Stranded since the crew had you walk the plank.",
+  "content.makedatanotlore.landlockedBuccaneer.siren": "Stranded since a siren lured you aground.",
+  "content.makedatanotlore.landlockedBuccaneer.storm": "Stranded since the storm.",
+  "content.makedatanotlore.landlockedBuccaneer.pardoned": "Stranded since you were pardoned by a Wästland court.",
+  "content.makedatanotlore.landlockedBuccaneer.froze": "Stranded since the ship froze in the waters three sea-miles off the coast of Kergüs.",
+
+  "content.makedatanotlore.landlockedBuccaneer.pegleg.title": "Pegleg of Pozeidönne",
+  "content.makedatanotlore.landlockedBuccaneer.pegleg.description": "After losing your leg to the sea, a half-fish-half-man took pity and proffered this substitute of carved whale’s bone. Its hollowed out base fills with concentrated brine overnight. Pouring the eroding liquid on a solid surface will make a hole - five feet wide and just as deep - within minutes. <strong>Don’t drink it.</strong>",
+  "content.makedatanotlore.landlockedBuccaneer.cursedCoin.title": "Cursed Coin",
+  "content.makedatanotlore.landlockedBuccaneer.cursedCoin.description": "An ancient gold coin taken from heretics on the isle of Crëlut. Until you return it, you are doomed to a cursed fate: <strong>to remain in this world a moment longer</strong>. Negative HP means you’re broken instead of necessarily dead.",
+  "content.makedatanotlore.landlockedBuccaneer.saltstoneEye.title": "Saltstone Eye",
+  "content.makedatanotlore.landlockedBuccaneer.saltstoneEye.description": "A scavenger pelican took your eye one night, but left something in its place. Your crusty socket itches constantly, but <strong>stings when danger is about to strike</strong>. Defence is DR10 and crits on a natural 19 as well as 20.",
+  "content.makedatanotlore.landlockedBuccaneer.parrot.title": "Few-feathered Parrot",
+  "content.makedatanotlore.landlockedBuccaneer.parrot.description": "A mangy yet murderous parrot friend. Throw it at an enemy and the bird attacks against DR10, dealing d4 damage. On a 4, it continues its deadly trajectory, instantly making an attack against another enemy. Can and will repeat things it hears. <strong>{hp} HP</strong>.",
+  "content.makedatanotlore.landlockedBuccaneer.cutlass.title": "Soaking Cutlass",
+  "content.makedatanotlore.landlockedBuccaneer.cutlass.description": "Attacks and defends against DR10. Damage is d6 and on a 6, a wave of seawater erupts from the blade. Creatures in front of you must <strong>test Strength against DR12</strong> or be knocked off their feet, taking d4 damage.",
+  "content.makedatanotlore.landlockedBuccaneer.sandfilledBoots.title": "Sand-filled Boots",
+  "content.makedatanotlore.landlockedBuccaneer.sandfilledBoots.description": "These boots allow you to walk on water as if it were a beach. As you move, you leave floating footsteps, lasting a round. Others may test <strong>Agility against DR10</strong> to follow behind."
+}

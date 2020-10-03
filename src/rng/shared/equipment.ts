@@ -117,7 +117,7 @@ export const rollFoodAndWater = () => {
   return sample(tables.equipment.foodAndWater)!;
 };
 
-export const rollStandardEquipment = (input: GenerateValuesProps) => {
+export const rollStandardEquipment = () => {
   const generalEquipment = sampleSize(3, [
     ...sampleSize(21, tables.equipment.general),
     sharedEntry('uncleanScroll'),

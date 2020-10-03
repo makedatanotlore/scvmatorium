@@ -8,9 +8,6 @@ export const FlexWrapper = styled.div`
 
   margin-top: 6px;
   margin-bottom: 6px;
-  > div {
-    flex-basis: 50%;
-  }
   ${mediaQuery.phone} {
     > div {
       flex-basis: 100%;
@@ -19,9 +16,11 @@ export const FlexWrapper = styled.div`
 `;
 
 export const HeaderWrapper = styled.span`
-  font-size: 1.75rem;
+  font-size: ${({ theme }) => theme.fontSize.header};
   font-family: 'Germania One', cursive;
   color: ${({ theme }) => theme.text.primary};
 `;
 
-export const BigWrapper = styled.div``;
+export const BigWrapper = styled.div`
+  display: flex;
+`;

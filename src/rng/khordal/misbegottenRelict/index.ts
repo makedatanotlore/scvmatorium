@@ -45,82 +45,123 @@ export const misbegottenRelict = (): Character => {
   const hp = rollHp(1, 12, toughness.score);
   const omens = rollOmens(1, 2);
 
-  const generalEquipment = !ancientHumour.tags.includes('spawnOfUnknownColour')
-    ? rollStandardEquipment({
-        presence: presence.score,
-        money: { min: 0, max: 0 },
-      })
-    : [blankEntry()];
+  const generalEquipment = rollStandardEquipment();
 
   const weapon = rollWeapon(8);
-  const armor =
-    !ancientHumour.tags.includes('childeOfThunderLizard') &&
-    !ancientHumour.tags.includes('spawnOfUnknownColour')
-      ? rollArmor(3, hasScroll(generalEquipment))
-      : blankEntry();
-  const foodAndWater =
-    !ancientHumour.tags.includes('interstellarExile') &&
-    !ancientHumour.tags.includes('spawnOfUnknownColour')
-      ? rollFoodAndWater()
-      : blankEntry();
+  const armor = !ancientHumour.tags.includes('childeOfThunderLizard')
+    ? rollArmor(3, hasScroll(generalEquipment))
+    : blankEntry();
+  const foodAndWater = !ancientHumour.tags.includes('interstellarExile')
+    ? rollFoodAndWater()
+    : blankEntry();
 
   const equipment = [foodAndWater, weapon, armor, ...generalEquipment];
 
-  return {
-    tags: ['misbegottenRelict'],
-    smalls: [
-      formatName(sample(names)!),
-      formatClass('khordal.misbegottenRelict'),
-      formatHp(hp),
-      formatOmens(omens, 2),
-    ],
-    bigs: [
-      {
-        component: {
-          id: 'introduction',
-        },
-        header: { id: 'character.stats.titles.introduction', values: {} },
-        content: [
-          formatOrigin(sample(origins)!),
+  return !ancientHumour.tags.includes('spawnOfUnknownColour')
+    ? {
+        tags: ['misbegottenRelict'],
+        smalls: [
+          formatName(sample(names)!),
+          formatClass('khordal.misbegottenRelict'),
+          formatHp(hp),
+          formatOmens(omens, 2),
+        ],
+        bigs: [
           {
-            tags: ['misbegottenRelict', 'khordal', 'blurb'],
-            title: {
-              id: 'content.khordal.misbegottenRelict.blurb',
-              values: {},
+            component: {
+              id: 'introduction',
             },
-            description: {
-              id: 'content.khordal.misbegottenRelict.blurb',
-              values: {},
-            },
+            header: { id: 'character.stats.titles.introduction', values: {} },
+            content: [
+              formatOrigin(sample(origins)!),
+              {
+                tags: ['misbegottenRelict', 'khordal', 'blurb'],
+                title: {
+                  id: 'content.khordal.misbegottenRelict.blurb',
+                  values: {},
+                },
+                description: {
+                  id: 'content.khordal.misbegottenRelict.blurb',
+                  values: {},
+                },
+              },
+              ...sampleSize(2, tables.traits).map((trait) =>
+                formatTrait(trait)
+              ),
+              formatBody(sample(tables.bodies)!),
+              formatHabit(sample(tables.habits)!),
+            ],
           },
-          ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
-          formatBody(sample(tables.bodies)!),
-          formatHabit(sample(tables.habits)!),
+          formatHumour(ancientHumour),
+          {
+            component: { id: 'abilityList' },
+            header: { id: 'character.stats.titles.abilities', values: {} },
+            content: [
+              formatAbility(strength),
+              formatAbility(agility),
+              formatAbility(presence),
+              formatAbility(toughness),
+            ],
+          },
+          {
+            component: { id: 'equipmentList' },
+            header: { id: 'character.stats.titles.equipment', values: {} },
+            content: equipment
+              .filter((item) => item.id !== '_blank')
+              .map((item) =>
+                formatEquipment(item, {
+                  presence: presence.score,
+                  money: { min: 0, max: 0 },
+                })
+              ),
+          },
         ],
-      },
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: presence.score,
-              money: { min: 0, max: 0 },
-            })
-          ),
-      },
-      formatHumour(ancientHumour),
-      {
-        component: { id: 'abilityList' },
-        header: { id: 'character.stats.titles.abilities', values: {} },
-        content: [
-          formatAbility(strength),
-          formatAbility(agility),
-          formatAbility(presence),
-          formatAbility(toughness),
+      }
+    : {
+        tags: ['misbegottenRelict'],
+        smalls: [
+          formatName(sample(names)!),
+          formatClass('khordal.misbegottenRelict'),
+          formatHp(hp),
+          formatOmens(omens, 2),
         ],
-      },
-    ],
-  };
+        bigs: [
+          {
+            component: {
+              id: 'introduction',
+            },
+            header: { id: 'character.stats.titles.introduction', values: {} },
+            content: [
+              formatOrigin(sample(origins)!),
+              {
+                tags: ['misbegottenRelict', 'khordal', 'blurb'],
+                title: {
+                  id: 'content.khordal.misbegottenRelict.blurb',
+                  values: {},
+                },
+                description: {
+                  id: 'content.khordal.misbegottenRelict.blurb',
+                  values: {},
+                },
+              },
+              ...sampleSize(2, tables.traits).map((trait) =>
+                formatTrait(trait)
+              ),
+              formatBody(sample(tables.bodies)!),
+              formatHabit(sample(tables.habits)!),
+            ],
+          },
+          formatHumour(ancientHumour),
+          {
+            component: { id: 'abilityList' },
+            header: { id: 'character.stats.titles.abilities', values: {} },
+            content: [
+              formatAbility(strength),
+              formatAbility(agility),
+              formatAbility(presence),
+              formatAbility(toughness),
+            ],
+          },
+        ],
+      };
 };

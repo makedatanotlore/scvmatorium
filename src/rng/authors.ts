@@ -7,5 +7,15 @@ export const makedatanotlore: Author = {
 
 export const khordal: Author = {
   name: 'Nick T',
-  url: 'https://makedatanotlore.itch.io/',
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+};
+
+export const donnyc: Author = {
+  name: 'Donny C',
+  url: 'https://donnyc.itch.io/',
+};
+
+export const goatmansgoblet: Author = {
+  name: 'Brian Yaksha',
+  url: 'http://www.goatmansgoblet.com/',
 };

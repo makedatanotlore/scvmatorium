@@ -1,5 +1,5 @@
 import { Attribution } from 'types/character';
-import { makedatanotlore, khordal } from 'rng/authors';
+import { makedatanotlore, khordal, donnyc, goatmansgoblet } from 'rng/authors';
 
 export const uncredited: Attribution = {
   title: { id: 'content.shared.uncredited' },
@@ -24,6 +24,13 @@ export const scvmfurther2: Attribution = {
     'https://docs.google.com/document/d/1LOijYULDxCiABHlzf1K_Zl-Yig91CQA1t8GaoAFBA68/edit?usp=sharing',
 };
 
+export const landlockedBuccaneer: Attribution = {
+  title: { id: 'content.makedatanotlore.landlockedBuccaneer' },
+  id: 'landlockedBuccaneer',
+  authors: [makedatanotlore],
+  url: 'https://makedatanotlore.itch.io/landlocked-buccaneer',
+};
+
 export const misbegottenRelict: Attribution = {
   title: { id: 'content.khordal.misbegottenRelict' },
   id: 'misbegottenRelict',
@@ -32,5 +39,43 @@ export const misbegottenRelict: Attribution = {
     'https://docs.google.com/document/d/1ndEAhYx7-g405r1saetGfSsG1QEOpIPhf_c4nS0lFB0',
 };
 
+export const sunScorchedZealot: Attribution = {
+  title: { id: 'content.khordal.sunScorchedZealot' },
+  id: 'sunScorchedZealot',
+  authors: [khordal],
+  url:
+    'https://docs.google.com/document/d/1hOm-kmOIpLW9-4SUGWUriJ6hTO32Fwi5LmDDfJCOukE/edit',
+};
+
+export const rottingRecalcitrant: Attribution = {
+  title: { id: 'content.donnyc.rottingRecalcitrant' },
+  id: 'rottingRecalcitrant',
+  authors: [donnyc],
+  url: 'https://makedatanotlore.itch.io/rotting-recalcitrant',
+};
+
+export const suitorKnightOfKergus: Attribution = {
+  title: { id: 'content.goatmansgoblet.suitorKnightOfKergus' },
+  id: 'suitorKnightOfKergus',
+  authors: [goatmansgoblet],
+  url:
+    'https://docs.google.com/document/d/1R-VCZBrmDupJhh39IpdutQHZ4DavY0rrE94DLu2tDig/edit',
+};
+
+export const theWretchedUsurper: Attribution = {
+  title: { id: 'content.goatmansgoblet.theWretchedUsurper' },
+  id: 'theWretchedUsurper',
+  authors: [goatmansgoblet],
+  url:
+    'https://docs.google.com/document/d/1PrGI1hOmimcDwQotfdCAjjhWvtIfnXaldFfs0YFivDg/edit',
+};
+
 export const contentAttributions = [scvmatorium, scvmfurther2];
-export const classAttributions = [misbegottenRelict];
+export const classAttributions = [
+  landlockedBuccaneer,
+  misbegottenRelict,
+  rottingRecalcitrant,
+  suitorKnightOfKergus,
+  sunScorchedZealot,
+  theWretchedUsurper,
+];

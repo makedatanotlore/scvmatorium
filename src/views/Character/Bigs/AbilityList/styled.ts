@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 export const FlexWrapper = styled.div`
+  flex-basis: 20%;
   display: flex;
   flex-direction: column;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 0.5rem;
-  flex-grow: 1;
 `;
 
 export const ListWrapper = styled.div`
@@ -35,3 +32,10 @@ export const DescriptionWrapper = styled.div`
 `;
 
 export { HeaderWrapper } from '../styled';
+
+export const Padding = styled.div`
+  color: ${({ theme }) => theme.text.primary};
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 0.5rem;
+`;

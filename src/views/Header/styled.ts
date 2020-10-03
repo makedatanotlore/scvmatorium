@@ -9,6 +9,7 @@ export const FlexWrapper = styled.div`
   text-align: center;
   line-height: 2rem;
   max-width: 100%;
+  margin-top: 12px;
 `;
 
 export const Logo = styled.img`

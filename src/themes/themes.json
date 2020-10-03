@@ -1,6 +1,7 @@
 {
   "default": {
     "faded": "#dfdfdf",
+    "fontSize": { "body": "1rem", "header": "1.75rem" },
     "background": {
       "primary": "#000000",
       "secondary": "#ff6ce7",
@@ -31,6 +32,7 @@
   },
   "print": {
     "faded": "#dfdfdf",
+    "fontSize": { "body": "12px", "header": "20px" },
     "background": {
       "primary": "#ffffff",
       "secondary": "#ffffff",

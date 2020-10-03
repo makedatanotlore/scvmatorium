@@ -1,7 +1,13 @@
 import React from 'react';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
 import { Small, Message } from 'types/character';
-import { FlexWrapper, HeaderWrapper } from './styled';
+import {
+  FlexWrapper,
+  HeaderWrapper,
+  Padding,
+  BodyWrapper,
+  OtherWrapper,
+} from './styled';
 
 type Props = {
   content: Small[];
@@ -25,34 +31,38 @@ const Introduction = ({ content, header }: Props) => {
 
   return (
     <FlexWrapper>
-      <HeaderWrapper>
-        <FormattedHTMLMessage id={header.id} values={header.values} />
-      </HeaderWrapper>
-      {otherStuff.map((small) => (
-        <p key={small.description.id}>
-          <FormattedHTMLMessage
-            id={small.description.id}
-            values={small.description.values}
-          />
-        </p>
-      ))}
-      <p>
-        <FormattedHTMLMessage
-          id={traitOne.title.id}
-          values={{
-            traitOne: formatMessage({ ...traitOne.description }),
-            traitTwo: formatMessage({ ...traitTwo.description }).toLowerCase(),
-          }}
-        />{' '}
-        {bodiesAndHabits.map((small) => (
-          <span key={small.description.id}>
+      <Padding>
+        <HeaderWrapper>
+          <FormattedHTMLMessage id={header.id} values={header.values} />
+        </HeaderWrapper>
+        {otherStuff.map((small) => (
+          <OtherWrapper key={small.description.id}>
             <FormattedHTMLMessage
               id={small.description.id}
               values={small.description.values}
-            />{' '}
-          </span>
+            />
+          </OtherWrapper>
         ))}
-      </p>
+        <p>
+          <FormattedHTMLMessage
+            id={traitOne.title.id}
+            values={{
+              traitOne: formatMessage({ ...traitOne.description }),
+              traitTwo: formatMessage({
+                ...traitTwo.description,
+              }).toLowerCase(),
+            }}
+          />{' '}
+          {bodiesAndHabits.map((small) => (
+            <BodyWrapper key={small.description.id}>
+              <FormattedHTMLMessage
+                id={small.description.id}
+                values={small.description.values}
+              />{' '}
+            </BodyWrapper>
+          ))}
+        </p>
+      </Padding>
     </FlexWrapper>
   );
 };

@@ -37,6 +37,6 @@ export const names = [
   'Thrug',
   'Uggh',
   'Urax',
-  'Urm',
+  'Furm',
   'Wartog',
 ].map((name) => entry(name));
