@@ -3,6 +3,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { reducer as appReducer } from 'ducks/reducer';
 import { reducer as themeReducer } from 'ducks/theme/reducer';
 import { reducer as characterReducer } from 'ducks/character/reducer';
+import { reducer as filterReducer } from 'ducks/filter/reducer';
 import { intlReducer } from 'react-intl-redux';
 import { defaultLocale } from 'translations';
 import { defaultTheme } from 'themes';
@@ -17,6 +18,7 @@ const reducers = combineReducers({
   intl: intlReducer,
   theme: themeReducer,
   character: characterReducer,
+  filter: filterReducer,
 });
 
 export const store = createStore(reducers, initialState, composeWithDevTools());

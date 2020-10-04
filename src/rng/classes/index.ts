@@ -5,11 +5,11 @@ import { rottingRecalcitrant } from 'rng/donnyc/rottingRecalcitrant';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
 
-export const classes = [
+export const classes = {
   landlockedBuccaneer,
   misbegottenRelict,
   rottingRecalcitrant,
   sunScorchedZealot,
   suitorKnightOfKergus,
   theWretchedUsurper,
-];
+};

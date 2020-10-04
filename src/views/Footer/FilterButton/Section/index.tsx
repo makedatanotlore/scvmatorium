@@ -1,15 +1,37 @@
 import React from 'react';
 import { Attribution } from 'types/character';
+import clsx from 'clsx';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
-import { FlexWrapper, Header, AttributionWrapper } from './styled';
+import {
+  FlexWrapper,
+  Header,
+  AuthorWrapper,
+  AttributionWrapper,
+  useStyles,
+  ContentWrapper,
+} from './styled';
+import Checkbox from '@material-ui/core/Checkbox';
 
 type Props = {
   label: string;
   attributions: Attribution[];
+  updateFn?: (updated: string[]) => void;
+  selected?: string[];
 };
 
-const Section = ({ label, attributions }: Props) => {
+const Section = ({ label, attributions, updateFn, selected }: Props) => {
   const { formatMessage } = useIntl();
+  const styles = useStyles();
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (updateFn) {
+      if (!event?.target?.checked) {
+        updateFn(selected?.filter((id) => event.target.name !== id) || []);
+      } else {
+        updateFn([...(selected || []), event.target.name]);
+      }
+    }
+  };
 
   return (
     <FlexWrapper>
@@ -18,25 +40,42 @@ const Section = ({ label, attributions }: Props) => {
         const title = formatMessage(attribution.title);
 
         return (
-          <AttributionWrapper key={attribution.id}>
-            <FormattedHTMLMessage
-              id='app.attribution'
-              values={{
-                title,
-                url: attribution.url,
-              }}
-            />
-            {attribution.authors.map((author, index) => (
+          <ContentWrapper key={attribution.id}>
+            {updateFn && (
+              <Checkbox
+                disableRipple
+                className={styles.root}
+                icon={<span className={styles.icon} />}
+                checkedIcon={
+                  <span className={clsx(styles.icon, styles.checkedIcon)} />
+                }
+                checked={selected?.includes(attribution.id) || false}
+                onChange={handleChange}
+                name={attribution.id}
+              />
+            )}
+            <AttributionWrapper>
               <FormattedHTMLMessage
-                key={author.name}
-                id='app.author'
+                id='app.attribution'
                 values={{
-                  url: author.url,
-                  name: author.name,
+                  title,
+                  url: attribution.url,
                 }}
               />
+            </AttributionWrapper>
+
+            {attribution.authors.map((author, index) => (
+              <AuthorWrapper key={author.name}>
+                <FormattedHTMLMessage
+                  id='app.author'
+                  values={{
+                    url: author.url,
+                    name: author.name,
+                  }}
+                />
+              </AuthorWrapper>
             ))}
-          </AttributionWrapper>
+          </ContentWrapper>
         );
       })}
     </FlexWrapper>

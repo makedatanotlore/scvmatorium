@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { random, sample } from 'lodash/fp';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { FormattedHTMLMessage } from 'react-intl';
 import { FlexWrapper, StyledButton, StyledText, ButtonWrapper } from './styled';
 import { setCharacter } from 'ducks/character/actions';
-import { classes } from 'rng/classes';
+import { selectClasses } from 'ducks/filter/selectors';
 
 const Roller = () => {
   const dispatch = useDispatch();
   const [message, setMessage] = useState(`app.reroll.1`);
+  const classes = useSelector(selectClasses);
 
   const updateCharacter = () => {
     dispatch(setCharacter(sample(classes)!()));
