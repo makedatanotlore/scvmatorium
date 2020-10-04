@@ -54,7 +54,7 @@ const Section = ({ label, attributions, updateFn, selected }: Props) => {
                 name={attribution.id}
               />
             )}
-            <AttributionWrapper>
+            <span>
               <FormattedHTMLMessage
                 id='app.attribution'
                 values={{
@@ -62,19 +62,18 @@ const Section = ({ label, attributions, updateFn, selected }: Props) => {
                   url: attribution.url,
                 }}
               />
-            </AttributionWrapper>
 
-            {attribution.authors.map((author, index) => (
-              <AuthorWrapper key={author.name}>
+              {attribution.authors.map((author, index) => (
                 <FormattedHTMLMessage
+                  key={author.name}
                   id='app.author'
                   values={{
                     url: author.url,
                     name: author.name,
                   }}
                 />
-              </AuthorWrapper>
-            ))}
+              ))}
+            </span>
           </ContentWrapper>
         );
       })}

@@ -24,10 +24,7 @@ export const ContentWrapper = styled.div`
 
 export const AttributionWrapper = styled.div``;
 
-export const AuthorWrapper = styled.div`
-  margin-left: 8px;
-  margin-right: 8px;
-`;
+export const AuthorWrapper = styled.div``;
 
 export const useStyles = makeStyles({
   root: {
