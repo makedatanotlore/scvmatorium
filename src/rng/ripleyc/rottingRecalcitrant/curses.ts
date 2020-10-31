@@ -3,23 +3,23 @@ import { TableEntry, Big } from 'types/character';
 
 const entry = (id: string): TableEntry => ({
   id: `rottingRecalcitrant-${id}`,
-  tags: ['donnyc', 'rottingRecalcitrant', 'curse', id],
+  tags: ['ripleyc', 'rottingRecalcitrant', 'curse', id],
   attribution: misbegottenRelict,
   content: {
     component: { id: 'plainBox' },
     header: {
-      id: `content.donnyc.rottingRecalcitrant.${id}.title`,
+      id: `content.ripleyc.rottingRecalcitrant.${id}.title`,
       values: {},
     },
     content: [
       {
-        tags: ['donnyc', 'rottingRecalcitrant', 'curse', id],
+        tags: ['ripleyc', 'rottingRecalcitrant', 'curse', id],
         title: {
-          id: `content.donnyc.rottingRecalcitrant.${id}.title`,
+          id: `content.ripleyc.rottingRecalcitrant.${id}.title`,
           values: {},
         },
         description: {
-          id: `content.donnyc.rottingRecalcitrant.${id}.description`,
+          id: `content.ripleyc.rottingRecalcitrant.${id}.description`,
           values: {},
         },
       },

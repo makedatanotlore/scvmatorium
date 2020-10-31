@@ -44,13 +44,13 @@ export const rottingRecalcitrant = (): Character => {
   }));
 
   const hp = {
-    tags: ['rottingRecalcitrant', 'donnyc', 'blurb'],
+    tags: ['rottingRecalcitrant', 'ripleyc', 'blurb'],
     title: {
       id: 'character.stats.titles.hp',
       values: {},
     },
     description: {
-      id: 'content.donnyc.rottingRecalcitrant.hp',
+      id: 'content.ripleyc.rottingRecalcitrant.hp',
       values: {},
     },
   };
@@ -63,16 +63,16 @@ export const rottingRecalcitrant = (): Character => {
     : blankEntry();
   const silver = {
     id: `rottingRecalcitrant-silver`,
-    tags: ['donnyc', 'rottingRecalcitrant', 'silver'],
+    tags: ['ripleyc', 'rottingRecalcitrant', 'silver'],
     attribution,
     content: {
-      tags: ['donnyc', 'rottingRecalcitrant', 'silver'],
+      tags: ['ripleyc', 'rottingRecalcitrant', 'silver'],
       title: {
-        id: `content.donnyc.rottingRecalcitrant.silver.title`,
+        id: `content.ripleyc.rottingRecalcitrant.silver.title`,
         values: {},
       },
       description: {
-        id: `content.donnyc.rottingRecalcitrant.silver.description`,
+        id: `content.ripleyc.rottingRecalcitrant.silver.description`,
         values: {},
       },
     },
@@ -92,7 +92,7 @@ export const rottingRecalcitrant = (): Character => {
     tags: ['rottingRecalcitrant'],
     smalls: [
       formatName(sample(tables.names)!),
-      formatClass('donnyc.rottingRecalcitrant'),
+      formatClass('ripleyc.rottingRecalcitrant'),
       hp,
     ],
     bigs: [
@@ -104,13 +104,13 @@ export const rottingRecalcitrant = (): Character => {
         content: [
           formatOrigin(sample(origins)!),
           {
-            tags: ['rottingRecalcitrant', 'donnyc', 'blurb'],
+            tags: ['rottingRecalcitrant', 'ripleyc', 'blurb'],
             title: {
-              id: 'content.donnyc.rottingRecalcitrant.blurb',
+              id: 'content.ripleyc.rottingRecalcitrant.blurb',
               values: {},
             },
             description: {
-              id: 'content.donnyc.rottingRecalcitrant.blurb',
+              id: 'content.ripleyc.rottingRecalcitrant.blurb',
               values: { d2: sample(['spite', 'hatred'])! },
             },
           },

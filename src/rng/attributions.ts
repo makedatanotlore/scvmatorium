@@ -1,5 +1,5 @@
 import { Attribution } from 'types/character';
-import { makedatanotlore, khordal, donnyc, goatmansgoblet } from 'rng/authors';
+import { makedatanotlore, khordal, ripleyc, goatmansgoblet } from 'rng/authors';
 
 export const uncredited: Attribution = {
   title: { id: 'content.shared.uncredited' },
@@ -48,9 +48,9 @@ export const sunScorchedZealot: Attribution = {
 };
 
 export const rottingRecalcitrant: Attribution = {
-  title: { id: 'content.donnyc.rottingRecalcitrant' },
+  title: { id: 'content.ripleyc.rottingRecalcitrant' },
   id: 'rottingRecalcitrant',
-  authors: [donnyc],
+  authors: [ripleyc],
   url: 'https://makedatanotlore.itch.io/rotting-recalcitrant',
 };
 

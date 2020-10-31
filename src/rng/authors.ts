@@ -10,9 +10,9 @@ export const khordal: Author = {
   url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 };
 
-export const donnyc: Author = {
-  name: 'Donny C',
-  url: 'https://donnyc.itch.io/',
+export const ripleyc: Author = {
+  name: 'Ripley C',
+  url: 'https://ripleyc.itch.io/',
 };
 
 export const goatmansgoblet: Author = {
