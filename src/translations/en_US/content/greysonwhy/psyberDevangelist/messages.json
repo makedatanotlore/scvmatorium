@@ -24,7 +24,7 @@
   "content.greysonwhy.psyberDevangelist.vibroKnife.title": "Vibro-knife",
   "content.greysonwhy.psyberDevangelist.vibroKnife.description": "d4+1 damage + Disadvantage to armor/protection; <span>Δ10 charges.</span>",
   "content.greysonwhy.psyberDevangelist.vibroSword.title": "Vibro-sword",
-  "content.greysonwhy.psyberDevangelist.vibroSword.description": "6+1 damage + Disadvantage to armor/protection; Δ8 charges.",
+  "content.greysonwhy.psyberDevangelist.vibroSword.description": "d6+1 damage + Disadvantage to armor/protection; Δ8 charges.",
   "content.greysonwhy.psyberDevangelist.stunFlail.title": "Stun Flail",
   "content.greysonwhy.psyberDevangelist.stunFlail.description": "d8 damage + test Toughness DR10+damage or or Ability tests have Disadvantage for rounds equal to margin of failure; <span>Δ8 charges.</span>",
   "content.greysonwhy.psyberDevangelist.laserPistol.title": "Laser Pistol",
