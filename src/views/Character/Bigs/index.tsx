@@ -4,8 +4,9 @@ import AbilityList from './AbilityList';
 import EquipmentList from './EquipmentList';
 import Introduction from './Introduction';
 import PlainBox from './PlainBox';
+import HalfBox from './HalfBox';
 import Table from './Table';
-import { FlexWrapper, BigWrapper } from './styled';
+import { FlexWrapper } from './styled';
 
 type Props = {
   content: Big[];
@@ -41,6 +42,14 @@ const Bigs = ({ content }: Props) => {
       case 'plainBox':
         return (
           <PlainBox
+            key={`${big.header.id}`}
+            header={big.header}
+            content={big.content}
+          />
+        );
+      case 'halfBox':
+        return (
+          <HalfBox
             key={`${big.header.id}`}
             header={big.header}
             content={big.content}

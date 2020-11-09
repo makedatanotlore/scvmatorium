@@ -1,5 +1,11 @@
 import { Attribution } from 'types/character';
-import { makedatanotlore, khordal, ripleyc, goatmansgoblet } from 'rng/authors';
+import {
+  makedatanotlore,
+  khordal,
+  ripleyc,
+  goatmansgoblet,
+  greysonwhy,
+} from 'rng/authors';
 
 export const uncredited: Attribution = {
   title: { id: 'content.shared.uncredited' },
@@ -70,10 +76,18 @@ export const theWretchedUsurper: Attribution = {
     'https://docs.google.com/document/d/1PrGI1hOmimcDwQotfdCAjjhWvtIfnXaldFfs0YFivDg/edit',
 };
 
+export const psyberDevangelist: Attribution = {
+  title: { id: 'content.greysonwhy.psyberDevangelist' },
+  id: 'psyberDevangelist',
+  authors: [greysonwhy],
+  url: 'https://greysonwhy.itch.io/the-psyber-devangelist-and-other-psi-sci-fi',
+};
+
 export const contentAttributions = [scvmatorium, scvmfurther2];
 export const classAttributions = [
   landlockedBuccaneer,
   misbegottenRelict,
+  psyberDevangelist,
   rottingRecalcitrant,
   suitorKnightOfKergus,
   sunScorchedZealot,

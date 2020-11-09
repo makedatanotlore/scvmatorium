@@ -19,3 +19,8 @@ export const goatmansgoblet: Author = {
   name: 'Brian Yaksha',
   url: 'http://www.goatmansgoblet.com/',
 };
+
+export const greysonwhy: Author = {
+  name: 'Greyson Yandt',
+  url: 'https://greysonwhy.itch.io/',
+};

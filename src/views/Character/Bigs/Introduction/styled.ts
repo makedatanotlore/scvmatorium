@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export { HeaderWrapper } from '../styled';
 
 export const FlexWrapper = styled.div`
-  flex-basis: 50%;
   flex-grow: 1;
 `;
 

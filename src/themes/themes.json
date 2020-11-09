@@ -32,7 +32,7 @@
   },
   "print": {
     "faded": "#dfdfdf",
-    "fontSize": { "body": "12px", "header": "20px" },
+    "fontSize": { "body": "11px", "header": "20px" },
     "background": {
       "primary": "#ffffff",
       "secondary": "#ffffff",

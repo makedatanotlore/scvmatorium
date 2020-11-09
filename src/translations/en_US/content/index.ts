@@ -7,6 +7,7 @@ import rottingRecalcitrant from './ripleyc/rottingRecalcitrant/messages.json';
 import sunScorchedZealot from './khordal/sunScorchedZealot/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
 import theWretchedUsurper from './goatmansgoblet/theWretchedUsurper/messages.json';
+import psyberDevangelist from './greysonwhy/psyberDevangelist/messages.json';
 
 export default {
   ...uncredited,
@@ -18,4 +19,5 @@ export default {
   ...suitorKnightOfKergus,
   ...theWretchedUsurper,
   ...landlockedBuccaneer,
+  ...psyberDevangelist,
 };

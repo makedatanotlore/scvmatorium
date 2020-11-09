@@ -8,7 +8,7 @@ type Props = {
   header: Message;
 };
 
-const PlainBox = ({ content, header }: Props) => {
+const HalfBox = ({ content, header }: Props) => {
   return (
     <FlexWrapper>
       <Padding>
@@ -28,4 +28,4 @@ const PlainBox = ({ content, header }: Props) => {
   );
 };
 
-export default PlainBox;
+export default HalfBox;

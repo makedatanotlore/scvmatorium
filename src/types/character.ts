@@ -16,7 +16,13 @@ export type Big = {
   header: Message;
   content: Small[];
   component: {
-    id: 'abilityList' | 'plainBox' | 'equipmentList' | 'introduction' | 'table';
+    id:
+      | 'abilityList'
+      | 'plainBox'
+      | 'equipmentList'
+      | 'introduction'
+      | 'table'
+      | 'halfBox';
   };
 };
 
