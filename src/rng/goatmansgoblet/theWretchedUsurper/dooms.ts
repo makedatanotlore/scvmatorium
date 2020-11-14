@@ -6,7 +6,7 @@ const entry = (id: string): TableEntry => ({
   tags: ['goatmansgoblet', 'theWretchedUsurper', id],
   attribution: theWretchedUsurper,
   content: {
-    component: { id: 'plainBox' },
+    component: { id: 'halfBox' },
     header: {
       id: `content.goatmansgoblet.theWretchedUsurper.${id}.title`,
       values: {},

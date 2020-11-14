@@ -16,7 +16,7 @@ const entry = (
   tags: ['makedatanotlore', 'landlockedBuccaneer', id],
   attribution: misbegottenRelict,
   content: {
-    component: { id: 'plainBox' },
+    component: { id: 'halfBox' },
     header: {
       id: `content.makedatanotlore.landlockedBuccaneer.${id}.title`,
       values: {},

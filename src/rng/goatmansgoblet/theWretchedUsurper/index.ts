@@ -85,7 +85,7 @@ export const theWretchedUsurper = (): Character => {
       },
       formatDoom(sample(dooms)!),
       {
-        component: { id: 'plainBox' },
+        component: { id: 'halfBox' },
         header: {
           id: 'content.goatmansgoblet.theWretchedUsurper.huntedAndHated.title',
           values: {},

@@ -102,26 +102,6 @@ export const psyberDevangelist = (): Character => {
       formatWeapon(weapon),
       formatPower(power),
       {
-        component: { id: 'halfBox' },
-        header: {
-          id: 'content.greysonwhy.psyberDevangelist.pstress.title',
-          values: {},
-        },
-        content: [
-          {
-            tags: ['psyberDevangelist', 'greysonwhy'],
-            title: {
-              id: 'content.greysonwhy.psyberDevangelist.pstress',
-              values: {},
-            },
-            description: {
-              id: 'content.greysonwhy.psyberDevangelist.pstress.description',
-              values: {},
-            },
-          },
-        ],
-      },
-      {
         component: { id: 'abilityList' },
         header: { id: 'character.stats.titles.abilities', values: {} },
         content: [

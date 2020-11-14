@@ -85,7 +85,7 @@ export const landlockedBuccaneer = (): Character => {
         ],
       },
       {
-        component: { id: 'plainBox' },
+        component: { id: 'halfBox' },
         header: {
           id: 'content.makedatanotlore.landlockedBuccaneer.fightinDirty.title',
           values: {},
