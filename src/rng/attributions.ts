@@ -5,6 +5,7 @@ import {
   ripleyc,
   goatmansgoblet,
   greysonwhy,
+  chalkdown,
 } from 'rng/authors';
 
 export const uncredited: Attribution = {
@@ -83,8 +84,16 @@ export const psyberDevangelist: Attribution = {
   url: 'https://greysonwhy.itch.io/the-psyber-devangelist-and-other-psi-sci-fi',
 };
 
+export const blightedMerman: Attribution = {
+  title: { id: 'content.chalkdown.blightedMerman' },
+  id: 'blightedMerman',
+  authors: [chalkdown],
+  url: 'https://chalkdown.itch.io/blighted-merman',
+};
+
 export const contentAttributions = [scvmatorium, scvmfurther2];
 export const classAttributions = [
+  blightedMerman,
   landlockedBuccaneer,
   misbegottenRelict,
   psyberDevangelist,

@@ -2,14 +2,7 @@ import React from 'react';
 import { Attribution } from 'types/character';
 import clsx from 'clsx';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
-import {
-  FlexWrapper,
-  Header,
-  AuthorWrapper,
-  AttributionWrapper,
-  useStyles,
-  ContentWrapper,
-} from './styled';
+import { FlexWrapper, Header, useStyles, ContentWrapper } from './styled';
 import Checkbox from '@material-ui/core/Checkbox';
 
 type Props = {

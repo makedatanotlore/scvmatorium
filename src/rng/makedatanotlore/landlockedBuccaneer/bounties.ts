@@ -1,11 +1,10 @@
 import { random } from 'lodash/fp';
-import { misbegottenRelict } from 'rng/attributions';
+import { landlockedBuccaneer } from 'rng/attributions';
 import {
   TableEntryBig,
   Big,
   GenerateValuesFn,
   GenerateValuesProps,
-  Small,
 } from 'types/character';
 
 const entry = (
@@ -14,7 +13,7 @@ const entry = (
 ): TableEntryBig => ({
   id: `landlockedBuccaneer-${id}`,
   tags: ['makedatanotlore', 'landlockedBuccaneer', id],
-  attribution: misbegottenRelict,
+  attribution: landlockedBuccaneer,
   content: {
     component: { id: 'halfBox' },
     header: {

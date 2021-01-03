@@ -1,0 +1,29 @@
+{
+  "content.chalkdown.blightedMerman": "Blighted Merman",
+  "content.chalkdown.blightedMerman.blurb": "<strong>You are a creature of the ocean</strong>, no longer a wretched landlubber. Dragged into the Endless Sea by curse or witchery and spat out a twisted form, changed forever. What is left of your humanity is perverted by the tides and the salt-soaked waters that you now call your home.",
+
+  "content.chalkdown.blightedMerman.mutation.title": "Aquatic Mutation",
+  "content.chalkdown.blightedMerman.maw.description": "Your maw gapes open when you talk, no longer suited for human language; your speech is slurred and you drool incessantly.<br><br>You can breathe underwater due to gills, but armor no longer fits you.",
+  "content.chalkdown.blightedMerman.stomachs.description": "You can only find sustenance in the entrails of rotten fish; all other food reeks of the land and turns your stomachs.<br><br>You can breathe underwater due to gills, but armor no longer fits you.",
+  "content.chalkdown.blightedMerman.eyes.description": "Your eyes have slowly relocated to either side of your head - giving you a laughable appearance and leaving you unable to determine distance and depth.<br><br>You can breathe underwater due to gills, but armor no longer fits you.",
+  "content.chalkdown.blightedMerman.mucus.description": "A slimy mucus covers your skin, dripping down at your feet wherever you walk and coating whatever you touch.<br><br>You can breathe underwater due to gills, but armor no longer fits you.",
+  "content.chalkdown.blightedMerman.fin.description": "A dorsal fin has sprouted from the top of your head which expands when you are threatened.<br><br>You can breathe underwater due to gills, but armor no longer fits you.",
+  "content.chalkdown.blightedMerman.gills.description": "The gills about your neck exude a black ichor and cause you to cough loudly.<br><br>You can breathe underwater, but armor no longer fits you.",
+
+  "content.chalkdown.blightedMerman.barbedVertebrae.title": "Barbed Vertebrae",
+  "content.chalkdown.blightedMerman.barbedVertebrae.description": "Wicked spines have grown from your scaled skin. If someone dares land a hit against you and draws blood, inflict d4 damage back onto them, they might think better next time.",
+  "content.chalkdown.blightedMerman.chromatophoricVeil.title": "Chromatophoric Veil",
+  "content.chalkdown.blightedMerman.chromatophoricVeil.description": "Pressing your body against a surface immediately blends you  into your surroundings. Only a DR14 Presence test can spot your natural camouflage . You have a forgettable face in a crowd as people struggle to remember you.",
+  "content.chalkdown.blightedMerman.expeditiousWebbing.title": "Expeditious Webbing",
+  "content.chalkdown.blightedMerman.expeditiousWebbing.description": "Mud and sludge does not slow you down, you were practically born in it. With webbed hands and feet you swim faster and are also immune from fall damage as you can glide with manta-like wings.",
+  "content.chalkdown.blightedMerman.avariciousAppendage.title": "Avaricious Appendage",
+  "content.chalkdown.blightedMerman.avariciousAppendage.description": "A helpful tentacle has grown out from your side, acting on its own to help in combat. When rolling damage, roll twice and take the highest result. With its assistance, you find grappling and climbing vertical surfaces with ease.",
+  "content.chalkdown.blightedMerman.naturalCarapace.title": "Natural Carapace",
+  "content.chalkdown.blightedMerman.naturalCarapace.description": "Your skin hardens and has formed into a large shell-like carapace. Acts as heavy armour (-d6 damage) but imposes no penalty on defense tests. If you are ever broken, the shell breaks too. It won’t grow back.",
+  "content.chalkdown.blightedMerman.razorSharpLaugh.title": "Razor-sharp Laugh",
+  "content.chalkdown.blightedMerman.razorSharpLaugh.description": "You have grown rows of brutally-sharp shark teeth. You have a bite attack that does d6 damage (DR10 attack while in water) and the ability to talk to fish, probably just before you eat them.",
+  "content.chalkdown.blightedMerman.unwieldyPincer.title": "Unwieldy Pincer",
+  "content.chalkdown.blightedMerman.unwieldyPincer.description": "One of your hands has been turned forever into a giant crab-claw. Ignore enemy shields as you crush them like clamshells, and count your hideous claw as your own shield. Also useful for smashing locks and coconuts.",
+  "content.chalkdown.blightedMerman.electricFeel.title": "Electric Feel",
+  "content.chalkdown.blightedMerman.electricFeel.description": "Your skin is slippery with a conductive gel and a shocking charge runs through your veins. This can be used as a weapon (d4) which ignores all armour; on a roll of a 1 the enemy is unable to attack next turn from your shocking personality."
+}
