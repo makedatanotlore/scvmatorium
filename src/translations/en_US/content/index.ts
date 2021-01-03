@@ -8,6 +8,7 @@ import sunScorchedZealot from './khordal/sunScorchedZealot/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
 import theWretchedUsurper from './goatmansgoblet/theWretchedUsurper/messages.json';
 import psyberDevangelist from './greysonwhy/psyberDevangelist/messages.json';
+import blightedMerman from './chalkdown/blightedMerman/messages.json';
 
 export default {
   ...uncredited,
@@ -20,4 +21,5 @@ export default {
   ...theWretchedUsurper,
   ...landlockedBuccaneer,
   ...psyberDevangelist,
+  ...blightedMerman,
 };

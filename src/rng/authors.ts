@@ -24,3 +24,8 @@ export const greysonwhy: Author = {
   name: 'Greyson Yandt',
   url: 'https://greysonwhy.itch.io/',
 };
+
+export const chalkdown: Author = {
+  name: 'Chalkdown & Djuun',
+  url: 'https://chalkdown.itch.io/',
+};
