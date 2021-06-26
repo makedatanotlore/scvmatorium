@@ -9,6 +9,7 @@ import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages
 import theWretchedUsurper from './goatmansgoblet/theWretchedUsurper/messages.json';
 import psyberDevangelist from './greysonwhy/psyberDevangelist/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
+import anCailleach from './michaelmars/anCailleach/messages.json';
 
 export default {
   ...uncredited,
@@ -22,4 +23,5 @@ export default {
   ...landlockedBuccaneer,
   ...psyberDevangelist,
   ...blightedMerman,
+  ...anCailleach,
 };

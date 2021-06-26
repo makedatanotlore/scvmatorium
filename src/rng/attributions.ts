@@ -6,6 +6,7 @@ import {
   goatmansgoblet,
   greysonwhy,
   chalkdown,
+  michaelmars,
 } from 'rng/authors';
 
 export const uncredited: Attribution = {
@@ -91,8 +92,16 @@ export const blightedMerman: Attribution = {
   url: 'https://chalkdown.itch.io/blighted-merman',
 };
 
+export const anCailleach: Attribution = {
+  title: { id: 'content.michaelmars.anCailleach' },
+  id: 'anCailleach',
+  authors: [michaelmars],
+  url: 'https://www.drivethrurpg.com/product/349184/An-Cailleach-An-Irish-Folklore-Class-for-Mork-Borg',
+};
+
 export const contentAttributions = [scvmatorium, scvmfurther2];
 export const classAttributions = [
+  anCailleach,
   blightedMerman,
   landlockedBuccaneer,
   misbegottenRelict,
