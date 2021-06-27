@@ -1,0 +1,18 @@
+{
+  "content.michaelmars.anCailleach": "An Cailleach",
+  "content.michaelmars.anCailleach.blurb": "<strong>Divine Hag</strong>. The Cailleach is the Ancient Earth herself. She is the lichen-covered rocks and the mountain peaks. She is the bared earth covered with snow and frost. She is the Deep Ancestress, veiled by the passage of time. And you were born under her influences.",
+  "content.michaelmars.anCailleach.regainOmen.title": "Divine Design",
+  "content.michaelmars.anCailleach.regainOmen.description": "As a part of divine design, you may <span>regain your Omen</span> by rolling a d6. On a 1 a Misery occurs, on any other result you regain the omen.",
+  "content.michaelmars.anCailleach.blackthornStaff.title": "Blackthorn Staff",
+  "content.michaelmars.anCailleach.blackthornStaff.description": "This staff is infused with a chill that freezes your enemies as the Cailleach’s staff freezes the realm. This staff deals an additional <span>1d6 cold damage</span> that ignores armor whenever it strikes someone.",
+  "content.michaelmars.anCailleach.woolenVeil.title": "Woolen Veil",
+  "content.michaelmars.anCailleach.woolenVeil.description": "This veil grows dirtier and dirtier as time goes on, but when you wash it the color returns to the pure white of fresh snow. Washing it also <span>brings a thunderous storm</span> that ravages the land and makes a creature of your choice <span>lose 1d10 hp</span> if you succeed on a Powers check.",
+  "content.michaelmars.anCailleach.cornDolly.title": "Corn Dolly",
+  "content.michaelmars.anCailleach.cornDolly.description": "This corn dolly made from the last sheath of the crop helped insure that your family would not go hungry over the long, cold winter, provided you cared for and took in the Cailleach if she came to town. You may expend a use of your Power to <span>feed 1d4 people</span> with nutritious food that tastes of dried blood mixed with corn meal.",
+  "content.michaelmars.anCailleach.hagStone.title": "Hag Stone",
+  "content.michaelmars.anCailleach.hagStone.description": "This stone was broken off of the Cailleach when she turned to stone as Brìghde took control of the season and year. Whenever you (die) part the veil between life and death, you have a <span>50% chance of turning to stone</span> instead. You will return to your normal form at the next nightfall.",
+  "content.michaelmars.anCailleach.imboleFirewood.title": "Imbole Firewood",
+  "content.michaelmars.anCailleach.imboleFirewood.description": "This firewood was gathered near the end of winter to last you until spring comes, but that day will not arrive soon. While carrying this firewood, <span>neither cold nor weather affect you</span>.",
+  "content.michaelmars.anCailleach.shapingHammer.title": "Shaping Hammer",
+  "content.michaelmars.anCailleach.shapingHammer.description": "Much as the Cailleach’s hammer shaped the valleys of the world, this hammer makes your path easier by shaping it for you. Whenever you are traveling you <span>arrive in the shortest amount of time</span>. Of course, you can still use this hammer to shape the skulls of your enemies, dealing <span>d8 damage</span> with a DR 10 Strength Test."
+}

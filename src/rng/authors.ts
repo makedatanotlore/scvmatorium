@@ -29,3 +29,8 @@ export const chalkdown: Author = {
   name: 'Chalkdown & Djuun',
   url: 'https://chalkdown.itch.io/',
 };
+
+export const michaelmars: Author = {
+  name: 'Michael Mars',
+  url: 'https://www.drivethrurpg.com/browse/pub/18364/Michael-Mars',
+};
