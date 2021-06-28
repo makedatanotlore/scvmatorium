@@ -15,6 +15,11 @@ export const greysonwhy: Author = {
   url: 'https://greysonwhy.itch.io/',
 };
 
+export const heckinviv: Author = {
+  name: 'Hekate V. Nichols',
+  url: 'https://kaylotura.itch.io/',
+};
+
 export const khordal: Author = {
   name: 'Nick T',
   url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',

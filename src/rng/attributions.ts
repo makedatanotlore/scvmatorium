@@ -3,6 +3,7 @@ import {
   chalkdown,
   goatmansgoblet,
   greysonwhy,
+  heckinviv,
   khordal,
   makedatanotlore,
   michaelmars,
@@ -35,6 +36,13 @@ export const misbegottenRelict: Attribution = {
   id: 'misbegottenRelict',
   authors: [khordal],
   url: 'https://docs.google.com/document/d/1ndEAhYx7-g405r1saetGfSsG1QEOpIPhf_c4nS0lFB0',
+};
+
+export const mutatedGoblin: Attribution = {
+  title: { id: 'content.heckinviv.mutatedGoblin' },
+  id: 'mutatedGoblin',
+  authors: [heckinviv],
+  url: 'https://kaylotura.itch.io/mutated-goblin',
 };
 
 export const psyberDevangelist: Attribution = {
@@ -99,6 +107,7 @@ export const classAttributions = [
   blightedMerman,
   landlockedBuccaneer,
   misbegottenRelict,
+  mutatedGoblin,
   psyberDevangelist,
   rottingRecalcitrant,
   suitorKnightOfKergus,
