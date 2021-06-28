@@ -30,7 +30,7 @@
     "content.heckinviv.mutatedGoblin.awfulAugury.title": "Awful Augury",
     "content.heckinviv.mutatedGoblin.awfulAugury.description": "Anytime you <span>hear a lie</span>, you get a truly miserable stomach ache. Roll DR 8 Presence or attack the miserable liar.",
     "content.heckinviv.mutatedGoblin.crustyCurse.title": "Crusty Curse",
-    "content.heckinviv.mutatedGoblin.crustyCurse.description": "Your bite requires a DR 12 Toughness test, or the target is Infected. If they die with this infection it is raised as a goblin d4 hours later.",
+    "content.heckinviv.mutatedGoblin.crustyCurse.description": "Your bite requires a DR 12 Toughness test, or the <span>target is Infected</span>. If they die with this infection it is raised as a goblin d4 hours later.",
     "content.heckinviv.mutatedGoblin.extraneousEyeball.title": "Extraneous Eyeball",
     "content.heckinviv.mutatedGoblin.extraneousEyeball.description": "Grow a <span>tertiary eye</span> in a strange place. You can see from it when you pluck it from your body for d4 hours. It grows back in d4 days.",
     "content.heckinviv.mutatedGoblin.fidgetyFetch.title": "Fidgety Fetch",
