@@ -1,5 +1,6 @@
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
 import { psyberDevangelist } from 'rng/greysonwhy/psyberDevangelist';
+import { mutatedGoblin } from 'rng/heckinviv/mutatedGoblin';
 import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
 import { misbegottenRelict } from 'rng/khordal/misbegottenRelict';
@@ -13,6 +14,7 @@ export const classes = {
   blightedMerman,
   landlockedBuccaneer,
   misbegottenRelict,
+  mutatedGoblin,
   psyberDevangelist,
   rottingRecalcitrant,
   sunScorchedZealot,
