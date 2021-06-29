@@ -11,15 +11,15 @@ import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
 
 export const classes = {
-  // anCailleach,
-  // blightedMerman,
+  anCailleach,
+  blightedMerman,
   fugitiveKnight,
-  // landlockedBuccaneer,
-  // misbegottenRelict,
-  // mutatedGoblin,
-  // psyberDevangelist,
-  // rottingRecalcitrant,
-  // sunScorchedZealot,
-  // suitorKnightOfKergus,
-  // theWretchedUsurper,
+  landlockedBuccaneer,
+  misbegottenRelict,
+  mutatedGoblin,
+  psyberDevangelist,
+  rottingRecalcitrant,
+  sunScorchedZealot,
+  suitorKnightOfKergus,
+  theWretchedUsurper,
 };
