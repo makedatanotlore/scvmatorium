@@ -29,14 +29,14 @@ export const fugitiveKnight: Attribution = {
   title: { id: 'content.neonon.fugitiveKnight' },
   id: 'fugitiveKnight',
   authors: [neonon],
-  url: 'https://neonon.itch.io/',
+  url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
 };
 
 export const landlockedBuccaneer: Attribution = {
   title: { id: 'content.makedatanotlore.landlockedBuccaneer' },
   id: 'landlockedBuccaneer',
   authors: [makedatanotlore],
-  url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
+  url: 'https://makedatanotlore.itch.io/landlocked-buccaneer',
 };
 
 export const misbegottenRelict: Attribution = {
