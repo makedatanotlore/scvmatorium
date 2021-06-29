@@ -35,6 +35,11 @@ export const michaelmars: Author = {
   url: 'https://www.drivethrurpg.com/browse/pub/18364/Michael-Mars',
 };
 
+export const neonon: Author = {
+  name: 'Michal Gotkowski',
+  url: 'https://neonon.itch.io/',
+};
+
 export const ripleyc: Author = {
   name: 'Ripley C',
   url: 'https://ripleyc.itch.io/',

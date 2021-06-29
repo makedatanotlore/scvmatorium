@@ -1,6 +1,7 @@
 import { Attribution } from 'types/character';
 import {
   chalkdown,
+  neonon,
   goatmansgoblet,
   greysonwhy,
   heckinviv,
@@ -22,6 +23,13 @@ export const blightedMerman: Attribution = {
   id: 'blightedMerman',
   authors: [chalkdown],
   url: 'https://chalkdown.itch.io/blighted-merman',
+};
+
+export const fugitiveKnight: Attribution = {
+  title: { id: 'content.neonon.fugitiveKnight' },
+  id: 'fugitiveKnight',
+  authors: [neonon],
+  url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
 };
 
 export const landlockedBuccaneer: Attribution = {
@@ -105,6 +113,7 @@ export const contentAttributions = [scvmatorium, scvmfurther2];
 export const classAttributions = [
   anCailleach,
   blightedMerman,
+  fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,
   mutatedGoblin,
