@@ -1,0 +1,36 @@
+{
+  "content.neonon.fugitiveKnight": "Fugitive Knight",
+  "content.neonon.fugitiveKnight.blurb": "Bravery, nobility, justice & honor mean nothing to you. Through cowardice and treachery you slew a valiant knight to usurp his title, crest and name. Cloistered within <strong>dead man's</strong> enchanted plate, you need not fear being hunted like a dog again, as it shelters you from harm and hides your damned self from those seeking vengeance for your past crimes, <strong>UNIMAGINABLE</strong>.",
+
+  "content.neonon.fugitiveKnight.bounty.title": "Bounty",
+  "content.neonon.fugitiveKnight.bounty.description": "The sizeable bounty (200s) on your head will make anyone, friend or foe, <span>turn against you</span>, should you ever dare to remove your helmet.",
+
+  "content.neonon.fugitiveKnight.despised.title": "Despised",
+  "content.neonon.fugitiveKnight.despised.description": "Despised by men and gods alike, you may only spend omens to <span>reroll armor</span>.",
+
+  "content.neonon.fugitiveKnight.brigandine.title": "Bridandine of Shadow King's Vanta Knechts",
+  "content.neonon.fugitiveKnight.brigandine.description": "<span>Heavy, Agility DR4, -d6+1 damage</span>. Use pPowers to emit fumes for d4 turns adding +2 defense to all near you.",
+  "content.neonon.fugitiveKnight.thornArmor.title": "Thorn Armor of the Sarkash Amok Knights",
+  "content.neonon.fugitiveKnight.thornArmor.description": "<span>Medium, Agility DR 2, -d4+1 damage</span>. Wireroot thorns do d2 damage to those who attack you up close.",
+  "content.neonon.fugitiveKnight.mirrorPlate.title": "Anthelia's Hands' Achromix Mirror-Plate",
+  "content.neonon.fugitiveKnight.mirrorPlate.description": "<span>Heavy, Agility DR4, -d6+1 damage</span>. If a spell targets you, roll d6. On 1 it has no effect, on 6 you bounce it back.",
+  "content.neonon.fugitiveKnight.scaleArmor.title": "Grift's Fjordsworn Knight's Scale Armor",
+  "content.neonon.fugitiveKnight.scaleArmor.description": "<span>Heavy, Agility DR4, -2d4 damage</span>. You take no falling damage, nor can you drown.",
+  "content.neonon.fugitiveKnight.moonsilverMail.title": "Moonsilver Mail of Valley's Gravewardens",
+  "content.neonon.fugitiveKnight.moonsilverMail.description": "<span>Medium, Agility DR2, -d4+1 damage</span>. Undead need to test Morale when they encounter you. You hit them with DR-2.",
+  "content.neonon.fugitiveKnight.plateCoat.title": "Plate Coat of the Seekers of Gore Chalice",
+  "content.neonon.fugitiveKnight.plateCoat.description": "<span>Heavy, Agility DR4, -2d4 damage</span>. ANY critical hit heals you d4 damage.",
+
+  "content.neonon.fugitiveKnight.slitThroat.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.slitThroat.description": "<span>Slit</span> the sleeping knight's <span>throat</span> in a Schleswig inn.",
+  "content.neonon.fugitiveKnight.spiderEggs.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.spiderEggs.description": "Fed the knight <span>ripe spider eggs</span>.",
+  "content.neonon.fugitiveKnight.goblinTracks.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.goblinTracks.description": "<span>Covered goblin tracks</span> and waited patiently.",
+  "content.neonon.fugitiveKnight.closedDoors.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.closedDoors.description": "<span>Closed the doors shut</span>, ignoring the knight's screams.",
+  "content.neonon.fugitiveKnight.ondaEels.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.ondaEels.description": "Forgot to mention <span>Onda Eels</span> swarming the knight while swimming.",
+  "content.neonon.fugitiveKnight.cancerPit.title": "Bards Shall Never Tell the Tale of How You...",
+  "content.neonon.fugitiveKnight.cancerPit.description": "Cut the knight's rope over a <span>cancer pit</span>."
+}
