@@ -9,6 +9,7 @@ import {
   makedatanotlore,
   michaelmars,
   ripleyc,
+  stregaflora,
 } from 'rng/authors';
 
 export const anCailleach: Attribution = {
@@ -51,6 +52,13 @@ export const mutatedGoblin: Attribution = {
   id: 'mutatedGoblin',
   authors: [heckinviv],
   url: 'https://kaylotura.itch.io/mutated-goblin',
+};
+
+export const nachthex: Attribution = {
+  title: { id: 'content.stregaflora.nachthex' },
+  id: 'nachthex',
+  authors: [stregaflora],
+  url: 'https://stregaflora.itch.io/nachthex',
 };
 
 export const psyberDevangelist: Attribution = {
@@ -117,6 +125,7 @@ export const classAttributions = [
   landlockedBuccaneer,
   misbegottenRelict,
   mutatedGoblin,
+  nachthex,
   psyberDevangelist,
   rottingRecalcitrant,
   suitorKnightOfKergus,

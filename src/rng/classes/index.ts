@@ -9,6 +9,7 @@ import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
+import { nachthex } from 'rng/stregaflora/nachthex';
 
 export const classes = {
   anCailleach,
@@ -17,6 +18,7 @@ export const classes = {
   landlockedBuccaneer,
   misbegottenRelict,
   mutatedGoblin,
+  nachthex,
   psyberDevangelist,
   rottingRecalcitrant,
   sunScorchedZealot,

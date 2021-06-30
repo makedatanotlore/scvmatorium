@@ -1,0 +1,34 @@
+{
+  "content.stregaflora.nachthex": "Nachthex",
+
+  "content.stregaflora.nachthex.blurb": "He found you out. That little fucking rat. After your execution, you were buried in Graven-Tosk. But <strong>They</strong> found you. They dug you up and invited you their coven and taught you of <strong>His</strong> gifts. Your deathmarks will never heal again. <strong>But you can get revenge</strong>. Murder the rat. Murder them all.",
+
+  "content.stregaflora.nachthex.burning.title": "Deathmarks",
+  "content.stregaflora.nachthex.burning.description": "<span>Burning</span>. Your flesh is hot as bluefire.",
+  "content.stregaflora.nachthex.drowning.title": "Deathmarks",
+  "content.stregaflora.nachthex.drowning.description": "<span>Drowning</span>. You cannot drink water, and instead must drink liquor.",
+  "content.stregaflora.nachthex.hanging.title": "Deathmarks",
+  "content.stregaflora.nachthex.hanging.description": "<span>Hanging</span>. Your neck is crooked and broken.",
+  "content.stregaflora.nachthex.slitThroat.title": "Deathmarks",
+  "content.stregaflora.nachthex.slitThroat.description": "<span>Slit throat</span>. Blood permanently gushes out of this open wound.",
+  "content.stregaflora.nachthex.crushed.title": "Deathmarks",
+  "content.stregaflora.nachthex.crushed.description": "<span>Crushed</span>. You body is flattened to a sheet.",
+  "content.stregaflora.nachthex.stoned.title": "Deathmarks",
+  "content.stregaflora.nachthex.stoned.description": "<span>Stoned</span>. You entire body is blue from bruises.",
+
+  "content.stregaflora.nachthex.gifts": "Horned One Gifts",
+  "content.stregaflora.nachthex.tableDescription": "A spell can be cast once every moon. All spells are cast using Presence.",
+
+  "content.stregaflora.nachthex.puppeteering.title": "Puppeteering (DR equal to HP)",
+  "content.stregaflora.nachthex.puppeteering.description": "Take over an NPC or monster.",
+  "content.stregaflora.nachthex.danceMagick.title": "Dance Magick (DR14)",
+  "content.stregaflora.nachthex.danceMagick.description": "Curse a person through dance. All damage done to them is doubled for d20 minutes.",
+  "content.stregaflora.nachthex.bloodMagick.title": "Blood Magick (No DR)",
+  "content.stregaflora.nachthex.bloodMagick.description": "Any blood spilled will burn eternally.",
+  "content.stregaflora.nachthex.necromancy.title": "Necromancy (DR14)",
+  "content.stregaflora.nachthex.necromancy.description": "Bring back any dead being for d20+Presence minutes.",
+  "content.stregaflora.nachthex.shapeshifting.title": "Shapeshifting (DR12)",
+  "content.stregaflora.nachthex.shapeshifting.description": "Turn into any animal for d10+Presence minutes.",
+  "content.stregaflora.nachthex.futureTelling.title": "Future Telling (DR14)",
+  "content.stregaflora.nachthex.futureTelling.description": "Ask the GM a yes/no question. They must answer truthfully."
+}
