@@ -55,7 +55,7 @@ export const nachthex = (): Character => {
   const armor = rollArmor(4, hasScroll(generalEquipment));
   // no silver
   const foodAndWater = rollFoodAndWater();
-  const equipment = [foodAndWater, weapon, ...generalEquipment];
+  const equipment = [foodAndWater, weapon, armor, ...generalEquipment];
 
   return {
     tags: ['nachthex'],
