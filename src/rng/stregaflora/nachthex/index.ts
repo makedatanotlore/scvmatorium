@@ -1,6 +1,5 @@
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import { rollHp, formatHp } from 'rng/shared/hp';
-import { rollSilver } from './../../shared/equipment';
 import { formatClass } from './../../shared/class';
 import { formatBody } from '../../shared/bodies';
 import { formatHabit } from '../../shared/habits';
@@ -54,9 +53,9 @@ export const nachthex = (): Character => {
   const generalEquipment = rollStandardEquipment();
   const weapon = rollWeapon(10);
   const armor = rollArmor(4, hasScroll(generalEquipment));
-  const silver = rollSilver();
+  // no silver
   const foodAndWater = rollFoodAndWater();
-  const equipment = [foodAndWater, weapon, ...generalEquipment, silver];
+  const equipment = [foodAndWater, weapon, ...generalEquipment];
 
   return {
     tags: ['nachthex'],
