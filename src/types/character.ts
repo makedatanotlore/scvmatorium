@@ -29,6 +29,7 @@ export type Big = {
 export type Message = { id: string; values?: Values; format?: Message };
 
 export type Author = {
+  id: string;
   name: string;
   url?: string;
 };
