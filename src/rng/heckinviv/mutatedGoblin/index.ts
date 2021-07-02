@@ -1,44 +1,27 @@
-import { rollOmens, formatOmens } from 'rng/shared/omens';
-import { rollHp, formatHp } from 'rng/shared/hp';
-import { rollSilver } from './../../shared/equipment';
-import { formatClass } from './../../shared/class';
-import { formatBody } from '../../shared/bodies';
-import { formatHabit } from '../../shared/habits';
-import { formatTrait } from '../../shared/traits';
+import { sampleSize, sample } from 'lodash/fp';
+import { mutatedGoblin as attribution } from 'rng/attributions';
+import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
+import { formatBody } from 'rng/shared/bodies';
+import { formatClass } from 'rng/shared/class';
+import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   rollFoodAndWater,
+  rollSilver,
   rollStandardEquipment,
   rollWeapon,
-} from '../../shared/equipment';
-import { sampleSize, sample } from 'lodash/fp';
-import { formatAbility, threeD6 } from 'rng/shared/abilities';
+} from 'rng/shared/equipment';
+import { formatHabit } from 'rng/shared/habits';
+import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
-import { Character } from 'types/character';
+import { rollOmens, formatOmens } from 'rng/shared/omens';
+import { formatTrait } from 'rng/shared/traits';
 import tables from 'rng/tables';
-import { formatEntry, entry } from './entry';
-import { infectionOrigins } from './infectionOrigins';
-import { mutations } from './mutations';
+import { Character } from 'types/character';
 
 export const mutatedGoblin = (): Character => {
-  const strength = {
-    name: 'strength',
-    score: threeD6(0),
-  };
-  const agility = {
-    name: 'agility',
-    score: threeD6(2),
-  };
-  const presence = {
-    name: 'presence',
-    score: threeD6(-2),
-  };
-  const toughness = {
-    name: 'toughness',
-    score: threeD6(0),
-  };
-
-  const hp = rollHp(1, 6, toughness.score);
+  const abilities = rollAbilities(0, 2, -2, 0);
+  const hp = rollHp(1, 6, abilities.toughness.score);
   const omens = rollOmens(1, 2);
 
   const generalEquipment = rollStandardEquipment();
@@ -47,6 +30,29 @@ export const mutatedGoblin = (): Character => {
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, ...generalEquipment, silver];
+
+  const infectionOrigins = [
+    'strangePotion',
+    'demonicGoblin',
+    'goblinRose',
+    'undeadGoblin',
+    'serpentGod',
+    'bornLikeThis',
+  ].map((x) => titledEntry(attribution, x));
+  const wretchedMind = titledEntry(attribution, 'wretchedMind');
+  const impotent = titledEntry(attribution, 'impotent');
+  const warpedBody = titledEntry(attribution, 'warpedBody');
+  const mutations = [
+    'awfulAugury',
+    'crustyCurse',
+    'extraneousEyeball',
+    'fidgetyFetch',
+    'rockyRotter',
+    'degenerateRegenerate',
+    'sharksShankTeeth',
+    'viciousVisage',
+  ].map((x) => titledEntry(attribution, x));
+  const oddMutation = titledEntry(attribution, 'oddMutation');
 
   return {
     tags: ['mutatedGoblin'],
@@ -79,22 +85,13 @@ export const mutatedGoblin = (): Character => {
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatEntry(sample(infectionOrigins)!),
-      formatEntry(entry('wretchedMind')),
-      formatEntry(entry('impotent')),
-      formatEntry(entry('warpedBody')),
-      formatEntry(sample(mutations)!),
-      formatEntry(entry('oddMutation')),
-      {
-        component: { id: 'abilityList' },
-        header: { id: 'character.stats.titles.abilities', values: {} },
-        content: [
-          formatAbility(strength),
-          formatAbility(agility),
-          formatAbility(presence),
-          formatAbility(toughness),
-        ],
-      },
+      formatTitledEntry(sample(infectionOrigins)!),
+      formatTitledEntry(wretchedMind),
+      formatTitledEntry(impotent),
+      formatTitledEntry(warpedBody),
+      formatTitledEntry(sample(mutations)!),
+      formatTitledEntry(oddMutation),
+      formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
         header: { id: 'character.stats.titles.equipment', values: {} },
@@ -102,7 +99,7 @@ export const mutatedGoblin = (): Character => {
           .filter((item) => item.id !== '_blank')
           .map((item) =>
             formatEquipment(item, {
-              presence: presence.score,
+              presence: abilities.presence.score,
               money: { min: 1, max: 6 },
             })
           ),

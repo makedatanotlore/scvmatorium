@@ -1,45 +1,29 @@
-import { rollOmens, formatOmens } from 'rng/shared/omens';
-import { rollHp, formatHp } from 'rng/shared/hp';
-import { rollSilver } from './../../shared/equipment';
-import { formatClass } from './../../shared/class';
-import { formatBody } from '../../shared/bodies';
-import { formatHabit } from '../../shared/habits';
-import { formatTrait } from '../../shared/traits';
+import { sampleSize, sample } from 'lodash/fp';
+import { anCailleach as attribution } from 'rng/attributions';
+import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
+import { formatBody } from 'rng/shared/bodies';
+import { formatClass } from 'rng/shared/class';
+import { formatHabit } from 'rng/shared/habits';
+import { formatTrait } from 'rng/shared/traits';
+import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
+  rollSilver,
   rollStandardEquipment,
   rollWeapon,
 } from '../../shared/equipment';
-import { sampleSize, sample } from 'lodash/fp';
-import { formatAbility, threeD6 } from 'rng/shared/abilities';
+import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
-import { Character } from 'types/character';
+import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { boons, formatBoon } from './boons';
-import { divineDesign, formatDivineDesign } from './divineDesign';
+import { Character } from 'types/character';
 
 export const anCailleach = (): Character => {
-  const strength = {
-    name: 'strength',
-    score: threeD6(0),
-  };
-  const agility = {
-    name: 'agility',
-    score: threeD6(-2),
-  };
-  const presence = {
-    name: 'presence',
-    score: threeD6(0),
-  };
-  const toughness = {
-    name: 'toughness',
-    score: threeD6(2),
-  };
-
-  const hp = rollHp(1, 8, toughness.score);
+  const abilities = rollAbilities(0, -2, 0, 2);
+  const hp = rollHp(1, 8, abilities.toughness.score);
   const omens = rollOmens(1, 1);
 
   const generalEquipment = rollStandardEquipment();
@@ -48,6 +32,16 @@ export const anCailleach = (): Character => {
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, armor, ...generalEquipment, silver];
+
+  const divineDesign = titledEntry(attribution, 'regainOmen');
+  const boons = [
+    'blackthornStaff',
+    'woolenVeil',
+    'cornDolly',
+    'hagStone',
+    'imboleFirewood',
+    'shapingHammer',
+  ].map((x) => titledEntry(attribution, x));
 
   return {
     tags: ['anCailleach'],
@@ -80,18 +74,9 @@ export const anCailleach = (): Character => {
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatDivineDesign(divineDesign),
-      formatBoon(sample(boons)!),
-      {
-        component: { id: 'abilityList' },
-        header: { id: 'character.stats.titles.abilities', values: {} },
-        content: [
-          formatAbility(strength),
-          formatAbility(agility),
-          formatAbility(presence),
-          formatAbility(toughness),
-        ],
-      },
+      formatTitledEntry(divineDesign),
+      formatTitledEntry(sample(boons)!),
+      formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
         header: { id: 'character.stats.titles.equipment', values: {} },
@@ -99,7 +84,7 @@ export const anCailleach = (): Character => {
           .filter((item) => item.id !== '_blank')
           .map((item) =>
             formatEquipment(item, {
-              presence: presence.score,
+              presence: abilities.presence.score,
               money: { min: 20, max: 120 },
             })
           ),

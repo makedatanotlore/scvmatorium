@@ -1,9 +1,16 @@
 import { random, sum } from 'lodash/fp';
-import { Small } from 'types/character';
+import { Big, Small } from 'types/character';
 
 type Ability = {
   name: string;
   score: number;
+};
+
+type Abilities = {
+  strength: Ability;
+  agility: Ability;
+  presence: Ability;
+  toughness: Ability;
 };
 
 export const threeD6 = (modifier: number) => {
@@ -40,4 +47,34 @@ export const formatAbility = ({ name, score }: Ability): Small => ({
     id: `character.stats.standard.ability`,
     values: { ability: formatScore(score) },
   },
+});
+
+export const rollAbilities = (strMod: number, agiMod: number, preMod: number, touMod: number): Abilities => ({
+  strength: {
+    name: 'strength',
+    score: threeD6(strMod),
+  },
+  agility: {
+    name: 'agility',
+    score: threeD6(agiMod),
+  },
+  presence: {
+    name: 'presence',
+    score: threeD6(preMod),
+  },
+  toughness: {
+    name: 'toughness',
+    score: threeD6(touMod),
+  }
+});
+
+export const formatAbilities = (abilities: Abilities): Big => ({
+  component: { id: 'abilityList' },
+  header: { id: 'character.stats.titles.abilities', values: {} },
+  content: [
+    formatAbility(abilities.strength),
+    formatAbility(abilities.agility),
+    formatAbility(abilities.presence),
+    formatAbility(abilities.toughness),
+  ],
 });
