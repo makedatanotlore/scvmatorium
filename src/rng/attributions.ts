@@ -138,6 +138,7 @@ export const classAttributions = [
   anCailleach,
   betrayedPhantom,
   blightedMerman,
+  cannibalCook,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,
