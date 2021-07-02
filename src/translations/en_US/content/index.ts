@@ -1,4 +1,5 @@
 import anCailleach from './michaelmars/anCailleach/messages.json';
+import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
 import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.json';
@@ -16,6 +17,7 @@ import uncredited from './shared/uncredited/messages.json';
 
 export default {
   ...anCailleach,
+  ...betrayedPhantom,
   ...blightedMerman,
   ...fugitiveKnight,
   ...misbegottenRelict,

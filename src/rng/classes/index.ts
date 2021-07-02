@@ -9,19 +9,21 @@ import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
+import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
 
 export const classes = {
-  anCailleach,
-  blightedMerman,
-  fugitiveKnight,
-  landlockedBuccaneer,
-  misbegottenRelict,
-  mutatedGoblin,
-  nachthex,
-  psyberDevangelist,
-  rottingRecalcitrant,
-  sunScorchedZealot,
-  suitorKnightOfKergus,
-  theWretchedUsurper,
+  // anCailleach,
+  betrayedPhantom,
+  // blightedMerman,
+  // fugitiveKnight,
+  // landlockedBuccaneer,
+  // misbegottenRelict,
+  // mutatedGoblin,
+  // nachthex,
+  // psyberDevangelist,
+  // rottingRecalcitrant,
+  // sunScorchedZealot,
+  // suitorKnightOfKergus,
+  // theWretchedUsurper,
 };
