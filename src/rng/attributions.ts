@@ -9,6 +9,7 @@ import {
   makedatanotlore,
   michaelmars,
   ripleyc,
+  sashadeath,
   stregaflora,
 } from 'rng/authors';
 
@@ -17,6 +18,13 @@ export const anCailleach: Attribution = {
   id: 'anCailleach',
   authors: [michaelmars],
   url: 'https://www.drivethrurpg.com/product/349184/An-Cailleach-An-Irish-Folklore-Class-for-Mork-Borg',
+};
+
+export const betrayedPhantom: Attribution = {
+  title: { id: 'content.sashadeath.betrayedPhantom' },
+  id: 'betrayedPhantom',
+  authors: [sashadeath],
+  url: 'https://theeldritchtomb.itch.io/betrayed-phantom',
 };
 
 export const blightedMerman: Attribution = {
@@ -120,6 +128,7 @@ export const uncredited: Attribution = {
 export const contentAttributions = [scvmatorium, scvmfurther2];
 export const classAttributions = [
   anCailleach,
+  betrayedPhantom,
   blightedMerman,
   fugitiveKnight,
   landlockedBuccaneer,

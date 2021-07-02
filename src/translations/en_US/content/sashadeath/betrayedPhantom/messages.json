@@ -1,0 +1,34 @@
+{
+  "content.sashadeath.betrayedPhantom": "Betrayed Phantom",
+
+  "content.sashadeath.betrayedPhantom.blurb": "<strong>YOU DIED</strong>. Fallen on the battlefield, your soul began to rot. Between earth and the beyond, <strong>SOMETHING REACHED OUT</strong>. You took its bargain, and it took your body. <strong>NOW YOU ARE A SHADE</strong>, alive again but half-existent. Your second chance at life is denied you, and a wraith now wears your skin.",
+
+  "content.sashadeath.betrayedPhantom.incorporeal.title": "Incorporeal",
+  "content.sashadeath.betrayedPhantom.incorporeal.description": "Can choose to pass through one of the following: <span>Wood</span>, <span>natural stone</span>, <span>flesh</span>.",
+
+  "content.sashadeath.betrayedPhantom.cannibal.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.cannibal.description": "A <span>Cannibal</span>. <span>Feasting</span>.",
+  "content.sashadeath.betrayedPhantom.murderer.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.murderer.description": "A <span>Murderer</span>. <span>Slaughtering</span>.",
+  "content.sashadeath.betrayedPhantom.liar.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.liar.description": "A <span>Liar</span>. <span>Disseminating</span>.",
+  "content.sashadeath.betrayedPhantom.adulterer.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.adulterer.description": "An <span>Adulterer</span>. <span>Homewrecking</span>.",
+  "content.sashadeath.betrayedPhantom.leader.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.leader.description": "A <span>Leader</span>. <span>Corrupting</span>.",
+  "content.sashadeath.betrayedPhantom.kinslayer.title": "Who You Were. What Your Body is Doing.",
+  "content.sashadeath.betrayedPhantom.kinslayer.description": "A <span>Kinslayer</span>. <span>Exterminating</span>.",
+
+  "content.sashadeath.betrayedPhantom.keepsakeCoin.title": "Keepsake Coin",
+  "content.sashadeath.betrayedPhantom.keepsakeCoin.description": "Placed on your corpse's eyes by some kind soul. You <span>always know the location</span> of the wraith wearing your skin.",
+  "content.sashadeath.betrayedPhantom.deathmask.title": "Deathmask",
+  "content.sashadeath.betrayedPhantom.deathmask.description": "The funeral mask you were meant to wear. When donned, <span>reduce the DR of all social rolls by 2</span> when communing with any undead.",
+  "content.sashadeath.betrayedPhantom.prayerBook.title": "Prayer Book",
+  "content.sashadeath.betrayedPhantom.prayerBook.description": "Your mother wanted you to have it. You <span>start with a Sacred Scroll</span>.",
+  "content.sashadeath.betrayedPhantom.fingerBone.title": "Finger Bone",
+  "content.sashadeath.betrayedPhantom.fingerBone.description": "Possibly belonged to a priest. No crypt, tomb, cemetery gate or catacomb <span>can lock you out</span>.",
+  "content.sashadeath.betrayedPhantom.tragicLetter.title": "Tragic Letter",
+  "content.sashadeath.betrayedPhantom.tragicLetter.description": "You <span>must deliver it</span> to someone. Only then can you be reunited with your body.",
+  "content.sashadeath.betrayedPhantom.glassEye.title": "Glass Eye",
+  "content.sashadeath.betrayedPhantom.glassEye.description": "Not yours. Place it in your skull to <span>see through any illusion</span>."
+}
