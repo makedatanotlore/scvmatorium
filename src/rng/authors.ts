@@ -12,6 +12,12 @@ export const goatmansgoblet: Author = {
   url: 'http://www.goatmansgoblet.com/',
 };
 
+export const graytide: Author = {
+  id: 'graytide',
+  name: 'Gry Tide',
+  url: 'https://itch.io/profile/gray-tide',
+};
+
 export const greysonwhy: Author = {
   id: 'greysonwhy',
   name: 'Greyson Yandt',

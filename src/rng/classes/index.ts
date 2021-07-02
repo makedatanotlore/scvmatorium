@@ -1,7 +1,8 @@
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
-import { psyberDevangelist } from 'rng/greysonwhy/psyberDevangelist';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
+import { cannibalCook } from 'rng/graytide/cannibalCook';
+import { psyberDevangelist } from 'rng/greysonwhy/psyberDevangelist';
 import { mutatedGoblin } from 'rng/heckinviv/mutatedGoblin';
 import { misbegottenRelict } from 'rng/khordal/misbegottenRelict';
 import { sunScorchedZealot } from 'rng/khordal/sunScorchedZealot';
@@ -16,6 +17,7 @@ export const classes = {
   anCailleach,
   betrayedPhantom,
   blightedMerman,
+  cannibalCook,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,

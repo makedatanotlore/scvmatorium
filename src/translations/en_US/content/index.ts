@@ -1,6 +1,7 @@
 import anCailleach from './michaelmars/anCailleach/messages.json';
 import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
+import cannibalCook from './graytide/cannibalCook/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
 import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.json';
 import nachthex from './stregaflora/nachthex/messages.json';
@@ -19,6 +20,7 @@ export default {
   ...anCailleach,
   ...betrayedPhantom,
   ...blightedMerman,
+  ...cannibalCook,
   ...fugitiveKnight,
   ...misbegottenRelict,
   ...mutatedGoblin,

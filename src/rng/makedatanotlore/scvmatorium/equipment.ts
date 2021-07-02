@@ -3,7 +3,7 @@ import { sample, random, max } from 'lodash/fp';
 import { scvmatorium } from 'rng/attributions';
 import { TableEntry } from 'types/character';
 
-const entry = (id: string, generateValues?: GenerateValuesFn): TableEntry => ({
+export const entry = (id: string, generateValues?: GenerateValuesFn): TableEntry => ({
   id: `scvmatorium-${id}`,
   tags: ['makedatanotlore', 'scvmatorium', 'equipment', id],
   attribution: scvmatorium,
