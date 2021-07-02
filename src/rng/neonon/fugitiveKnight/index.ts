@@ -1,44 +1,27 @@
-import { rollOmens, formatOmens } from 'rng/shared/omens';
-import { rollHp, formatHp } from 'rng/shared/hp';
-import { rollSilver } from './../../shared/equipment';
-import { formatClass } from './../../shared/class';
-import { formatBody } from '../../shared/bodies';
-import { formatHabit } from '../../shared/habits';
-import { formatTrait } from '../../shared/traits';
+import { sampleSize, sample } from 'lodash/fp';
+import { fugitiveKnight as attribution } from 'rng/attributions';
+import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
+import { formatBody } from 'rng/shared/bodies';
+import { formatClass } from 'rng/shared/class';
+import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   rollFoodAndWater,
+  rollSilver,
   rollStandardEquipment,
   rollWeapon,
-} from '../../shared/equipment';
-import { sampleSize, sample } from 'lodash/fp';
-import { formatAbility, threeD6 } from 'rng/shared/abilities';
+} from 'rng/shared/equipment';
+import { formatHabit } from 'rng/shared/habits';
+import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
-import { Character } from 'types/character';
+import { rollOmens, formatOmens } from 'rng/shared/omens';
+import { formatTrait } from 'rng/shared/traits';
 import tables from 'rng/tables';
-import { formatEntry, entry } from './entry';
-import { armor } from './armor';
-import { bardsTales } from './bardsTales';
+import { Character } from 'types/character';
 
 export const fugitiveKnight = (): Character => {
-  const strength = {
-    name: 'strength',
-    score: threeD6(0),
-  };
-  const agility = {
-    name: 'agility',
-    score: threeD6(2),
-  };
-  const presence = {
-    name: 'presence',
-    score: threeD6(0),
-  };
-  const toughness = {
-    name: 'toughness',
-    score: threeD6(-2),
-  };
-
-  const hp = rollHp(1, 4, toughness.score);
+  const abilities = rollAbilities(0, 2, 0, -2);
+  const hp = rollHp(1, 4, abilities.toughness.score);
   const omens = rollOmens(1, 2);
 
   const generalEquipment = rollStandardEquipment();
@@ -47,6 +30,25 @@ export const fugitiveKnight = (): Character => {
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, ...generalEquipment, silver];
+
+  const bounty = titledEntry(attribution, 'bounty');
+  const despised = titledEntry(attribution,'despised')
+  const armor = [
+    'brigandine',
+    'thornArmor',
+    'mirrorPlate',
+    'scaleArmor',
+    'moonsilverMail',
+    'plateCoat',
+  ].map((x) => titledEntry(attribution, x));
+  const bardsTales = [
+    'slitThroat',
+    'spiderEggs',
+    'goblinTracks',
+    'closedDoors',
+    'ondaEels',
+    'cancerPit',
+  ].map((x) => titledEntry(attribution, x));
 
   return {
     tags: ['fugitiveKnight'],
@@ -79,20 +81,11 @@ export const fugitiveKnight = (): Character => {
           ...sampleSize(2, tables.habits).map((habit) => formatHabit(habit)),
         ],
       },
-      formatEntry(entry('bounty')),
-      formatEntry(entry('despised')),
-      formatEntry(sample(armor)!),
-      formatEntry(sample(bardsTales)!),
-      {
-        component: { id: 'abilityList' },
-        header: { id: 'character.stats.titles.abilities', values: {} },
-        content: [
-          formatAbility(strength),
-          formatAbility(agility),
-          formatAbility(presence),
-          formatAbility(toughness),
-        ],
-      },
+      formatTitledEntry(bounty),
+      formatTitledEntry(despised),
+      formatTitledEntry(sample(armor)!),
+      formatTitledEntry(sample(bardsTales)!),
+      formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
         header: { id: 'character.stats.titles.equipment', values: {} },
@@ -100,7 +93,7 @@ export const fugitiveKnight = (): Character => {
           .filter((item) => item.id !== '_blank')
           .map((item) =>
             formatEquipment(item, {
-              presence: presence.score,
+              presence: abilities.presence.score,
               money: { min: 10, max: 60 },
             })
           ),

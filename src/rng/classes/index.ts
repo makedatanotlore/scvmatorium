@@ -12,16 +12,16 @@ import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
 import { nachthex } from 'rng/stregaflora/nachthex';
 
 export const classes = {
-  anCailleach,
-  blightedMerman,
-  fugitiveKnight,
-  landlockedBuccaneer,
-  misbegottenRelict,
+  // anCailleach,
+  // blightedMerman,
+  // fugitiveKnight,
+  // landlockedBuccaneer,
+  // misbegottenRelict,
   mutatedGoblin,
-  nachthex,
-  psyberDevangelist,
-  rottingRecalcitrant,
-  sunScorchedZealot,
-  suitorKnightOfKergus,
-  theWretchedUsurper,
+  // nachthex,
+  // psyberDevangelist,
+  // rottingRecalcitrant,
+  // sunScorchedZealot,
+  // suitorKnightOfKergus,
+  // theWretchedUsurper,
 };
