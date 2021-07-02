@@ -15,7 +15,7 @@ export const goatmansgoblet: Author = {
 export const graytide: Author = {
   id: 'graytide',
   name: 'Gray Tide',
-  url: 'https://itch.io/profile/gray-tide',
+  url: 'https://gray-tide.itch.io/',
 };
 
 export const greysonwhy: Author = {
