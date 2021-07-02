@@ -3,24 +3,15 @@
 
   "content.graytide.cannibalCook.blurb": "The <strong>MASSES</strong> starve in the streets, but not <strong>YOU</strong>. While they see only desolation and despair, you have discovered a bounteous <strong>FEAST</strong>... and a <u>delightful</u> business opportunity. <u>Some</u> people are dying. <u>Other</u> people are hungry. <u>You</u> just might have found a way to solve both their problems.",
 
+  "content.graytide.cannibalCook.tastingFood": "You started out tasting food for King Fathmu IX.",
+  "content.graytide.cannibalCook.fishingMen": "You started out fishing men from Lake Onda.",
+  "content.graytide.cannibalCook.corpseCarts": "You started out racing corpse carts through the streets of Galgenbeck.",
+  "content.graytide.cannibalCook.sangfroid": "You started out at the famous Café de Sang-Froid in Allians.",
+  "content.graytide.cannibalCook.foodcart": "You started out staffing the first successful food cart in the Valley of Unfortunate Undead.",
+  "content.graytide.cannibalCook.prisonStew": "You started out cooking prison stew, deep beneath the Palace of the Shadow King.",
+
   "content.graytide.cannibalCook.predatoryGaze.title": "Predatory Gaze",
   "content.graytide.cannibalCook.predatoryGaze.description": "People don't like the way you stare, and your eyes linger in the wrong places. Humans roll <span>Reaction at -2</span>, and <span>Morale at +2</span>.",
-
-  "content.graytide.cannibalCook.femur.title": "Femur",
-  "content.graytide.cannibalCook.femur.description": "d4 damage",
-
-  "content.graytide.cannibalCook.tastingFood.title": "You Started Out:",
-  "content.graytide.cannibalCook.tastingFood.description": "<span>Tasting food</span> for King Fathmu IX.",
-  "content.graytide.cannibalCook.fishingMen.title": "You Started Out:",
-  "content.graytide.cannibalCook.fishingMen.description": "<span>Fishing-men</span> from Lake Onda.",
-  "content.graytide.cannibalCook.corpseCarts.title": "You Started Out:",
-  "content.graytide.cannibalCook.corpseCarts.description": "<span>Racing corpse carts</span> through the streets of Galgenbeck.",
-  "content.graytide.cannibalCook.sangfroid.title": "You Started Out:",
-  "content.graytide.cannibalCook.sangfroid.description": "At the famous <span>Café de Sang-Froid</span> in Allians.",
-  "content.graytide.cannibalCook.foodcart.title": "You Started Out:",
-  "content.graytide.cannibalCook.foodcart.description": "Staffing the first successful <span>food cart</span> in the Valley of Unfortunate Undead.",
-  "content.graytide.cannibalCook.prisonStew.title": "You Started Out:",
-  "content.graytide.cannibalCook.prisonStew.description": "<span>Cooking prison stew</span>, deep beneath the Palace of the Shadow King.",
 
   "content.graytide.cannibalCook.foodFighter.title": "Food Fighter",
   "content.graytide.cannibalCook.foodFighter.description": "It's a competitive business. You've learned to improvise. <span>Femurs count as 1d6</span> in your hands. You can <span>make arrowheads</span> from human remains.",
@@ -33,5 +24,8 @@
   "content.graytide.cannibalCook.scarredHide.title": "Scarred Hide",
   "content.graytide.cannibalCook.scarredHide.description": "In your desperation, you have even eaten of your own flesh. You have the scar tissue to prove it. <span>Skin counts as light armor</span>, upgrade light armor to medium.",
   "content.graytide.cannibalCook.entrailOracle.title": "Entrail Oracle",
-  "content.graytide.cannibalCook.entrailOracle.description": "Open up a fresh human corpse and predict the future. DR 12 presence. Success - <span>regain 1 omen</span>. Failure - <span>lose 1 omen</span>."
+  "content.graytide.cannibalCook.entrailOracle.description": "Open up a fresh human corpse and predict the future. DR 12 presence. Success - <span>regain 1 omen</span>. Failure - <span>lose 1 omen</span>.",
+
+  "content.graytide.cannibalCook.femur.title": "Femur",
+  "content.graytide.cannibalCook.femur.description": "d4 damage"
 }
