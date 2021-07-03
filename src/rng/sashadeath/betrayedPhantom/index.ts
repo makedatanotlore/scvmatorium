@@ -52,7 +52,7 @@ export const betrayedPhantom = (): Character => {
   ].map((x) => titledEntry(attribution, x));
 
   return {
-    tags: ['betrayedPhantom'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('sashadeath.betrayedPhantom'),

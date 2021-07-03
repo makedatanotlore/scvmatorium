@@ -71,7 +71,7 @@ export const cannibalCook = (): Character => {
   ].map((x) => titledEntry(attribution, x));
 
   return {
-    tags: ['cannibalCook'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('graytide.cannibalCook'),

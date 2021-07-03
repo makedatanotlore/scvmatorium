@@ -52,7 +52,7 @@ export const fugitiveKnight = (): Character => {
   ].map((x) => tableEntry(attribution, x));
 
   return {
-    tags: ['fugitiveKnight'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('neonon.fugitiveKnight'),

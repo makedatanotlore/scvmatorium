@@ -56,7 +56,7 @@ export const mutatedGoblin = (): Character => {
   const oddMutation = titledEntry(attribution, 'oddMutation');
 
   return {
-    tags: ['mutatedGoblin'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('heckinviv.mutatedGoblin'),

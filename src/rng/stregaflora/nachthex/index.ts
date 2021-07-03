@@ -44,7 +44,7 @@ export const nachthex = (): Character => {
   ].map((x) => tableEntry(attribution, x));
 
   return {
-    tags: ['nachthex'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('stregaflora.nachthex'),
