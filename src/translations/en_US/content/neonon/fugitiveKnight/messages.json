@@ -21,16 +21,10 @@
   "content.neonon.fugitiveKnight.plateCoat.title": "Plate Coat of the Seekers of Gore Chalice",
   "content.neonon.fugitiveKnight.plateCoat.description": "<span>Heavy, Agility DR4, -2d4 damage</span>. ANY critical hit heals you d4 damage.",
 
-  "content.neonon.fugitiveKnight.slitThroat.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.slitThroat.description": "<span>Slit</span> the sleeping knight's <span>throat</span> in a Schleswig inn.",
-  "content.neonon.fugitiveKnight.spiderEggs.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.spiderEggs.description": "Fed the knight <span>ripe spider eggs</span>.",
-  "content.neonon.fugitiveKnight.goblinTracks.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.goblinTracks.description": "<span>Covered goblin tracks</span> and waited patiently.",
-  "content.neonon.fugitiveKnight.closedDoors.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.closedDoors.description": "<span>Closed the doors shut</span>, ignoring the knight's screams.",
-  "content.neonon.fugitiveKnight.ondaEels.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.ondaEels.description": "Forgot to mention <span>Onda Eels</span> swarming the knight while swimming.",
-  "content.neonon.fugitiveKnight.cancerPit.title": "Bards Shall Never Tell the Tale of How You...",
-  "content.neonon.fugitiveKnight.cancerPit.description": "Cut the knight's rope over a <span>cancer pit</span>."
+  "content.neonon.fugitiveKnight.slitThroat": "Bards shall never tell the tale of how you slit the sleeping knight's throat in a Schleswig inn.",
+  "content.neonon.fugitiveKnight.spiderEggs": "Bards shall never tell the tale of how you fed the knight ripe spider eggs.",
+  "content.neonon.fugitiveKnight.goblinTracks": "Bards shall never tell the tale of how you covered goblin tracks and waited patiently.",
+  "content.neonon.fugitiveKnight.closedDoors": "Bards shall never tell the tale of how you closed the doors shut, ignoring the knight's screams.",
+  "content.neonon.fugitiveKnight.ondaEels": "Bards shall never tell the tale of how you forgot to mention Onda Eels swarming the knight while swimming.",
+  "content.neonon.fugitiveKnight.cancerPit": "Bards shall never tell the tale of how you cut the knight's rope over a cancer pit."
 }

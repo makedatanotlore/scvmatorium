@@ -1,5 +1,5 @@
 import { sampleSize, sample } from 'lodash/fp';
-import { betrayedPhantom as attribution } from 'rng/attributions';
+import { cannibalCook as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
@@ -11,6 +11,7 @@ import {
   hasScroll,
   rollArmor,
   rollFoodAndWater,
+  rollSilver,
   rollStandardEquipment,
   rollWeapon,
 } from '../../shared/equipment';
@@ -18,45 +19,63 @@ import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character } from 'types/character';
+import { Character, TableEntry } from 'types/character';
 
-export const betrayedPhantom = (): Character => {
-  const abilities = rollAbilities(0, 0, 2, -2);
-  const hp = rollHp(1, 6, abilities.toughness.score);
-  const omens = rollOmens(1, 4);
+export const equipmentEntry = (id: string): TableEntry => ({
+  id: `graytide-${id}`,
+  tags: ['graytide', 'cannibalCook', 'equipment', id],
+  attribution: attribution,
+  content: {
+    tags: ['graytide', 'cannibalCook', 'equipment', id],
+    title: {
+      id: `content.graytide.cannibalCook.${id}.title`,
+      values: {},
+    },
+    description: {
+      id: `content.graytide.cannibalCook.${id}.description`,
+      values: {},
+    },
+  }
+});
+
+export const cannibalCook = (): Character => {
+  const abilities = rollAbilities(0, 0, 0, 0);
+  const hp = rollHp(1, 8, abilities.toughness.score);
+  const omens = rollOmens(1, 2);
 
   const generalEquipment = rollStandardEquipment();
+  const femur = equipmentEntry('femur');
   const weapon = rollWeapon(6);
   const armor = rollArmor(2, hasScroll(generalEquipment));
-  // no silver
+  const silver = rollSilver();  
   const foodAndWater = rollFoodAndWater();
-  const equipment = [foodAndWater, weapon, armor, ...generalEquipment];
+  const equipment = [foodAndWater, femur, weapon, armor, ...generalEquipment, silver];
 
-  const incorporeal = titledEntry(attribution, 'incorporeal');
-  const whoAndWhat = [
-    'cannibal',
-    'murderer',
-    'liar',
-    'adulterer',
-    'leader',
-    'kinslayer'
+  const youStartedOut = [
+    'tastingFood',
+    'fishingMen',
+    'corpseCarts',
+    'sangfroid',
+    'foodcart',
+    'prisonStew'
   ].map((x) => tableEntry(attribution, x));
-  const phantomItems = [
-    'keepsakeCoin',
-    'deathmask',
-    'prayerBook',
-    'fingerBone',
-    'tragicLetter',
-    'glassEye',
+  const predatoryGaze = titledEntry(attribution, 'predatoryGaze');
+  const cookItems = [
+    'foodFighter',
+    'spiceCollection',
+    'trophyCollection',
+    'manEater',
+    'scarredHide',
+    'entrailOracle',
   ].map((x) => titledEntry(attribution, x));
 
   return {
-    tags: ['betrayedPhantom'],
+    tags: ['cannibalCook'],
     smalls: [
       formatName(sample(tables.names)!),
-      formatClass('sashadeath.betrayedPhantom'),
+      formatClass('graytide.cannibalCook'),
       formatHp(hp),
-      formatOmens(omens, 4),
+      formatOmens(omens, 2),
     ],
     bigs: [
       {
@@ -66,24 +85,24 @@ export const betrayedPhantom = (): Character => {
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
           {
-            tags: ['betrayedPhantom', 'sashadeath', 'blurb'],
+            tags: ['cannibalCook', 'graytide', 'blurb'],
             title: {
-              id: 'content.sashadeath.betrayedPhantom.blurb',
+              id: 'content.graytide.cannibalCook.blurb',
               values: {},
             },
             description: {
-              id: 'content.sashadeath.betrayedPhantom.blurb',
+              id: 'content.graytide.cannibalCook.blurb',
               values: {},
             },
           },
-          formatTableEntry(sample(whoAndWhat)!),
+          formatTableEntry(sample(youStartedOut)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatTitledEntry(incorporeal),
-      formatTitledEntry(sample(phantomItems)!),
+      formatTitledEntry(predatoryGaze),
+      formatTitledEntry(sample(cookItems)!),
       formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
@@ -93,7 +112,7 @@ export const betrayedPhantom = (): Character => {
           .map((item) =>
             formatEquipment(item, {
               presence: abilities.presence.score,
-              money: { min: 0, max: 0 },
+              money: { min: 30, max: 180 },
             })
           ),
       },

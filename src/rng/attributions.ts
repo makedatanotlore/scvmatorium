@@ -3,6 +3,7 @@ import {
   chalkdown,
   neonon,
   goatmansgoblet,
+  graytide,
   greysonwhy,
   heckinviv,
   khordal,
@@ -32,6 +33,13 @@ export const blightedMerman: Attribution = {
   id: 'blightedMerman',
   authors: [chalkdown],
   url: 'https://chalkdown.itch.io/blighted-merman',
+};
+
+export const cannibalCook: Attribution = {
+  title: { id: 'content.graytide.cannibalCook' },
+  id: 'cannibalCook',
+  authors: [graytide],
+  url: 'https://gray-tide.itch.io/cannibal-cook',
 };
 
 export const fugitiveKnight: Attribution = {
@@ -130,6 +138,7 @@ export const classAttributions = [
   anCailleach,
   betrayedPhantom,
   blightedMerman,
+  cannibalCook,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,

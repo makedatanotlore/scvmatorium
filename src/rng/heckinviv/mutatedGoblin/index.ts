@@ -3,7 +3,7 @@ import { mutatedGoblin as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   rollFoodAndWater,
@@ -38,7 +38,7 @@ export const mutatedGoblin = (): Character => {
     'undeadGoblin',
     'serpentGod',
     'bornLikeThis',
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => tableEntry(attribution, x));
   const wretchedMind = titledEntry(attribution, 'wretchedMind');
   const impotent = titledEntry(attribution, 'impotent');
   const warpedBody = titledEntry(attribution, 'warpedBody');
@@ -80,12 +80,12 @@ export const mutatedGoblin = (): Character => {
               values: {},
             },
           },
+          formatTableEntry(sample(infectionOrigins)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatTitledEntry(sample(infectionOrigins)!),
       formatTitledEntry(wretchedMind),
       formatTitledEntry(impotent),
       formatTitledEntry(warpedBody),
