@@ -5,9 +5,9 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
@@ -47,7 +47,8 @@ export const cannibalCook = (): Character => {
   const femur = equipmentEntry('femur');
   const weapon = rollWeapon(6);
   const armor = rollArmor(2, hasScroll(generalEquipment));
-  const silver = rollSilver();  
+  const silver = rollSilver();
+  const silverRange = {min: 30, max: 180};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, femur, weapon, armor, ...generalEquipment, silver];
 
@@ -84,17 +85,7 @@ export const cannibalCook = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['cannibalCook', 'graytide', 'blurb'],
-            title: {
-              id: 'content.graytide.cannibalCook.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.graytide.cannibalCook.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           formatTableEntry(sample(youStartedOut)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
@@ -104,18 +95,7 @@ export const cannibalCook = (): Character => {
       formatTitledEntry(predatoryGaze),
       formatTitledEntry(sample(cookItems)!),
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 30, max: 180 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange),
     ],
   };
 };

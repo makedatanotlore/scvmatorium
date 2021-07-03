@@ -5,9 +5,9 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { blurb, titledEntry, formatTitledEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
@@ -30,6 +30,7 @@ export const anCailleach = (): Character => {
   const weapon = rollWeapon(6);
   const armor = rollArmor(3, hasScroll(generalEquipment));
   const silver = rollSilver();
+  const silverRange = {min: 20, max: 120};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, armor, ...generalEquipment, silver];
 
@@ -44,7 +45,7 @@ export const anCailleach = (): Character => {
   ].map((x) => titledEntry(attribution, x));
 
   return {
-    tags: ['anCailleach'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('michaelmars.anCailleach'),
@@ -53,22 +54,10 @@ export const anCailleach = (): Character => {
     ],
     bigs: [
       {
-        component: {
-          id: 'introduction',
-        },
+        component: { id: 'introduction' },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['anCailleach', 'michaelmars', 'blurb'],
-            title: {
-              id: 'content.michaelmars.anCailleach.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.michaelmars.anCailleach.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
@@ -77,18 +66,7 @@ export const anCailleach = (): Character => {
       formatTitledEntry(divineDesign),
       formatTitledEntry(sample(boons)!),
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 20, max: 120 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange),
     ],
   };
 };

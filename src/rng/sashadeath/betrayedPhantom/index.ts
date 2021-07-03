@@ -5,9 +5,9 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
@@ -29,6 +29,7 @@ export const betrayedPhantom = (): Character => {
   const weapon = rollWeapon(6);
   const armor = rollArmor(2, hasScroll(generalEquipment));
   // no silver
+  const silverRange = {min: 0, max: 0};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, armor, ...generalEquipment];
 
@@ -65,17 +66,7 @@ export const betrayedPhantom = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['betrayedPhantom', 'sashadeath', 'blurb'],
-            title: {
-              id: 'content.sashadeath.betrayedPhantom.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.sashadeath.betrayedPhantom.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           formatTableEntry(sample(whoAndWhat)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
@@ -85,18 +76,7 @@ export const betrayedPhantom = (): Character => {
       formatTitledEntry(incorporeal),
       formatTitledEntry(sample(phantomItems)!),
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 0, max: 0 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange)
     ],
   };
 };

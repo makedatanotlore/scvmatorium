@@ -67,3 +67,16 @@ export const formatTableEntry = ({
     description: { ...description, values },
   };
 };
+
+export const blurb = (attribution: Attribution) => ({
+  tags: [attribution.id, attribution.authors[0].id, 'blurb'],
+  title: {
+    id: `content.${attribution.authors[0].id}.${attribution.id}.blurb`,
+    values: {},
+  },
+  description: {
+    id: `content.${attribution.authors[0].id}.${attribution.id}.blurb`,
+    values: {},
+  }
+});
+
