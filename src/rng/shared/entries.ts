@@ -34,6 +34,7 @@ export const titledEntry = (
 
 export const formatTitledEntry = ({ content }: TableEntryBig) => content as Big;
 
+// A TableEntry directly using the text from a single id.
 export const tableEntry = (attribution: Attribution, id: string, generateValues?: GenerateValuesFn): TableEntry => ({
   id: `${attribution.id}-${id}`,
   tags: [attribution.authors[0].id, attribution.id, id],

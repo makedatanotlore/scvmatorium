@@ -3,7 +3,7 @@ import { nachthex as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
@@ -40,7 +40,7 @@ export const nachthex = (): Character => {
     'slitThroat',
     'crushed',
     'stoned',
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => tableEntry(attribution, x));
 
   return {
     tags: ['nachthex'],
@@ -68,12 +68,12 @@ export const nachthex = (): Character => {
               values: {},
             },
           },
+          formatTableEntry(sample(deathmarks)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           ...sampleSize(2, tables.habits).map((habit) => formatHabit(habit)),
         ],
       },
-      formatTitledEntry(sample(deathmarks)!),
       {
         component: { id: 'table' },
         header: {

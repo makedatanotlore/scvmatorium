@@ -3,7 +3,7 @@ import { fugitiveKnight as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   rollFoodAndWater,
@@ -48,7 +48,7 @@ export const fugitiveKnight = (): Character => {
     'closedDoors',
     'ondaEels',
     'cancerPit',
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => tableEntry(attribution, x));
 
   return {
     tags: ['fugitiveKnight'],
@@ -76,6 +76,7 @@ export const fugitiveKnight = (): Character => {
               values: {},
             },
           },
+          formatTableEntry(sample(bardsTales)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           ...sampleSize(2, tables.habits).map((habit) => formatHabit(habit)),
@@ -84,7 +85,6 @@ export const fugitiveKnight = (): Character => {
       formatTitledEntry(bounty),
       formatTitledEntry(despised),
       formatTitledEntry(sample(armor)!),
-      formatTitledEntry(sample(bardsTales)!),
       formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },

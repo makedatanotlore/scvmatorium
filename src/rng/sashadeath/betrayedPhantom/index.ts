@@ -5,7 +5,7 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
@@ -40,7 +40,7 @@ export const betrayedPhantom = (): Character => {
     'adulterer',
     'leader',
     'kinslayer'
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => tableEntry(attribution, x));
   const phantomItems = [
     'keepsakeCoin',
     'deathmask',
@@ -76,12 +76,12 @@ export const betrayedPhantom = (): Character => {
               values: {},
             },
           },
+          formatTableEntry(sample(whoAndWhat)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatTitledEntry(sample(whoAndWhat)!),
       formatTitledEntry(incorporeal),
       formatTitledEntry(sample(phantomItems)!),
       formatAbilities(abilities),
