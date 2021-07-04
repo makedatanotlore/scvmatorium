@@ -24,6 +24,12 @@ export const greysonwhy: Author = {
   url: 'https://greysonwhy.itch.io/',
 };
 
+export const harkenstone: Author = {
+  id: 'harkenstone',
+  name: 'Grant Fleming',
+  url: 'https://gjfleming.itch.io/',
+};
+
 export const heckinviv: Author = {
   id: 'heckinviv',
   name: 'Hekate V. Nichols',

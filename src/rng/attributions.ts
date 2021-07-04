@@ -5,6 +5,7 @@ import {
   goatmansgoblet,
   graytide,
   greysonwhy,
+  harkenstone,
   heckinviv,
   khordal,
   makedatanotlore,
@@ -40,6 +41,13 @@ export const cannibalCook: Attribution = {
   id: 'cannibalCook',
   authors: [graytide],
   url: 'https://gray-tide.itch.io/cannibal-cook',
+};
+
+export const corpsePlunderer: Attribution = {
+  title: { id: 'content.harkenstone.corpsePlunderer' },
+  id: 'corpsePlunderer',
+  authors: [harkenstone],
+  url: 'https://gjfleming.itch.io/the-corpse-plunderer',
 };
 
 export const fugitiveKnight: Attribution = {
@@ -139,6 +147,7 @@ export const classAttributions = [
   betrayedPhantom,
   blightedMerman,
   cannibalCook,
+  corpsePlunderer,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,
