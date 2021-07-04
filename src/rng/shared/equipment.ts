@@ -2,7 +2,20 @@ import { sample, sampleSize, random } from 'lodash/fp';
 import tables from 'rng/tables';
 import { uncredited } from 'rng/attributions';
 
-import { TableEntry, Small, GenerateValuesProps } from 'types/character';
+import { Big, GenerateValuesProps, Small, TableEntry } from 'types/character';
+
+export const formatEquipmentList = (equipment: TableEntry[], presenceScore: number, silverRange: {min: number, max: number}): Big => ({
+  component: { id: 'equipmentList' },
+  header: { id: 'character.stats.titles.equipment', values: {} },
+  content: equipment
+    .filter((item) => item.id !== '_blank')
+    .map((item) =>
+      formatEquipment(item, {
+        presence: presenceScore,
+        money: silverRange,
+      })
+    )
+});
 
 export const formatEquipment = (
   { content, generateValues }: TableEntry,

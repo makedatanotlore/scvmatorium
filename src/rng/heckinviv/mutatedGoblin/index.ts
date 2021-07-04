@@ -3,9 +3,9 @@ import { mutatedGoblin as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   rollFoodAndWater,
   rollSilver,
   rollStandardEquipment,
@@ -28,6 +28,7 @@ export const mutatedGoblin = (): Character => {
   const weapon = rollWeapon(4);
   // no armor
   const silver = rollSilver();
+  const silverRange = {min: 1, max: 6};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, ...generalEquipment, silver];
 
@@ -55,7 +56,7 @@ export const mutatedGoblin = (): Character => {
   const oddMutation = titledEntry(attribution, 'oddMutation');
 
   return {
-    tags: ['mutatedGoblin'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('heckinviv.mutatedGoblin'),
@@ -69,17 +70,7 @@ export const mutatedGoblin = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['mutatedGoblin', 'heckinviv', 'blurb'],
-            title: {
-              id: 'content.heckinviv.mutatedGoblin.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.heckinviv.mutatedGoblin.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           formatTableEntry(sample(infectionOrigins)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
@@ -92,18 +83,7 @@ export const mutatedGoblin = (): Character => {
       formatTitledEntry(sample(mutations)!),
       formatTitledEntry(oddMutation),
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 1, max: 6 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange)
     ],
   };
 };

@@ -3,9 +3,9 @@ import { fugitiveKnight as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   rollFoodAndWater,
   rollSilver,
   rollStandardEquipment,
@@ -28,6 +28,7 @@ export const fugitiveKnight = (): Character => {
   const weapon = rollWeapon(10);
   // no armor
   const silver = rollSilver();
+  const silverRange = {min: 10, max: 60};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, ...generalEquipment, silver];
 
@@ -51,7 +52,7 @@ export const fugitiveKnight = (): Character => {
   ].map((x) => tableEntry(attribution, x));
 
   return {
-    tags: ['fugitiveKnight'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('neonon.fugitiveKnight'),
@@ -65,17 +66,7 @@ export const fugitiveKnight = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['fugitiveKnight', 'neonon', 'blurb'],
-            title: {
-              id: 'content.neonon.fugitiveKnight.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.neonon.fugitiveKnight.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           formatTableEntry(sample(bardsTales)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
@@ -86,18 +77,7 @@ export const fugitiveKnight = (): Character => {
       formatTitledEntry(despised),
       formatTitledEntry(sample(armor)!),
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 10, max: 60 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange)
     ],
   };
 };

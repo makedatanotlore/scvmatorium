@@ -3,9 +3,9 @@ import { nachthex as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
-import { formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, formatTableEntry, tableEntry } from 'rng/shared/entries';
 import {
-  formatEquipment,
+  formatEquipmentList,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
@@ -30,6 +30,7 @@ export const nachthex = (): Character => {
   const weapon = rollWeapon(10);
   const armor = rollArmor(4, hasScroll(generalEquipment));
   // no silver
+  const silverRange = {min: 0, max: 0};
   const foodAndWater = rollFoodAndWater();
   const equipment = [foodAndWater, weapon, armor, ...generalEquipment];
 
@@ -43,7 +44,7 @@ export const nachthex = (): Character => {
   ].map((x) => tableEntry(attribution, x));
 
   return {
-    tags: ['nachthex'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('stregaflora.nachthex'),
@@ -57,17 +58,7 @@ export const nachthex = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['nachthex', 'stregaflora', 'blurb'],
-            title: {
-              id: 'content.stregaflora.nachthex.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.stregaflora.nachthex.blurb',
-              values: {},
-            },
-          },
+          blurb(attribution),
           formatTableEntry(sample(deathmarks)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
@@ -96,18 +87,7 @@ export const nachthex = (): Character => {
         ],
       },
       formatAbilities(abilities),
-      {
-        component: { id: 'equipmentList' },
-        header: { id: 'character.stats.titles.equipment', values: {} },
-        content: equipment
-          .filter((item) => item.id !== '_blank')
-          .map((item) =>
-            formatEquipment(item, {
-              presence: abilities.presence.score,
-              money: { min: 0, max: 0 },
-            })
-          ),
-      },
+      formatEquipmentList(equipment, abilities.presence.score, silverRange)
     ],
   };
 };
