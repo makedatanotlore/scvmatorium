@@ -1,0 +1,34 @@
+{
+    "content.harkenstone.corpsePlunderer": "Corpse Plunderer",
+    "content.harkenstone.corpsePlunderer.blurb": "<strong>Grave-touched Opportunist</strong>. Of course I take what I can find....what good would it do them now? Sweat trickles from your brow as the shovel bites into the dirt. Treasure lies below. A little bit of work with your crowbar in in the darkness and then it will be yours. You saw the rings on her fat hand. It’s like pennies from heaven...well, maybe not heaven.",
+
+    "content.harkenstone.corpsePlunderer.strangePotion": "Why on earth are you such an odd Goblin? A strange potion you drank, made by an odd alchemist not far from Galgenbeck. See <i>The Goblin Grinder</i>.",
+    "content.harkenstone.corpsePlunderer.demonicGoblin": "Why on earth are you such an odd Goblin? Attacked by a demonic goblin said to have crawled out of hell itself from a pit in Graven-Tosk. See <i>The Devil’s Tomb</i>.",
+    "content.harkenstone.corpsePlunderer.goblinRose": "Why on earth are you such an odd Goblin? A prick from a mutated goblin-rose that sits dried next to a love letter addressed to somewhere in the Wastland. See <i>Murder, Blues, and Her on my Mind</i>.",
+    "content.harkenstone.corpsePlunderer.undeadGoblin": "Why on earth are you such an odd Goblin? Bitten by an ancient crusty undead-goblin with the tattoos of a Cretun monk. See <i>The Death Ziggurat</i>.",
+    "content.harkenstone.corpsePlunderer.serpentGod": "Why on earth are you such an odd Goblin? It all started after the strange dreams of a slumbering serpent god. See <i>The Forsaken God</i>.",
+    "content.harkenstone.corpsePlunderer.bornLikeThis": "Why on earth are you such an odd Goblin? You were born like this, you’ve always been an odd-goblin, you grew up near a weird old noble’s tomb in the Valley of Unfortunate Dead. See <i>Vault of the Unseen</i>.",
+
+    "content.harkenstone.corpsePlunderer.graveSight.title": "Grave-Sight",
+    "content.harkenstone.corpsePlunderer.graveSight.description": "+2 to vision related tests in low light or even total darkness.",
+
+    "content.harkenstone.corpsePlunderer.pricePaid.title": "The Price Paid",
+    "content.harkenstone.corpsePlunderer.pricePaid.description": "A life spent knee deep in sodden graves and surrounded by corpses has made you <span>incredibly resilient</span>. You get a -4DR to all rolls vs disease or infection.<p>Unfortunately that does not apply to the permanent pox you do have. Your skin forms weeping, ugly lesions and flakes away in chunks, leaving you looking like one of the dead yourself. You always <span>heal one less point</span> than normal through any means other than magic.",
+
+    "content.harkenstone.corpsePlunderer.graveHonedShovel.title": "Grave-Honed Shovel",
+    "content.harkenstone.corpsePlunderer.graveHonedShovel.description": "Handy for burying the dead or making someone that way. <span>D6+1 damage</span>.",
+    "content.harkenstone.corpsePlunderer.agathasSkull.title": "Agatha's Skull",
+    "content.harkenstone.corpsePlunderer.agathasSkull.description": "The Ebon Pox thought it could take her from you, but you got the last laugh. <span>Your daughter’s skull can talk with you</span> and even offers advice. Of course it’s the advice of a dead 7 year old.",
+    "content.harkenstone.corpsePlunderer.graveDust.title": "Pouch of Thrice-Cursed Grave Dust",
+    "content.harkenstone.corpsePlunderer.graveDust.description": "<span>d6 doses</span>. If thrown into the air, will <span>blind an opponent for d4 rounds</span>. If mixed into a drink it forms <span>DR14 lethal poison that takes effect in d3 rounds</span>.",
+    "content.harkenstone.corpsePlunderer.graveCrow.title": "Necrus the Grave Crow",
+    "content.harkenstone.corpsePlunderer.graveCrow.description": "<span>Attack DR12, Def DR10, HP 6, Claw/Peck d4 damage</span>. He keenly understands the things you say and will defend you. Once per day, you can see through his eyes. He also covers your shoulders with droppings at every opportunity.",
+    "content.harkenstone.corpsePlunderer.witchesElixir.title": "Crypt Witches' Elixir",
+    "content.harkenstone.corpsePlunderer.witchesElixir.description": "<span>d4 doses</span>. Inky liquid that can raise those dead less than 24 hours. When administered, <span>roll d6</span> 1-3) Returned from the grave with 2 HP. 4-5) Returned but as a zombie bound to serve you. It hates you with a passion. 6) Thrashes wildly, twisting and contorting, while spewing out the elixir and clawing you for d4 damage.",
+    "content.harkenstone.corpsePlunderer.bonePickersBlade.title": "Bone-Picker's Blade",
+    "content.harkenstone.corpsePlunderer.bonePickersBlade.description": "A long, lethal obsidian Dirk. <span>D6 damage +Special DR8 or +1d4 Poison Damage.",
+    "content.harkenstone.corpsePlunderer.wifesHand.title": "Your Wife's Hand",
+    "content.harkenstone.corpsePlunderer.wifesHand.description": "Years ago you took her hand in marriage. ‘Til death do you part? No, you’ll be keeping it – and not just because you couldn’t get the ring off. It’s withered and desiccated but you believe it’s lucky. <span>Each day roll d6</span>: on 1-5) +1 Omen, on a 6) she gives you the finger and -1 Omen.",
+    "content.harkenstone.corpsePlunderer.cryptWornCrowbar.title": "Crypt-worn Crowbar",
+    "content.harkenstone.corpsePlunderer.cryptWornCrowbar.description": "Cold hard iron, good for getting into places and things where you shouldn’t. <span>Roll d6</span>: 1-4) You pry open the lock successfully. 5) You pry open the lock but leave it damaged and clear it was forced. 6) You can’t get it open but make a lot of noise trying. Works as a metal club in a pinch <span>D4+1 damage</span>."
+  }
