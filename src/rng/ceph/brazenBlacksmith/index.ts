@@ -27,7 +27,7 @@ export const brazenBlacksmith = (): Character => {
   const maxOmens = 2;
   const omens = rollOmens(1, maxOmens);
 
-  const generalEquipment = rollStandardEquipment();
+  const generalEquipment = rollStandardEquipment(false);  // no scroll
   const weapon = rollWeapon(10);
   const armor = rollArmor(4, hasScroll(generalEquipment));
   const silver = rollSilver();
