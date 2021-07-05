@@ -1,5 +1,11 @@
 import { Author } from 'types/character';
 
+export const ceph: Author = {
+  id: 'ceph',
+  name: 'Ceph',
+  url: 'https://fc85057.itch.io/',
+};
+
 export const chalkdown: Author = {
   id: 'chalkdown',
   name: 'Chalkdown & Djuun',

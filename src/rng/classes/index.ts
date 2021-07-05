@@ -1,3 +1,4 @@
+import { brazenBlacksmith } from 'rng/ceph/brazenBlacksmith';
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
@@ -18,6 +19,7 @@ export const classes = {
   anCailleach,
   betrayedPhantom,
   blightedMerman,
+  brazenBlacksmith,
   cannibalCook,
   corpsePlunderer,
   fugitiveKnight,

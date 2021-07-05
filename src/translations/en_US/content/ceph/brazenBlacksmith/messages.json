@@ -1,0 +1,29 @@
+{
+  "content.ceph.brazenBlacksmith": "Brazen Blacksmith",
+
+  "content.ceph.brazenBlacksmith.blurb": "\"<strong>Blessed be the forgers of iron, and spikes and barbwire.\" —Mgta, Exercises in Futility</strong><p>Your working environment has hardened you but hasn't done your mobility any favors. You are literate but cannot use scrolls - who needs such things when there are perfectly fine weapons to be crafted?",
+
+  "content.ceph.brazenBlacksmith.master": "Your master was beaten to death in the streets of Galgenbeck right outside the shop.",
+  "content.ceph.brazenBlacksmith.servant": "Working as an indentured servant in Kergüs, you just finished working off your debts.",
+  "content.ceph.brazenBlacksmith.outlaws": "Outlaws would pay you to dispose of “evidence” in your furnace.",
+  "content.ceph.brazenBlacksmith.torture": "You forged torture devices in the <strong>Palace of the Shadow King</strong>.",
+  "content.ceph.brazenBlacksmith.apprentice": "Your apprentice was kidnapped by a group of hooded figures in broad daylight.",
+  "content.ceph.brazenBlacksmith.fletcher": "A man named Fletcher used to pay you handsomely for hooks and chains.",
+
+  "content.ceph.brazenBlacksmith.forgedInFire.title": "Forged in Fire",
+  "content.ceph.brazenBlacksmith.forgedInFire.description": "<span>+6 to any tests</span> involving fire or heat.",
+  "content.ceph.brazenBlacksmith.hailToTheHammer.title": "Hail to the Hammer",
+  "content.ceph.brazenBlacksmith.hailToTheHammer.description": "Regular tools like hammers deal <span>1d6 damage</span>.",
+  "content.ceph.brazenBlacksmith.quickFix.title": "Quick Fix",
+  "content.ceph.brazenBlacksmith.quickFix.description": "If there are scrap materials around, test Presence DR12 to <span>fix armor</span>. Failure reduces it one tier.",
+  "content.ceph.brazenBlacksmith.tongs.title": "Tongs",
+  "content.ceph.brazenBlacksmith.tongs.description": "If you defend successfully, 1 in 4 chance you grasp attacker with tongs and <span>gain a free attack</span>.",
+  "content.ceph.brazenBlacksmith.luckyHorseshoe.title": "Lucky Horseshoe",
+  "content.ceph.brazenBlacksmith.luckyHorseshoe.description": "Acts like a boomerang, dealing <span>1d6 damage</span>.",
+  "content.ceph.brazenBlacksmith.unbreakable.title": "Unbreakable",
+  "content.ceph.brazenBlacksmith.unbreakable.description": "Armor reduced to 0 <span>can still be repaired</span>.",
+  "content.ceph.brazenBlacksmith.boneCollector.title": "Bone Collector",
+  "content.ceph.brazenBlacksmith.boneCollector.description": "Test Presence DR14 to turn bones into a <span>one-time use shield -d2</span>.",
+  "content.ceph.brazenBlacksmith.knowThisMechanism.title": "I Know this Mechanism",
+  "content.ceph.brazenBlacksmith.knowThisMechanism.description": "Test Strength DR12 to <span>break a lock</span>. If you fail, a key is required."
+}
