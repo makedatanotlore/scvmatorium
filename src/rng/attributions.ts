@@ -1,6 +1,7 @@
 import { Attribution } from 'types/character';
 import {
   chalkdown,
+  ceph,
   neonon,
   goatmansgoblet,
   graytide,
@@ -20,6 +21,13 @@ export const anCailleach: Attribution = {
   id: 'anCailleach',
   authors: [michaelmars],
   url: 'https://www.drivethrurpg.com/product/349184/An-Cailleach-An-Irish-Folklore-Class-for-Mork-Borg',
+};
+
+export const brazenBlacksmith: Attribution = {
+  title: { id: 'content.ceph.brazenBlacksmith' },
+  id: 'brazenBlacksmith',
+  authors: [ceph],
+  url: 'https://fc85057.itch.io/brazen-blacksmith',
 };
 
 export const betrayedPhantom: Attribution = {
@@ -146,6 +154,7 @@ export const classAttributions = [
   anCailleach,
   betrayedPhantom,
   blightedMerman,
+  brazenBlacksmith,
   cannibalCook,
   corpsePlunderer,
   fugitiveKnight,
