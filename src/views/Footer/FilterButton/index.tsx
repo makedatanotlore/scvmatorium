@@ -25,6 +25,7 @@ const Filter = () => {
         <Section
           selected={classes}
           updateFn={handleUpdateFilter}
+          closeFn={() => setOpen(false)}
           label='Classes'
           attributions={classAttributions}
         />

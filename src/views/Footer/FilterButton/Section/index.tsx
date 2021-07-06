@@ -4,15 +4,18 @@ import clsx from 'clsx';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
 import { FlexWrapper, Header, useStyles, ContentWrapper } from './styled';
 import Checkbox from '@material-ui/core/Checkbox';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 type Props = {
   label: string;
   attributions: Attribution[];
   updateFn?: (updated: string[]) => void;
+  closeFn?: () => void;
   selected?: string[];
 };
 
-const Section = ({ label, attributions, updateFn, selected }: Props) => {
+const Section = ({ label, attributions, updateFn, selected, closeFn }: Props) => {
   const { formatMessage } = useIntl();
   const styles = useStyles();
 
@@ -26,9 +29,20 @@ const Section = ({ label, attributions, updateFn, selected }: Props) => {
     }
   };
 
+  const handleClose = () => {
+    if (closeFn) {
+      closeFn()
+    }
+  };
+
   return (
     <FlexWrapper>
-      <Header>{label}</Header>
+      <Header>{label}
+        {closeFn && (
+          <IconButton className={styles.closeButton} onClick={handleClose} aria-label="close-class-list">
+            <CloseIcon />
+          </IconButton>
+      )}</Header>
       {attributions.map((attribution) => {
         const title = formatMessage(attribution.title);
 
@@ -56,7 +70,7 @@ const Section = ({ label, attributions, updateFn, selected }: Props) => {
                 }}
               />
 
-              {attribution.authors.map((author, index) => (
+              {attribution.authors.map((author) => (
                 <FormattedHTMLMessage
                   key={author.name}
                   id='app.author'

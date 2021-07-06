@@ -10,9 +10,12 @@ export const FlexWrapper = styled.div`
 `;
 
 export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
   color: ${({ theme }) => theme.text.inverted};
   font-weight: 700;
   padding: 0.5rem;
+  align-items: center;
 `;
 
 export const ContentWrapper = styled.div`
@@ -70,5 +73,9 @@ export const useStyles = makeStyles({
       border: '1px solid black',
       backgroundColor: 'black',
     },
+  },
+  closeButton: {
+    borderRadius: '0 !important',
+    color: '#ff6ce7 !important',
   },
 });
