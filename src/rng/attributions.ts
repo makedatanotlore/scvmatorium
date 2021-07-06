@@ -1,5 +1,6 @@
 import { Attribution } from 'types/character';
 import {
+  anadversary,
   chalkdown,
   ceph,
   neonon,
@@ -56,6 +57,13 @@ export const corpsePlunderer: Attribution = {
   id: 'corpsePlunderer',
   authors: [harkenstone],
   url: 'https://gjfleming.itch.io/the-corpse-plunderer',
+};
+
+export const deathWitch: Attribution = {
+  title: { id: 'content.anadversary.deathWitch' },
+  id: 'deathWitch',
+  authors: [anadversary],
+  url: 'https://anadversary.itch.io/death-witch',
 };
 
 export const fugitiveKnight: Attribution = {
@@ -157,6 +165,7 @@ export const classAttributions = [
   brazenBlacksmith,
   cannibalCook,
   corpsePlunderer,
+  deathWitch,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,
