@@ -6,7 +6,7 @@ import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { rollD } from 'rng/shared/roll';
 import { formatTrait } from 'rng/shared/traits';
-import { blurb, equipmentEntry, formatTitledEntry, titledEntry} from 'rng/shared/entries';
+import { blurb, equipmentEntry, formatTitledEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipmentList,
   hasScroll,
@@ -45,7 +45,7 @@ export const deathWitch = (): Character => {
   if (totalUnclean === 1) {
     uncleanScrolls = equipmentEntry(attribution, 'oneUncleanScroll');
   } else {
-    uncleanScrolls = equipmentEntry(attribution, 'multipleUncleanScrolls', 
+    uncleanScrolls = equipmentEntry(attribution, 'multipleUncleanScrolls',
         () => ({num: totalUnclean}));
   }
 
@@ -55,9 +55,9 @@ export const deathWitch = (): Character => {
   const animalNames = [
     'Astrid',
     'Agnes',
-    'Behemoth', 
+    'Behemoth',
     'Beherit',
-    'Bitsy', 
+    'Bitsy',
     'Malus',
     'Enid',
     'Izzy',
