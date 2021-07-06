@@ -41,7 +41,7 @@ export const sinfulSailor = (): Character => {
     }),
     entry('shoddyArquebus', ({ presence }) => ({
       amount: max([2 + presence, 1])!,
-    }),
+    })
   ];
 
   const generalEquipment = rollStandardEquipment();
