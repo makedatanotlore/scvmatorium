@@ -11,6 +11,7 @@ import { misbegottenRelict } from 'rng/khordal/misbegottenRelict';
 import { sunScorchedZealot } from 'rng/khordal/sunScorchedZealot';
 import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
+import { sinfulSailor } from 'rng/michaelmars/sinfulSailor'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
@@ -31,6 +32,7 @@ export const classes = {
   nachthex,
   psyberDevangelist,
   rottingRecalcitrant,
+  sinfulSailor,
   sunScorchedZealot,
   suitorKnightOfKergus,
   theWretchedUsurper,

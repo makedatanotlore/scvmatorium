@@ -129,6 +129,13 @@ export const scvmfurther2: Attribution = {
   url: 'https://docs.google.com/document/d/1LOijYULDxCiABHlzf1K_Zl-Yig91CQA1t8GaoAFBA68/edit?usp=sharing',
 };
 
+export const sinfulSailor: Attribution = {
+  title: { id: 'content.michaelmars.sinfulSailor' },
+  id: 'sinfulSailor',
+  authors: [michaelmars],
+  url: 'https://www.drivethrurpg.com/product/348673/Within-A-Mile-of-Home-A-Zine-for-Mork-Borg',
+};
+
 export const suitorKnightOfKergus: Attribution = {
   title: { id: 'content.goatmansgoblet.suitorKnightOfKergus' },
   id: 'suitorKnightOfKergus',
@@ -173,6 +180,7 @@ export const classAttributions = [
   nachthex,
   psyberDevangelist,
   rottingRecalcitrant,
+  sinfulSailor,
   suitorKnightOfKergus,
   sunScorchedZealot,
   theWretchedUsurper,
