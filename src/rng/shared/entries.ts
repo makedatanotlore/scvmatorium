@@ -32,8 +32,6 @@ export const titledEntry = (
     generateValues,
   });
 
-// export const formatTitledEntry = ({ content }: TableEntryBig) => content as Big;
-
 export const formatTitledEntry = ({
   content,
   generateValues,
