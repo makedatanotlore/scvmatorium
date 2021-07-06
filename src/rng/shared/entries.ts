@@ -32,7 +32,30 @@ export const titledEntry = (
     generateValues,
   });
 
-export const formatTitledEntry = ({ content }: TableEntryBig) => content as Big;
+// export const formatTitledEntry = ({ content }: TableEntryBig) => content as Big;
+
+export const formatTitledEntry = ({
+  content,
+  generateValues,
+}: TableEntryBig): Big => {
+  const { header, content: innerContent, component } = content as Big;
+  const values = generateValues
+    ? generateValues({ presence: 0, money: { min: 0, max: 0 } })
+    : {};
+  const smalls = innerContent.map(sml => {
+    const {tags, title, description} = sml;
+    return {
+      tags,
+      title: {...title, values},
+      description: {...description, values}
+    };
+  });
+  return {
+    header: { ...header, values},
+    content: smalls,
+    component
+  };
+};
 
 // A TableEntry directly using the text from a single id.
 export const tableEntry = (attribution: Attribution, id: string, generateValues?: GenerateValuesFn): TableEntry => ({
@@ -47,6 +70,24 @@ export const tableEntry = (attribution: Attribution, id: string, generateValues?
     },
     description: {
       id: `content.${attribution.authors[0].id}.${attribution.id}.${id}`,
+    },
+  },
+  generateValues,
+});
+
+// A TableEntry with a title and description
+export const equipmentEntry = (attribution: Attribution, id: string, generateValues?: GenerateValuesFn): TableEntry => ({
+  id: `${attribution.id}-${id}`,
+  tags: [attribution.authors[0].id, attribution.id, id],
+  attribution,
+  content: {
+    tags: [attribution.authors[0].id, attribution.id, id],
+    title: {
+      id: `content.${attribution.authors[0].id}.${attribution.id}.${id}.title`,
+      values: {},
+    },
+    description: {
+      id: `content.${attribution.authors[0].id}.${attribution.id}.${id}.description`,
       values: {},
     },
   },
@@ -79,4 +120,3 @@ export const blurb = (attribution: Attribution) => ({
     values: {},
   }
 });
-

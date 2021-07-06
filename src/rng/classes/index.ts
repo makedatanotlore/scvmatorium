@@ -1,3 +1,4 @@
+import { deathWitch } from 'rng/anadversary/deathWitch';
 import { brazenBlacksmith } from 'rng/ceph/brazenBlacksmith';
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
@@ -22,6 +23,7 @@ export const classes = {
   brazenBlacksmith,
   cannibalCook,
   corpsePlunderer,
+  deathWitch,
   fugitiveKnight,
   landlockedBuccaneer,
   misbegottenRelict,

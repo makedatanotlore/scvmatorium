@@ -1,0 +1,22 @@
+{
+  "content.anadversary.deathWitch": "Death Witch",
+
+  "content.anadversary.deathWitch.blurb": "<strong>What? Do you have a Death Witch?</strong><p>The unclean blessing on Nechrubel is on you. <strong>WORK IT!</strong>",
+
+  "content.anadversary.deathWitch.powers.title": "Powers",
+  "content.anadversary.deathWitch.powers.description": "<span>Roll Presence + d6 every morning for daily powers</span>. Due to study and unholy devotion, when reading an Unclean Scroll test Presence DR10. If you succeed, the power is cast and you subtract one from your daily total. If you fail, the power does not work, you take no damage, but have to wait d6x10 minutes to cast again. Normal DR and effects when reading Sacred Scrolls.",
+
+  "content.anadversary.deathWitch.oneUncleanScroll.title": "Random unclean scroll",
+  "content.anadversary.deathWitch.oneUncleanScroll.description": " ",
+  "content.anadversary.deathWitch.multipleUncleanScrolls.title": "{num} random unclean scrolls",
+  "content.anadversary.deathWitch.multipleUncleanScrolls.description": " ",
+
+  "content.anadversary.deathWitch.familiar.title": "Familiar: {animalName} the {animalType}",
+  "content.anadversary.deathWitch.familiar.description": "{animalName} gives <span>+2 to Presence</span> and provides counsel in difficult times.",
+  "content.anadversary.deathWitch.flyingUnguent.title": "Flying unguent",
+  "content.anadversary.deathWitch.flyingUnguent.description": "When lovingly rubbed into the wood of a broom, <span>allows one to fly</span> for up to 1 hour a day. DR10 to stay on the broom.",
+  "content.anadversary.deathWitch.nechBag.title": "Nech Bag",
+  "content.anadversary.deathWitch.nechBag.description": "Filled with bones and crematory ash, allows the Death Witch to <span>remain broken but alive</span> down to -6 HP as long as worn on their belt.",
+  "content.anadversary.deathWitch.doom.title": "DRAW DOWN THE DOOM",
+  "content.anadversary.deathWitch.doom.description": "Unclean Scroll – Consumes all available daily powers; Min req to cast: 3.<p><span>Summons the very power of Nechrubel into the caster for d66 minutes</span>. All difficulty rolls are 6, damage reduction -6, and 6 total omens. Succesful: caster is exhausted for 18 hours afterward. Unsuccessful: caster takes d6+6 damage, and is incapacitated for d66 hours.<p>Unique to Death Witch class. Attempted use by anyone else results in scroll casting penalty always!"
+}

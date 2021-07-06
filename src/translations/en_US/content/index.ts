@@ -1,3 +1,4 @@
+import deathWitch from './anadversary/deathWitch/messages.json';
 import brazenBlacksmith from './ceph/brazenBlacksmith/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
@@ -25,6 +26,7 @@ export default {
   ...brazenBlacksmith,
   ...cannibalCook,
   ...corpsePlunderer,
+  ...deathWitch,
   ...fugitiveKnight,
   ...misbegottenRelict,
   ...mutatedGoblin,
