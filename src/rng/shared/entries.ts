@@ -2,7 +2,7 @@ import { Attribution, Big, GenerateValuesFn, Small, TableEntry, TableEntryBig } 
 
 // A big entry with a title and a description.
 export const titledEntry = (
-  attribution: Attribution, 
+  attribution: Attribution,
   id: string,
   componentId: 'abilityList' | 'plainBox' | 'equipmentList' | 'introduction' | 'table' | 'halfBox' = 'halfBox',
   generateValues?: GenerateValuesFn): TableEntryBig => ({

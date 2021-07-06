@@ -1,11 +1,11 @@
-import { sampleSize, sample } from 'lodash/fp';
+import { sampleSize, sample, max } from 'lodash/fp';
 import { sinfulSailor as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { titledEntry, formatTitledEntry, formatTableEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
@@ -16,9 +16,13 @@ import {
 } from '../../shared/equipment';
 import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
+import { equipmentEntry, tableEntry } from 'rng/shared/entries';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character } from 'types/character';
+import { Character, GenerateValuesFn, TableEntry } from 'types/character';
+
+export const entry = (id: string, generateValues?: GenerateValuesFn): TableEntry => equipmentEntry(attribution, id, generateValues)
+
 
 export const sinfulSailor = (): Character => {
   const abilities = rollAbilities(1, 1, 0, -2);
@@ -41,7 +45,7 @@ export const sinfulSailor = (): Character => {
     })),
     entry('shoddyArquebus', ({ presence }) => ({
       amount: max([2 + presence, 1])!,
-    }))
+    })),
   ];
 
   const generalEquipment = rollStandardEquipment();
@@ -57,7 +61,7 @@ export const sinfulSailor = (): Character => {
     'drunkenRage',
     'fun',
     'born',
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => tableEntry(attribution, x));
 
   const sinfulMark = [
     'envy',
@@ -68,7 +72,7 @@ export const sinfulSailor = (): Character => {
     'sloth',
     'anger',
     'sincarnate',
-  ].map((x) => titledEntry(attribution, x));
+  ].map((x) => titledEntry(attribution, x, 'plainBox'));
 
   return {
     tags: ['sinfulSailor'],
@@ -85,23 +89,12 @@ export const sinfulSailor = (): Character => {
         },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
-          {
-            tags: ['sinfulSailor', 'michaelmars', 'blurb'],
-            title: {
-              id: 'content.michaelmars.sinfulSailor.blurb',
-              values: {},
-            },
-            description: {
-              id: 'content.michaelmars.sinfulSailor.blurb',
-              values: {},
-            },
-          },
+          formatTableEntry(sample(joinedBecause)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatTitledEntry(sample(joinedBecause)!),
       formatTitledEntry(sample(sinfulMark)!),
       formatAbilities(abilities),
       {
