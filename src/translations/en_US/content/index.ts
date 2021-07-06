@@ -13,6 +13,7 @@ import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.
 import scvmatorium from './makedatanotlore/scvmatorium/messages.json';
 import scvmfurther2 from './makedatanotlore/scvmfurther2/messages.json';
 import anCailleach from './michaelmars/anCailleach/messages.json';
+import sinfulSailor from './michaelmars/sinfulSailor/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
 import rottingRecalcitrant from './ripleyc/rottingRecalcitrant/messages.json';
 import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
@@ -36,6 +37,7 @@ export default {
   ...rottingRecalcitrant,
   ...scvmatorium,
   ...scvmfurther2,
+  ...sinfulSailor,
   ...suitorKnightOfKergus,
   ...sunScorchedZealot,
   ...theWretchedUsurper,
