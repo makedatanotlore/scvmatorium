@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
+import {mediaQuery} from "../../../../utils/mediaQueries";
 
 export const FlexWrapper = styled.div`
   display: flex;
@@ -22,7 +23,13 @@ export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 0.25rem;
+  padding: 0.2rem;
+  font-size: 1em;
+
+  ${mediaQuery.phone}{
+    font-size: 0.85em;
+    padding: 0.1rem;
+  }
 `;
 
 export const AttributionWrapper = styled.div``;
@@ -31,6 +38,8 @@ export const AuthorWrapper = styled.div``;
 
 export const useStyles = makeStyles({
   root: {
+    padding: '3px !important',
+    marginRight: '6px !important',
     '&:hover': {
       backgroundColor: 'transparent',
     },
