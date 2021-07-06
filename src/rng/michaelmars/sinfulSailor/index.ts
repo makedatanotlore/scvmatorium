@@ -34,14 +34,14 @@ export const sinfulSailor = (): Character => {
     entry('cutlass'),
     entry('shoddyPistolet', ({ presence }) => ({
       amount: max([2 + presence, 1])!,
-    }),
+    })),
     entry('boardingPike'),
     entry('shoddyCulverin', ({ presence }) => ({
       amount: max([2 + presence, 1])!,
-    }),
+    })),
     entry('shoddyArquebus', ({ presence }) => ({
       amount: max([2 + presence, 1])!,
-    })
+    }))
   ];
 
   const generalEquipment = rollStandardEquipment();
