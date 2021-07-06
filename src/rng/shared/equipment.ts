@@ -130,13 +130,16 @@ export const rollFoodAndWater = () => {
   return sample(tables.equipment.foodAndWater)!;
 };
 
-export const rollStandardEquipment = () => {
-  const generalEquipment = sampleSize(3, [
+export const rollStandardEquipment = (includeScrolls=true) => {
+  const equipmentList = [
     ...sampleSize(21, tables.equipment.general),
-    sharedEntry('uncleanScroll'),
-    sharedEntry('sacredScroll'),
     sharedEntry('shield'),
-  ])!;
+  ];
+  if (includeScrolls) {
+    equipmentList.push(
+      sharedEntry('uncleanScroll'), sharedEntry('sacredScroll'));
+  }
+  const generalEquipment = sampleSize(3, equipmentList)!;
 
   const bags = rollBags();
 
