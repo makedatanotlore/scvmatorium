@@ -12,6 +12,7 @@ import {
   khordal,
   makedatanotlore,
   michaelmars,
+  peppermintBones,
   ripleyc,
   sashadeath,
   stregaflora,
@@ -155,6 +156,13 @@ export const theWretchedUsurper: Attribution = {
   id: 'theWretchedUsurper',
   authors: [goatmansgoblet],
   url: 'https://docs.google.com/document/d/1PrGI1hOmimcDwQotfdCAjjhWvtIfnXaldFfs0YFivDg/edit',
+};
+
+export const unheroicFeats: Attribution = {
+  title: { id: 'content.peppermintBones.unheroicFeats' },
+  id: 'unheroicFeats',
+  authors: [peppermintBones],
+  url: 'https://drive.google.com/file/d/1A4dl3yRXt19Am0ZV5tPyqjfnkJR0R5f8/view?usp=sharing',
 };
 
 export const uncredited: Attribution = {

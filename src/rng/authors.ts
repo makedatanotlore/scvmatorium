@@ -72,6 +72,11 @@ export const neonon: Author = {
   url: 'https://neonon.itch.io/',
 };
 
+export const peppermintBones: Author = {
+  id: 'peppermintBones',
+  name: 'Johnny Carhat',
+};
+
 export const ripleyc: Author = {
   id: 'ripleyc',
   name: 'Ripley C',
