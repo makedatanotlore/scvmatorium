@@ -13,6 +13,7 @@ import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
 import { sinfulSailor } from 'rng/michaelmars/sinfulSailor'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
+import { tormentedToymaker } from 'rng/reverendunclebastard/tormentedToymaker';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
@@ -36,4 +37,5 @@ export const classes = {
   sunScorchedZealot,
   suitorKnightOfKergus,
   theWretchedUsurper,
+  tormentedToymaker,
 };

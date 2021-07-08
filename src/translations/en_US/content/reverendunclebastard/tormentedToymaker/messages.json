@@ -1,0 +1,16 @@
+{
+  "content.reverendunclebastard.tormentedToymaker": "Tormented Toymaker",
+  "content.reverendunclebastard.tormentedToymaker.blurb": "Once you were a peaceful toymaker, but the loss of your family has driven you mad. Now your toys are imbued with dark magic, and wreak havoc on the dying land.",
+
+  "content.reverendunclebastard.tormentedToymaker.toymaking.title": "Toymaking",
+  "content.reverendunclebastard.tormentedToymaker.toymaking.description": "Once per day, you may use one of your powers to craft a small animated wooden toy. Test Presence DR12: if you succeed the price may be paid by another, if you fail you must pay the price. If you fumble, also roll on the Arcane Catastrophes table. If you Crit, no price must be paid.",
+
+  "content.reverendunclebastard.tormentedToymaker.bird.title": "Bird",
+  "content.reverendunclebastard.tormentedToymaker.bird.description": "HP 3, Morale -, Attack -. Will seek out a hidden target. Price: One eye.",
+  "content.reverendunclebastard.tormentedToymaker.horse.title": "Horse",
+  "content.reverendunclebastard.tormentedToymaker.horse.description": "HP 3, Morale -, Attack -. Brings bad luck when hiding in an enemy's home. Price: One cup of blood.",
+  "content.reverendunclebastard.tormentedToymaker.soldier.title": "Soldier",
+  "content.reverendunclebastard.tormentedToymaker.soldier.description": "HP 3, Morale -, Tiny Sword D3. Will attack one target whose location is known. Price: One finger.",
+  "content.reverendunclebastard.tormentedToymaker.spinner.title": "Spinner",
+  "content.reverendunclebastard.tormentedToymaker.spinner.description": "Shatters after one use. Slows time for D6 rounds, Toymaker takes 2 actions/round. Price: One tooth."
+}

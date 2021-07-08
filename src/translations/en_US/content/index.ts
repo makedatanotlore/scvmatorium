@@ -15,6 +15,7 @@ import scvmfurther2 from './makedatanotlore/scvmfurther2/messages.json';
 import anCailleach from './michaelmars/anCailleach/messages.json';
 import sinfulSailor from './michaelmars/sinfulSailor/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
+import tormentedToymaker from './reverendunclebastard/tormentedToymaker/messages.json';
 import rottingRecalcitrant from './ripleyc/rottingRecalcitrant/messages.json';
 import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import uncredited from './shared/uncredited/messages.json';
@@ -41,5 +42,6 @@ export default {
   ...suitorKnightOfKergus,
   ...sunScorchedZealot,
   ...theWretchedUsurper,
+  ...tormentedToymaker,
   ...uncredited,
 };
