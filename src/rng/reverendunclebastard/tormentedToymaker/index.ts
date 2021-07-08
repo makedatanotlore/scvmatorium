@@ -24,7 +24,7 @@ import { toys } from './toys';
 
 export const tormentedToymaker = (): Character => {
   const abilities = rollAbilities(0, -2, 2, 0);
-  const hp = rollHp(1, 8, abilities.toughness.score);
+  const hp = rollHp(1, 4, abilities.toughness.score);
   const maxOmens = 2;
   const omens = rollOmens(1, maxOmens);
 
