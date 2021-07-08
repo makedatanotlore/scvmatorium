@@ -75,6 +75,13 @@ export const neonon: Author = {
 export const peppermintBones: Author = {
   id: 'peppermintBones',
   name: 'Johnny Carhat',
+  url: 'https://metalskull-games.itch.io/',
+};
+
+export const reverendunclebastard: Author = {
+  id: 'reverendunclebastard',
+  name: 'Reverend Uncle Bastard',
+  url: 'https://reverendunclebastard.itch.io/',
 };
 
 export const ripleyc: Author = {

@@ -13,6 +13,7 @@ import {
   makedatanotlore,
   michaelmars,
   peppermintBones,
+  reverendunclebastard,
   ripleyc,
   sashadeath,
   stregaflora,
@@ -158,6 +159,13 @@ export const theWretchedUsurper: Attribution = {
   url: 'https://docs.google.com/document/d/1PrGI1hOmimcDwQotfdCAjjhWvtIfnXaldFfs0YFivDg/edit',
 };
 
+export const tormentedToymaker : Attribution = {
+  title: { id: 'content.reverendunclebastard.tormentedToymaker' },
+  id: 'tormentedToymaker',
+  authors: [reverendunclebastard],
+  url: 'https://reverendunclebastard.itch.io/tormented-toymaker-a-mork-borg-class',
+};
+
 export const unheroicFeats: Attribution = {
   title: { id: 'content.peppermintBones.unheroicFeats' },
   id: 'unheroicFeats',
@@ -192,4 +200,5 @@ export const classAttributions = [
   suitorKnightOfKergus,
   sunScorchedZealot,
   theWretchedUsurper,
+  tormentedToymaker,
 ];
