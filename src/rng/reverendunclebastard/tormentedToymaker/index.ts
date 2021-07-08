@@ -5,7 +5,7 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { blurb, tableEntry, titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { blurb } from 'rng/shared/entries';
 import {
   formatEquipmentList,
   hasScroll,
@@ -19,25 +19,8 @@ import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character, TableEntry } from 'types/character';
+import { Character } from 'types/character';
 import { toys } from './toys';
-
-const classTrait = (id: string): TableEntry => ({
-  id: `scvmatorium-${id}`,
-  tags: ['reverendunclebastard', 'tormentedToymaker', 'trait', id],
-  attribution,
-  content: {
-    tags: ['reverendunclebastard', 'tormentedToymaker', 'trait', id],
-    title: {
-      id: `content.reverendunclebastard.tormentedToymaker.${id}`,
-      values: {},
-    },
-    description: {
-      id: `content.reverendunclebastard.tormentedToymaker.${id}`,
-      values: {},
-    },
-  },
-});
 
 export const tormentedToymaker = (): Character => {
   const abilities = rollAbilities(0, -2, 2, 0);
