@@ -17,13 +17,25 @@ export const Header = styled.div`
   font-weight: 700;
   padding: 0.5rem;
   align-items: center;
+
+
+  ${mediaQuery.phone}{
+    padding: 0.1rem;
+  }
+`;
+
+export const HeaderLabelWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 `;
 
 export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-size: 1em;
 
   ${mediaQuery.phone}{
@@ -76,6 +88,26 @@ export const useStyles = makeStyles({
         "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
         " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +
         "1.003 0 00-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0012 5z' fill='%23fff'/%3E%3C/svg%3E\")",
+      content: '""',
+    },
+    'input:hover ~ &': {
+      border: '1px solid black',
+      backgroundColor: 'black',
+    },
+  },
+  indeterminateIcon: {
+    backgroundColor: 'white',
+    backgroundImage:
+        'linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))',
+    '&:before': {
+      display: 'block',
+      marginTop: '2px',
+      marginLeft: '2px',
+      marginBottom: '1px',
+      marginRight: '1px',
+      width: '15px',
+      height: '15px',
+      backgroundColor: '#ff6ce7',
       content: '""',
     },
     'input:hover ~ &': {

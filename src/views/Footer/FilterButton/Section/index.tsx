@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Attribution } from 'types/character';
 import clsx from 'clsx';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
-import { FlexWrapper, Header, useStyles, ContentWrapper } from './styled';
+import { FlexWrapper, Header, useStyles, ContentWrapper, HeaderLabelWrapper } from './styled';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
@@ -11,13 +11,21 @@ type Props = {
   label: string;
   attributions: Attribution[];
   updateFn?: (updated: string[]) => void;
+  updateAllFn?: (updated: string[]) => void;
   closeFn?: () => void;
   selected?: string[];
 };
 
-const Section = ({ label, attributions, updateFn, selected, closeFn }: Props) => {
+const Section = ({ label, attributions, updateFn, updateAllFn, selected = [], closeFn }: Props) => {
   const { formatMessage } = useIntl();
+  const [allSelected, setAllSelected] = useState(attributions.map(({id}) => selected.includes(id) ).every((isSelected) => isSelected))
+  const [someSelected, setSomeSelected] = useState(attributions.map(({id}) => selected.includes(id) ).some((isSelected) => isSelected))
   const styles = useStyles();
+
+  useEffect(() => {
+    setAllSelected(attributions.map(({id}) => selected.includes(id) ).every((isSelected) => isSelected))
+    setSomeSelected(attributions.map(({id}) => selected.includes(id) ).some((isSelected) => isSelected))
+  }, [attributions, selected])
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (updateFn) {
@@ -25,6 +33,16 @@ const Section = ({ label, attributions, updateFn, selected, closeFn }: Props) =>
         updateFn(selected?.filter((id) => event.target.name !== id) || []);
       } else {
         updateFn([...(selected || []), event.target.name]);
+      }
+    }
+  };
+
+  const handleUpdateAll = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (updateAllFn) {
+      if (!event?.target?.checked) {
+        updateAllFn([]);
+      } else {
+        updateAllFn(attributions.map(({id}) => id));
       }
     }
   };
@@ -37,7 +55,25 @@ const Section = ({ label, attributions, updateFn, selected, closeFn }: Props) =>
 
   return (
     <FlexWrapper>
-      <Header>{label}
+      <Header>
+        <HeaderLabelWrapper>
+          {updateAllFn && <Checkbox
+              disableRipple
+              className={styles.root}
+              icon={<span className={styles.icon} />}
+              checkedIcon={
+                <span className={clsx(styles.icon, styles.checkedIcon)} />
+              }
+              checked={allSelected}
+              indeterminate={someSelected && !allSelected}
+              indeterminateIcon={
+                <span className={clsx(styles.icon, styles.indeterminateIcon)} />
+              }
+              onChange={handleUpdateAll}
+              name={'select-all'}
+          />}
+          {label}
+        </HeaderLabelWrapper>
         {closeFn && (
           <IconButton className={styles.closeButton} onClick={handleClose} aria-label="close-class-list">
             <CloseIcon />

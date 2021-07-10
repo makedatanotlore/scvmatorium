@@ -4,7 +4,7 @@
   "app.print": "Go print yourself",
   "app.subtitle": "A third party <span>character generator</span> for MÖRK BORG",
 
-  "app.version": "v0.1.18 - \"toyz II men\"",
+  "app.version": "v0.2.0 - \"select ALL the classes\"",
   "app.copyright": "SCVMATORIUM is an independent production by <a href=\"https://makedatanotlore.itch.io/\" target=\"_blank\">Karl Druid</a> <a href=\"https://github.com/makedatanotlore/scvmatorium/graphs/contributors\" target=\"_blank\">(+ contributors)</a> and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License. MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.",
 
   "app.reroll.1": "Drink the poison",
@@ -27,6 +27,16 @@
   "app.reroll.18": "Wake the troll",
   "app.reroll.19": "Stand in the fire",
   "app.reroll.20": "Fall on your sword",
+  "app.reroll.21": "Hug the goblin",
+  "app.reroll.22": "Make a barrel roll",
+  "app.reroll.23": "Make like a dyer",
+  "app.reroll.24": "Climb the tower",
+  "app.reroll.25": "Catch the arrow",
+  "app.reroll.26": "Enter the arena",
+  "app.reroll.27": "Threaten the wizard",
+  "app.reroll.28": "Click the button",
+  "app.reroll.29": "Kick the bucket",
+  "app.reroll.30": "Eat the apple",
 
   "app.author": "<a href=\"{url}\" target=\"_blank\">{name}</a>",
   "app.attribution": "<a href=\"{url}\" target=\"_blank\">{title}</a> by "
