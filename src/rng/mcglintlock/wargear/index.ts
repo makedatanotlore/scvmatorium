@@ -22,7 +22,6 @@ export const d4Weapons = [
   'atlatl',
   'ballPeenHammer',
   'blackjack',
-  'boatpaddle',
   'boomerang',
   'brassKnuckles',
   'broomHandle',
@@ -56,6 +55,7 @@ export const d4Weapons = [
 
 export const d6Weapons = [
   'assegai',
+  'boatpaddle',  
   'broadaxe',
   'cudgel',
   'cutlass',
@@ -63,6 +63,7 @@ export const d6Weapons = [
   'katana',
   'militaryFork',
   'pilum',
+  'recurvedBow',
   'sabre',
   'scimitar',
   'shillelagh',
