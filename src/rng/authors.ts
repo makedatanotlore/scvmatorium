@@ -60,6 +60,12 @@ export const makedatanotlore: Author = {
   url: 'https://makedatanotlore.itch.io/',
 };
 
+export const mcglintlock: Author = {
+  id: 'mcglintlock',
+  name: 'Matt McGlincy',
+  url: 'https://mcglintlock.itch.io/',
+};
+
 export const michaelmars: Author = {
   id: 'michaelmars',
   name: 'Michael Mars',

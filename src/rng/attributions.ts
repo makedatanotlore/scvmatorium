@@ -3,7 +3,6 @@ import {
   anadversary,
   chalkdown,
   ceph,
-  neonon,
   goatmansgoblet,
   graytide,
   greysonwhy,
@@ -11,7 +10,9 @@ import {
   heckinviv,
   khordal,
   makedatanotlore,
+  mcglintlock,
   michaelmars,
+  neonon,
   peppermintBones,
   reverendunclebastard,
   ripleyc,
@@ -180,7 +181,18 @@ export const uncredited: Attribution = {
   url: '',
 };
 
-export const contentAttributions = [scvmatorium, scvmfurther2];
+export const wargear: Attribution = {
+  title: { id: 'content.mcglintlock.wargear' },
+  id: 'wargear',
+  authors: [mcglintlock],
+  url: 'https://mcglintlock.itch.io/',
+};
+
+export const contentAttributions = [
+  scvmatorium,
+  scvmfurther2,
+  wargear,
+];
 export const classAttributions = [
   anCailleach,
   betrayedPhantom,

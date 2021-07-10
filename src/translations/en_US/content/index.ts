@@ -12,6 +12,7 @@ import sunScorchedZealot from './khordal/sunScorchedZealot/messages.json';
 import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.json';
 import scvmatorium from './makedatanotlore/scvmatorium/messages.json';
 import scvmfurther2 from './makedatanotlore/scvmfurther2/messages.json';
+import wargear from './mcglintlock/wargear/messages.json';
 import anCailleach from './michaelmars/anCailleach/messages.json';
 import sinfulSailor from './michaelmars/sinfulSailor/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
@@ -44,4 +45,5 @@ export default {
   ...theWretchedUsurper,
   ...tormentedToymaker,
   ...uncredited,
+  ...wargear,  
 };

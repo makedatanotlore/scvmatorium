@@ -14,7 +14,7 @@
   "content.graytide.cannibalCook.predatoryGaze.description": "People don't like the way you stare, and your eyes linger in the wrong places. Humans roll <span>Reaction at -2</span>, and <span>Morale at +2</span>.",
 
   "content.graytide.cannibalCook.foodFighter.title": "Food Fighter",
-  "content.graytide.cannibalCook.foodFighter.description": "It's a competitive business. You've learned to improvise. <span>Femurs count as 1d6</span> in your hands. You can <span>make arrowheads</span> from human remains.",
+  "content.graytide.cannibalCook.foodFighter.description": "It's a competitive business. You've learned to improvise. <span>Femurs (or other bone clubs) count as 1d6</span> in your hands. You can <span>make arrowheads</span> from human remains.",
   "content.graytide.cannibalCook.spiceCollection.title": "I can't believe it's not... Rotten",
   "content.graytide.cannibalCook.spiceCollection.description": "Your spice collection can turn even long dead, putrescent corpses into a <span>fitting meal</span>. Fresh corpses <span>improve healing dice</span> one step.",
   "content.graytide.cannibalCook.trophyCollection.title": "Trophy Collection",
@@ -26,6 +26,6 @@
   "content.graytide.cannibalCook.entrailOracle.title": "Entrail Oracle",
   "content.graytide.cannibalCook.entrailOracle.description": "Open up a fresh human corpse and predict the future. DR 12 presence. Success - <span>regain 1 omen</span>. Failure - <span>lose 1 omen</span>.",
 
-  "content.graytide.cannibalCook.femur.title": "Femur",
+  "content.graytide.cannibalCook.femur.title": "Legbone",
   "content.graytide.cannibalCook.femur.description": "d4 damage"
 }
