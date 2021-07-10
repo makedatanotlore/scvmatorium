@@ -1,7 +1,7 @@
 import { sample, sampleSize, random } from 'lodash/fp';
 import tables from 'rng/tables';
 import { uncredited } from 'rng/attributions';
-import { d2Weapons, d4Weapons, d6Weapons, d8Weapons, d10Weapons } from 'rng/mcglintlock/gearDrop/weapons';
+import { d2Weapons, d4Weapons, d6Weapons, d8Weapons, d10Weapons } from 'rng/mcglintlock/wargear';
 import { Big, GenerateValuesProps, Small, TableEntry } from 'types/character';
 
 export const formatEquipmentList = (equipment: TableEntry[], presenceScore: number, silverRange: {min: number, max: number}): Big => ({

@@ -1,6 +1,6 @@
 
 import { max } from 'lodash/fp';
-import { gearDrop as attribution } from 'rng/attributions';
+import { wargear as attribution } from 'rng/attributions';
 import { equipmentEntry } from 'rng/shared/entries';
 
 const entryFn = (x: string) => equipmentEntry(attribution, x, ({ presence }) => ({
@@ -11,6 +11,7 @@ const entryFn = (x: string) => equipmentEntry(attribution, x, ({ presence }) => 
 }));
 
 export const d2Weapons = [
+  'blowgun',  
   'bola',
   'bullwhip',
   'hairPin',
@@ -21,7 +22,6 @@ export const d4Weapons = [
   'atlatl',
   'ballPeenHammer',
   'blackjack',
-  'blowgun',
   'boatpaddle',
   'boomerang',
   'brassKnuckles',
@@ -46,13 +46,11 @@ export const d4Weapons = [
   'razor',
   'rustySword',
   'scalpel',
-  'shank',
   'sharpenedStick',
   'shovel',
   'shuriken',
   'sickle',
   'slingshot',
-  'stick',
   'throwingKnife',
 ].map(entryFn);
 
@@ -77,17 +75,16 @@ export const d6Weapons = [
 
 export const d8Weapons = [
   'billhook',
-  'claymore',
   'estoc',
   'glaive',
   'lance',
   'maul',
-  'pike',
   'scythe',
   'voulge',
 ].map(entryFn);
 
 export const d10Weapons = [
+  'claymore',
   'executionersAxe',
   'flamberge',
   'greatsword',

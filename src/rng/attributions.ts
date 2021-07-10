@@ -76,13 +76,6 @@ export const fugitiveKnight: Attribution = {
   url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
 };
 
-export const gearDrop: Attribution = {
-  title: { id: 'content.mcglintlock.gearDrop' },
-  id: 'gearDrop',
-  authors: [mcglintlock],
-  url: 'https://mcglintlock.itch.io/',
-};
-
 export const landlockedBuccaneer: Attribution = {
   title: { id: 'content.makedatanotlore.landlockedBuccaneer' },
   id: 'landlockedBuccaneer',
@@ -188,10 +181,17 @@ export const uncredited: Attribution = {
   url: '',
 };
 
+export const wargear: Attribution = {
+  title: { id: 'content.mcglintlock.wargear' },
+  id: 'wargear',
+  authors: [mcglintlock],
+  url: 'https://mcglintlock.itch.io/',
+};
+
 export const contentAttributions = [
-  gearDrop,
   scvmatorium,
   scvmfurther2,
+  wargear,
 ];
 export const classAttributions = [
   anCailleach,
