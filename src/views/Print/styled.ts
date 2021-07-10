@@ -14,6 +14,37 @@ export const FlexWrapper = styled.div`
     '. header .'
     '. sheet .'
     '. footer .';
+
+
+
+  a {
+    color: ${({ theme }) => theme.button.background.hover};
+    background-color: transparent;
+    text-transform: inherit;
+    text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.button.text.active};
+    background-color: transparent;
+  }
+
+  a:active {
+    color: ${({ theme }) => theme.button.background.hover};
+    background-color: transparent;
+  }
+
+  a:visited {
+    color: ${({ theme }) => theme.button.background.hover};
+    background-color: transparent;
+
+    :hover {
+      color: ${({ theme }) => theme.button.text.active};
+      background-color: transparent;
+    }
+  }
 `;
 
 export const Footer = styled.div`

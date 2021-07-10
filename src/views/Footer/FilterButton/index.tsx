@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 const Filter = () => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
-  const classes = useSelector(selectClassIds);
+  const classIds = useSelector(selectClassIds);
 
   const handleUpdateFilter = (updated: string[]) => {
     dispatch(updateFilter(updated));
@@ -23,8 +23,9 @@ const Filter = () => {
       </StyledButton>
       <Drawer anchor='top' open={open} onClose={() => setOpen(!open)}>
         <Section
-          selected={classes}
+          selected={classIds}
           updateFn={handleUpdateFilter}
+          updateAllFn={handleUpdateFilter}
           closeFn={() => setOpen(false)}
           label='Classes'
           attributions={classAttributions}

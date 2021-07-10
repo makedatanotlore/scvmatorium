@@ -13,7 +13,7 @@ const Roller = () => {
 
   const updateCharacter = () => {
     dispatch(setCharacter(sample(classes)!()));
-    setMessage(`app.reroll.${random(1, 20)}`);
+    setMessage(`app.reroll.${random(1, 30)}`);
   };
 
   return (
