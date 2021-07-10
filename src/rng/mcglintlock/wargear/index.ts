@@ -79,6 +79,7 @@ export const d8Weapons = [
   'glaive',
   'lance',
   'maul',
+  'pike',
   'scythe',
   'voulge',
 ].map(entryFn);
