@@ -12,7 +12,7 @@ export const rollD444Weapons = (dieNum: number): TableEntry => {
   // Lutov's original roll-table is d444 or d44+100 if you begin with a scroll.
   // However, all our existing classes use rollWeapon(num) and many 3p classes
   // specify a lower weapon die... so we use a custom rolling method to make
-  // d444Weapons play nicely with a possibly lower weapon die.
+  // d444Weapons play nicely with that.
   // In the core book, the weapons roll (1d10 or less) maps to weapons of
   // certain damages, like so: 1-4: d4, 5-7: d6, 8-9: d8, 10: d10.
   // d444Weapons adds even lower/crappier d2 weapons, so we steal roll result
@@ -26,7 +26,7 @@ export const rollD444Weapons = (dieNum: number): TableEntry => {
   } else if (roll <= 7) {
     weapons = d6Weapons;
   } else if (roll <= 9) {
-    weapons = d6Weapons;
+    weapons = d8Weapons;
   } else {
     weapons = d10Weapons;
   }
