@@ -4,24 +4,22 @@ import { equipmentEntry } from 'rng/shared/entries';
 import { rollD } from 'rng/shared/roll';
 import { TableEntry } from 'types/character';
 
-// Lutov's original roll-table is d444, or d44+100 if you begin with a scroll.
-// However, all our existing classes use rollWeapon(num).
-//
-// In the core book, the weapons roll (1d10 or less) maps to 
-// weapons of certain damages, like so:
-// 1-4: d4
-// 5-7: d6
-// 8-9: d8
-// 10: d10
-/*
-const rollD444Weapons = (dieNum: number): TableEntry => {
-  if (dieNum === 10) {
-    // vanilla, classless die roll
-  }
+export const d444Weapons = () => {
+  // placeholder
+};
 
-  const roll = rollD(dieNum);
+export const rollD444Weapons = (dieNum: number): TableEntry => {
+  // Lutov's original roll-table is d444 or d44+100 if you begin with a scroll.
+  // However, all our existing classes use rollWeapon(num) and many 3p classes
+  // specify a lower weapon die... so we use a custom rolling method to make
+  // d444Weapons play nicely with a possibly lower weapon die.
+  // In the core book, the weapons roll (1d10 or less) maps to weapons of
+  // certain damages, like so: 1-4: d4, 5-7: d6, 8-9: d8, 10: d10.
+  // d444Weapons adds even lower/crappier d2 weapons, so we steal roll result
+  // 1 for those.
   let weapons;
-  if (roll == 1) {
+  const roll = rollD(dieNum);  // we assume 1 <= dieNum <= 10
+  if (roll === 1) {
     weapons = d2Weapons;
   } else if (roll <= 4) {
     weapons = d4Weapons;
@@ -30,119 +28,17 @@ const rollD444Weapons = (dieNum: number): TableEntry => {
   } else if (roll <= 9) {
     weapons = d6Weapons;
   } else {
-    // 10
     weapons = d10Weapons;
   }
   return sample(weapons)!;
 };
-*/
 
-export const rollD444Weapons = (dieNum: number, scroll: boolean): TableEntry => {
-  if (dieNum === 10) {
-    // vanilla, classless die roll
-
-    // d44 - 11-44, 16 entries
-    // d444 = 111-444, aka all entries
-    if (scroll) {
-      // d44 + 100 = 111-144, aka entries 0-15 (the first 16)
-      return sample(d444Weapons.slice(0, 15))!;
-    }
-    return sample(d444Weapons)!;
-  }
-
-  // TODO
-  return sample(d444Weapons)!;
-}
-
-// roll d444 for a weapon. If you begin with a scroll, roll d44+100.
-
-export const d444Weapons = [
-  // 111 - 144. Non-lethal. Test Strength to attack.
-  'fist',
-  'stick',
-  'torch',
-  'whip',
-
-  'deadMansHand',
-  'hammer',
-  'fightingGlove',
-  'brassKnuckles',
-
-  'femur',
-  'lash',
-  'crowbar',
-  'staff',
-
-  'pegleg',
-  'club',
-  'knout',
-  'scepter',
-
-  // 211-244. Pierce/cutting. Test Strength or Agility to attack.
-  'scissors',
-  'knife',
-  'dagger',
-  'shortsword',
-
-  'meathook',
-  'spear',
-  'steelClaws',
-  'armingSword',
-
-  'scythe',
-  'pike',
-  'estoc',
-  'lance',
-
-  'falchion',
-  'sabre',
-  'rapier',
-  'grosseMesser',
-
-  // 311-344. Ranged. Test Presence to attack. Add Presence to the number of arrows, bolts, etc.
-  'stones',
-  'darts',
-  'arrows',
-  'sling',
-
-  'slingshot',
-  'staffSling',
-  'blowgun',
-  'shortbow',
-
-  'throwingAxes',
-  'amentum',
-  'lightCrossbow',
-  'bow',
-
-  'handCannon',
-  'longbow',
-  'crossbow',
-  'culverin',
-
-  // 411-444. Crushing/slashing. Test Strength to attack. Attacks ignore one armor tier, +1 damage to an unarmored foe.
-  'boardWithNails',
-  'axe',
-  'mace',
-  'morningstar',
-
-  'shovel',
-  'bardiche',
-  'claymore',
-  'warhammer',
-
-  'warCleaver',
-  'broadsword',
-  'oneHandedFlail',
-  'warAxe',
-
-  'warScythe',
-  'flail',
-  'halberd',
-  'zweihander',
-].map((x) => equipmentEntry(attribution, x, ({ presence }) => ({
-      ammo: max([10 + presence, 1])!,
-})));
+const entryFn = (x: string) => equipmentEntry(attribution, x, ({ presence }) => ({
+  // We use a generic 'ammo' field for 10+ arrows, bolts, stones, etc.
+  // Other low-count projectiles like throwing axes use a hard-coded count
+  // in the description.
+  ammo: max([10 + presence, 1])!,
+}));
 
 export const d2NonLethal = [
   'fist',
@@ -153,110 +49,110 @@ export const d2NonLethal = [
   'hammer',
   'fightingGlove',
   'brassKnuckles',
-];
+].map(entryFn);
 
 export const d4NonLethal = [
   'femur',
   'lash',
   'crowbar',
   'staff',
-];
+].map(entryFn);
 
 export const d6NonLethal = [
   'pegleg',
   'club',
   'knout',
   'scepter',
-];
+].map(entryFn);
 
 export const d4PiercingCutting = [
   'scissors',
   'knife',
   'dagger',
   'shortsword',
-];
+].map(entryFn);
 
 export const d6PiercingCutting = [
   'meathook',
   'spear',
   'steelClaws',
   'armingSword',
-];
+].map(entryFn);
 
 export const d8PiercingCutting = [
   'scythe',
   'pike',
   'estoc',
   'lance',
-];
+].map(entryFn);
 
-// actually 2d4-1, but whatever
+// actually 2d4-1 dmg, but whatever
 export const d10PiercingCutting = [
   'falchion',
   'sabre',
   'rapier',
   'grosseMesser',
-];
+].map(entryFn);
 
 export const d2Ranged = [
   'stones',
   'darts',
   'arrows',
   'sling'
-];
+].map(entryFn);
 
 export const d4Ranged = [
   'slingshot',
   'staffSling',
   'blowgun',
   'shortbow',
-];
+].map(entryFn);
 
 export const d6Ranged = [
   'throwingAxes',
   'amentum',
   'lightCrossbow',
   'bow',
-];
+].map(entryFn);
 
 export const d8Ranged = [
   'handCannon',
   'longbow',
   'crossbow',
   'culverin',
-];
+].map(entryFn);
 
 export const d4CrushingSlashing = [
   'boardWithNails',
   'axe',
   'mace',
   'morningstar',
-];
+].map(entryFn);
 
 export const d6CrushingSlashing = [
   'shovel',
   'bardiche',
   'claymore',
   'warhammer',
-];
+].map(entryFn);
 
 export const d8CrushingSlashing = [
   'warCleaver',
   'broadsword',
   'oneHandedFlail',
   'warAxe',
-];
+].map(entryFn);
 
 export const d10CrushingSlashing = [
   'warScythe',
   'flail',
   'halberd',
   'zweihander',
-];
+].map(entryFn);
 
 export const d2Weapons = [
-  d2NonLethal,
-  d2Ranged,
+  ...d2NonLethal,
+  ...d2Ranged,
 ];
 
 export const d4Weapons = [
@@ -283,5 +179,3 @@ export const d10Weapons = [
   ...d10PiercingCutting,
   ...d10CrushingSlashing,
 ];
-
-//.map((x) => entry(feat));

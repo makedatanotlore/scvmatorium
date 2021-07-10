@@ -106,10 +106,11 @@ export const rollArmor = (armor: number, scroll: boolean): TableEntry => {
   ][roll];
 };
 
-export const rollWeapon = (weapon: number, scroll: boolean = false): TableEntry => {
+export const rollWeapon = (weapon: number): TableEntry => {
+  // TODO: add checkboxes to additional content section in FilterButton
   const weaponsHackEnabled = true;
   if (weaponsHackEnabled) {
-    return rollD444Weapons(weapon, scroll);
+    return rollD444Weapons(weapon);
   } else {
     return rollNormalWeapon(weapon);
   }
