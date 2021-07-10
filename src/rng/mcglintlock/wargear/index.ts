@@ -63,7 +63,7 @@ export const d6Weapons = [
   'katana',
   'militaryFork',
   'pilum',
-  'recurvedBow',
+  'recurveBow',
   'sabre',
   'scimitar',
   'shillelagh',
