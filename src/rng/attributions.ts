@@ -3,7 +3,6 @@ import {
   anadversary,
   chalkdown,
   ceph,
-  neonon,
   goatmansgoblet,
   graytide,
   greysonwhy,
@@ -11,7 +10,9 @@ import {
   heckinviv,
   khordal,
   makedatanotlore,
+  mcglintlock,
   michaelmars,
+  neonon,
   peppermintBones,
   reverendunclebastard,
   ripleyc,
@@ -73,6 +74,13 @@ export const fugitiveKnight: Attribution = {
   id: 'fugitiveKnight',
   authors: [neonon],
   url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
+};
+
+export const gearDrop: Attribution = {
+  title: { id: 'content.mcglintlock.gearDrop' },
+  id: 'gearDrop',
+  authors: [mcglintlock],
+  url: 'https://mcglintlock.itch.io/',
 };
 
 export const landlockedBuccaneer: Attribution = {
@@ -180,7 +188,11 @@ export const uncredited: Attribution = {
   url: '',
 };
 
-export const contentAttributions = [scvmatorium, scvmfurther2];
+export const contentAttributions = [
+  gearDrop,
+  scvmatorium,
+  scvmfurther2,
+];
 export const classAttributions = [
   anCailleach,
   betrayedPhantom,

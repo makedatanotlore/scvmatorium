@@ -1,7 +1,7 @@
 import { sample, sampleSize, random } from 'lodash/fp';
 import tables from 'rng/tables';
 import { uncredited } from 'rng/attributions';
-
+import { d2Weapons, d4Weapons, d6Weapons, d8Weapons, d10Weapons } from 'rng/mcglintlock/gearDrop/weapons';
 import { Big, GenerateValuesProps, Small, TableEntry } from 'types/character';
 
 export const formatEquipmentList = (equipment: TableEntry[], presenceScore: number, silverRange: {min: number, max: number}): Big => ({
@@ -108,17 +108,22 @@ export const rollArmor = (armor: number, scroll: boolean): TableEntry => {
 export const rollWeapon = (weapon: number): TableEntry => {
   const roll = random(0, weapon - 1);
 
+  const d4 = [...tables.equipment.weapons.d4, ...d2Weapons, ...d4Weapons];
+  const d6 = [...tables.equipment.weapons.d6, ...d6Weapons];
+  const d8 = [...tables.equipment.weapons.d8, ...d8Weapons];
+  const d10 = [...tables.equipment.weapons.d10, ...d10Weapons];
+
   return [
-    sample(tables.equipment.weapons.d4)!,
-    sample(tables.equipment.weapons.d4)!,
-    sample(tables.equipment.weapons.d4)!,
-    sample(tables.equipment.weapons.d4)!,
-    sample(tables.equipment.weapons.d6)!,
-    sample(tables.equipment.weapons.d6)!,
-    sample(tables.equipment.weapons.d8)!,
-    sample(tables.equipment.weapons.d8)!,
-    sample(tables.equipment.weapons.d10)!,
-    sample(tables.equipment.weapons.d10)!,
+    sample(d4)!,
+    sample(d4)!,
+    sample(d4)!,
+    sample(d4)!,
+    sample(d6)!,
+    sample(d6)!,
+    sample(d8)!,
+    sample(d8)!,
+    sample(d10)!,
+    sample(d10)!,
   ][roll];
 };
 
