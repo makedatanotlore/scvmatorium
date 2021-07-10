@@ -54,6 +54,12 @@ export const khordal: Author = {
   url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 };
 
+export const lutov: Author = {
+  id: 'lutov',
+  name: 'Lutov al\'Ksandaar',
+  url: 'https://lutov.itch.io/',
+};
+
 export const makedatanotlore: Author = {
   id: 'makedatanotlore',
   name: 'Karl Druid',

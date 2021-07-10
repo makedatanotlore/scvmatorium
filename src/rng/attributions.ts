@@ -10,6 +10,7 @@ import {
   harkenstone,
   heckinviv,
   khordal,
+  lutov,
   makedatanotlore,
   michaelmars,
   peppermintBones,
@@ -59,6 +60,13 @@ export const corpsePlunderer: Attribution = {
   id: 'corpsePlunderer',
   authors: [harkenstone],
   url: 'https://gjfleming.itch.io/the-corpse-plunderer',
+};
+
+export const d444Weapons: Attribution = {
+  title: { id: 'content.lutov.d444Weapons' },
+  id: 'd444Weapons',
+  authors: [lutov],
+  url: 'https://lutov.itch.io/d444-weapons',
 };
 
 export const deathWitch: Attribution = {
@@ -180,7 +188,11 @@ export const uncredited: Attribution = {
   url: '',
 };
 
-export const contentAttributions = [scvmatorium, scvmfurther2];
+export const contentAttributions = [
+  d444Weapons,
+  scvmatorium, 
+  scvmfurther2
+];
 export const classAttributions = [
   anCailleach,
   betrayedPhantom,

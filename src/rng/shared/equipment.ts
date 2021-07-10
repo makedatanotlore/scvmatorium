@@ -1,6 +1,7 @@
 import { sample, sampleSize, random } from 'lodash/fp';
 import tables from 'rng/tables';
 import { uncredited } from 'rng/attributions';
+import { rollD444Weapons } from 'rng/lutov/d444Weapons';
 
 import { Big, GenerateValuesProps, Small, TableEntry } from 'types/character';
 
@@ -105,7 +106,16 @@ export const rollArmor = (armor: number, scroll: boolean): TableEntry => {
   ][roll];
 };
 
-export const rollWeapon = (weapon: number): TableEntry => {
+export const rollWeapon = (weapon: number, scroll: boolean = false): TableEntry => {
+  const weaponsHackEnabled = true;
+  if (weaponsHackEnabled) {
+    return rollD444Weapons(weapon, scroll);
+  } else {
+    return rollNormalWeapon(weapon);
+  }
+};
+
+const rollNormalWeapon = (weapon: number): TableEntry => {
   const roll = random(0, weapon - 1);
 
   return [

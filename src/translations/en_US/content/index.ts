@@ -9,6 +9,7 @@ import corpsePlunderer from './harkenstone/corpsePlunderer/messages.json';
 import mutatedGoblin from './heckinviv/mutatedGoblin/messages.json';
 import misbegottenRelict from './khordal/misbegottenRelict/messages.json';
 import sunScorchedZealot from './khordal/sunScorchedZealot/messages.json';
+import d444Weapons from './lutov/d444Weapons/messages.json';
 import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.json';
 import scvmatorium from './makedatanotlore/scvmatorium/messages.json';
 import scvmfurther2 from './makedatanotlore/scvmfurther2/messages.json';
@@ -28,6 +29,7 @@ export default {
   ...brazenBlacksmith,
   ...cannibalCook,
   ...corpsePlunderer,
+  ...d444Weapons,
   ...deathWitch,
   ...fugitiveKnight,
   ...misbegottenRelict,
