@@ -185,7 +185,7 @@ export const wargear: Attribution = {
   title: { id: 'content.mcglintlock.wargear' },
   id: 'wargear',
   authors: [mcglintlock],
-  url: 'https://mcglintlock.itch.io/',
+  url: 'https://www.youtube.com/watch?v=g7-bSTxLeGs',
 };
 
 export const contentAttributions = [
