@@ -61,6 +61,7 @@ export const d6Weapons = [
   'cutlass',
   'falchion',
   'katana',
+  'lightCrossbow',
   'militaryFork',
   'pilum',
   'recurveBow',
