@@ -153,6 +153,13 @@ export const sunScorchedZealot: Attribution = {
   url: 'https://docs.google.com/document/d/1hOm-kmOIpLW9-4SUGWUriJ6hTO32Fwi5LmDDfJCOukE/edit',
 };
 
+export const terriblerBrokenerBadder: Attribution = {
+  title: { id: 'content.mcglintlock.terriblerBrokenerBadder' },
+  id: 'terriblerBrokenerBadder',
+  authors: [mcglintlock],
+  url: 'https://mcglintlock.itch.io/terriblerbrokenerbadder',
+};
+
 export const theWretchedUsurper: Attribution = {
   title: { id: 'content.goatmansgoblet.theWretchedUsurper' },
   id: 'theWretchedUsurper',
@@ -191,6 +198,7 @@ export const wargear: Attribution = {
 export const contentAttributions = [
   scvmatorium,
   scvmfurther2,
+  terriblerBrokenerBadder,
   wargear,
 ];
 export const classAttributions = [
