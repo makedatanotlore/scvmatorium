@@ -62,7 +62,7 @@ export const nachthex = (): Character => {
           formatTableEntry(sample(deathmarks)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
-          ...sampleSize(2, tables.habits).map((habit) => formatHabit(habit)),
+          ...sampleSize(1, tables.habits).map((habit) => formatHabit(habit)),
         ],
       },
       {
