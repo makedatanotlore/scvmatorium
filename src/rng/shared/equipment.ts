@@ -154,3 +154,11 @@ export const rollStandardEquipment = (includeScrolls=true) => {
     )
     .filter((item) => item.id !== '_blank');
 };
+
+export const rollScroll = (scrollCount: number) => {
+  const scrollList = [
+    sharedEntry('uncleanScroll'),
+    sharedEntry('sacredScroll')
+  ];
+  return Array(scrollCount).fill(0).map(x => sample(scrollList)!);
+};

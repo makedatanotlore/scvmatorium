@@ -1,25 +1,26 @@
-import { sampleSize, sample, max } from 'lodash/fp';
+import { sampleSize, sample, random } from 'lodash/fp';
 import { victrixLudorum as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { titledEntry, formatTitledEntry, formatTableEntry } from 'rng/shared/entries';
+import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
+  rollScroll,
   rollSilver,
   rollStandardEquipment,
 } from '../../shared/equipment';
 import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
-import { equipmentEntry, tableEntry } from 'rng/shared/entries';
+import { equipmentEntry } from 'rng/shared/entries';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character, GenerateValuesFn, TableEntry } from 'types/character';
+import { Character, TableEntry } from 'types/character';
 
 export const entry = (id: string): TableEntry => equipmentEntry(attribution, id)
 
@@ -33,7 +34,9 @@ export const victrixLudorum = (): Character => {
   const armor = rollArmor(3, hasScroll(generalEquipment));
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
-  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, silver];
+  const scrollCount = random(1,2);
+  const scroll = rollScroll(scrollCount);
+  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, ...scroll, silver];
 
   const hide = titledEntry(attribution, 'hide');
   const maim = titledEntry(attribution, 'maim');
@@ -41,18 +44,16 @@ export const victrixLudorum = (): Character => {
   const dirtySpear = titledEntry(attribution, 'dirtySpear');
 
   return {
-    tags: ['victrixLudorum'],
+    tags: [attribution.id],
     smalls: [
       formatName(sample(tables.names)!),
       formatClass('astrolich.victrixLudorum'),
       formatHp(hp),
-      formatOmens(omens, 1),
+      formatOmens(omens, 2),
     ],
     bigs: [
       {
-        component: {
-          id: 'introduction',
-        },
+        component: { id: 'introduction' },
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
