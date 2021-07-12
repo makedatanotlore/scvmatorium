@@ -1,4 +1,5 @@
 import { deathWitch } from 'rng/anadversary/deathWitch';
+import { victrixLudorum } from 'rng/astrolich/victrixLudorum';
 import { brazenBlacksmith } from 'rng/ceph/brazenBlacksmith';
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
@@ -38,4 +39,5 @@ export const classes = {
   suitorKnightOfKergus,
   theWretchedUsurper,
   tormentedToymaker,
+  victrixLudorum,
 };

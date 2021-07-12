@@ -1,6 +1,7 @@
 import { Attribution } from 'types/character';
 import {
   anadversary,
+  astrolich,
   chalkdown,
   ceph,
   goatmansgoblet,
@@ -181,6 +182,13 @@ export const unheroicFeats: Attribution = {
   url: 'https://drive.google.com/file/d/1A4dl3yRXt19Am0ZV5tPyqjfnkJR0R5f8/view?usp=sharing',
 };
 
+export const victrixLudorum: Attribution = {
+  title: { id: 'content.astrolich.victrixLudorum' },
+  id: 'victrixLudorum',
+  authors: [astrolich],
+  url: 'https://astrolich.itch.io/victrix-ludorum',
+};
+
 export const uncredited: Attribution = {
   title: { id: 'content.shared.uncredited' },
   id: 'uncredited',
@@ -221,4 +229,5 @@ export const classAttributions = [
   sunScorchedZealot,
   theWretchedUsurper,
   tormentedToymaker,
+  victrixLudorum,
 ];

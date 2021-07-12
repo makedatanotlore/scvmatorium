@@ -1,0 +1,18 @@
+{
+    "content.astrolich.vitrixLudorum": "Vitrix Ludorum",
+
+    "content.astrolich.vitrixLudorum.hide.title": "Hide",
+    "content.astrolich.vitrixLudorum.hide.description": "You have learned the best way to attack your enemies is when they are looking the other way. You coneal yourself at a DR10.",
+
+    "content.astrolich.vitrixLudorum.maim.title": "Maim",
+    "content.astrolich.vitrixLudorum.maim.description": "You have an unconventional method of combat. When you land a critical hit, you force your enemy to roll on the broken table.",
+
+    "content.astrolich.vitrixLudorum.stabbed.title": "Stabbed in the Bum",
+    "content.astrolich.vitrixLudorum.stabbed.description": "Attack using your agility at DR +2. A succesful blow renders the target incapable of moving.",
+
+    "content.astrolich.vitrixLudorum.dirtySpear.title": "Dirty Spear",
+    "content.astrolich.vitrixLudorum.dirtySpear.description": "Successful attacks with a spear infect.",
+
+    "content.astrolich.vitrixLudorum.spear.title": "Spear",
+    "content.astrolich.vitrixLudorum.spear.description": "Two-handed, can not use powers."
+}
