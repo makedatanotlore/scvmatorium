@@ -16,6 +16,7 @@ import wargear from './mcglintlock/wargear/messages.json';
 import anCailleach from './michaelmars/anCailleach/messages.json';
 import sinfulSailor from './michaelmars/sinfulSailor/messages.json';
 import fugitiveKnight from './neonon/fugitiveKnight/messages.json';
+import terriblerBrokenerBadder from './mcglintlock/terriblerBrokenerBadder/messages.json';
 import tormentedToymaker from './reverendunclebastard/tormentedToymaker/messages.json';
 import rottingRecalcitrant from './ripleyc/rottingRecalcitrant/messages.json';
 import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
@@ -42,6 +43,7 @@ export default {
   ...sinfulSailor,
   ...suitorKnightOfKergus,
   ...sunScorchedZealot,
+  ...terriblerBrokenerBadder,
   ...theWretchedUsurper,
   ...tormentedToymaker,
   ...uncredited,
