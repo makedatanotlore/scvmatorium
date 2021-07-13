@@ -53,7 +53,7 @@ export const mutatedGoblin = (): Character => {
     'sharksShankTeeth',
     'viciousVisage',
   ].map((x) => titledEntry(attribution, x));
-  const oddMutation = titledEntry(attribution, 'oddMutation');
+  const oddMutation = titledEntry(attribution, 'oddMutation', 'plainBox');
 
   return {
     tags: [attribution.id],

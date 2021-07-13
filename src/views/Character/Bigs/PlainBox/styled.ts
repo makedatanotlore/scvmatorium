@@ -4,6 +4,7 @@ export { HeaderWrapper } from '../styled';
 
 export const FlexWrapper = styled.div`
   flex-grow: 1;
+  width: 100%;
 `;
 
 export const Padding = styled.div`

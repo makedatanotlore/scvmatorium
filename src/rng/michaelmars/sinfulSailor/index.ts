@@ -63,7 +63,7 @@ export const sinfulSailor = (): Character => {
     'born',
   ].map((x) => tableEntry(attribution, x));
 
-  const sinfulMark = [
+  const sinfulMark = sample([
     'envy',
     'gluttony',
     'avarice',
@@ -72,7 +72,9 @@ export const sinfulSailor = (): Character => {
     'sloth',
     'anger',
     'sincarnate',
-  ].map((x) => titledEntry(attribution, x, 'plainBox'));
+  ])!;
+
+  const money = sinfulMark === 'avarice' ? { min: 40, max: 240 } : { min: 20, max: 120 };
 
   return {
     tags: ['sinfulSailor'],
@@ -95,7 +97,7 @@ export const sinfulSailor = (): Character => {
           formatHabit(sample(tables.habits)!),
         ],
       },
-      formatTitledEntry(sample(sinfulMark)!),
+      formatTitledEntry(titledEntry(attribution, sinfulMark, 'plainBox')),
       formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
@@ -105,7 +107,7 @@ export const sinfulSailor = (): Character => {
           .map((item) =>
             formatEquipment(item, {
               presence: abilities.presence.score,
-              money: { min: 20, max: 120 },
+              money,
             })
           ),
       },

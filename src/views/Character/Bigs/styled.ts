@@ -19,6 +19,10 @@ export const HeaderWrapper = styled.span`
   font-size: ${({ theme }) => theme.fontSize.header};
   font-family: 'Germania One', cursive;
   color: ${({ theme }) => theme.text.primary};
+
+  > * span {
+    color: ${({ theme }) => theme.text.secondary};
+  }
 `;
 
 export const BigWrapper = styled.div`

@@ -15,8 +15,8 @@ const PlainBox = ({ content, header }: Props) => {
         <HeaderWrapper>
           <FormattedHTMLMessage id={header.id} values={header.values} />
         </HeaderWrapper>
-        {content.map((small) => (
-          <StyledText key={small.description.id}>
+        {content.map((small, index) => (
+          <StyledText key={`${small.description.id}-${index}`}>
             <FormattedHTMLMessage
               id={small.description.id}
               values={small.description.values}
