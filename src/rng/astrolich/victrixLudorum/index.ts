@@ -1,28 +1,25 @@
-import { sampleSize, sample, random } from 'lodash/fp';
+import { sampleSize, sample } from 'lodash/fp';
 import { victrixLudorum as attribution } from 'rng/attributions';
+import { scrolls } from 'rng/makedatanotlore/scvmatorium/equipment';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { titledEntry, formatTitledEntry } from 'rng/shared/entries';
+import { titledEntry, formatTitledEntry, equipmentEntry } from 'rng/shared/entries';
 import {
   formatEquipment,
   hasScroll,
   rollArmor,
   rollFoodAndWater,
-  rollScroll,
   rollSilver,
   rollStandardEquipment,
 } from '../../shared/equipment';
 import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
-import { equipmentEntry } from 'rng/shared/entries';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character, TableEntry } from 'types/character';
-
-export const entry = (id: string): TableEntry => equipmentEntry(attribution, id)
+import { Character } from 'types/character';
 
 
 export const victrixLudorum = (): Character => {
@@ -30,13 +27,12 @@ export const victrixLudorum = (): Character => {
   const hp = rollHp(1, 8, abilities.toughness.score);
   const omens = rollOmens(1, 2);
 
-  const generalEquipment = rollStandardEquipment();
+  const generalEquipment = rollStandardEquipment(false);
   const armor = rollArmor(3, hasScroll(generalEquipment));
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
-  const scrollCount = random(1,2);
-  const scroll = rollScroll(scrollCount);
-  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, ...scroll, silver];
+  // const scroll = scrolls({min: 1, max: 2});
+  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, scrolls, silver];
 
   const hide = titledEntry(attribution, 'hide');
   const maim = titledEntry(attribution, 'maim');
@@ -75,6 +71,7 @@ export const victrixLudorum = (): Character => {
             formatEquipment(item, {
               presence: abilities.presence.score,
               money: { min: 20, max: 120 },
+			  scrollCount: { min: 1, max: 2 },
             })
           ),
       },

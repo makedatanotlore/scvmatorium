@@ -179,5 +179,8 @@
   "content.makedatanotlore.scvmatorium.stainedPlate.title": "Stained platemail armor",
   "content.makedatanotlore.scvmatorium.stainedPlate.description": "-d6 incoming damage, tier 3 (Agility tests are DR+4, defence DR+2)",
   "content.makedatanotlore.scvmatorium.rustyPlate.title": "Rusty platemail armor",
-  "content.makedatanotlore.scvmatorium.rustyPlate.description": "-d6 incoming damage, tier 3 (Agility tests are DR+4, defence DR+2)"
+  "content.makedatanotlore.scvmatorium.rustyPlate.description": "-d6 incoming damage, tier 3 (Agility tests are DR+4, defence DR+2)",
+
+  "content.makedatanotlore.scvmatorium.scrolls.title": "{amount, plural, one {One random scroll} other {# random scrolls} }",
+  "content.makedatanotlore.scvmatorium.scrolls.description": "Sacred or unclean"
 }

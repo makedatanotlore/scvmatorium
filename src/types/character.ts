@@ -65,6 +65,7 @@ export type Equipment = {
 export type GenerateValuesProps = {
   presence: number;
   money: { min: number; max: number };
+  scrollCount?: {min: number; max: number };
 };
 
 export type GenerateValuesFn = (input: GenerateValuesProps) => Values;
