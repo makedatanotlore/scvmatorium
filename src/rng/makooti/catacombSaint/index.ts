@@ -81,7 +81,7 @@ export const catacombSaint = (): Character => {
         ],
       },
       formatTitledEntry(titledEntry(attribution, 'undead')),
-      formatTitledEntry(titledEntry(attribution, 'sacredCaster')),
+      formatTitledEntry(titledEntry(attribution, 'sacredWatcher')),
       formatTitledEntry(sample(relics)!),
       formatAbilities(abilities),
       formatEquipmentList(equipment, abilities.presence.score, silverRange),

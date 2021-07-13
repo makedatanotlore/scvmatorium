@@ -13,8 +13,8 @@
   "content.makooti.catacombSaint.undead.title": "Undead",
   "content.makooti.catacombSaint.undead.description": "You are <span>literally a skeleton</span>. You do not eat, breath, sleep, or have any other functions that the living would have. You cannot become infected, but only resting can heal you, as you focus on the sacred rites that keep you together.",
 
-  "content.makooti.catacombSaint.sacredCaster.title": "Sacred Caster",
-  "content.makooti.catacombSaint.sacredCaster.description": "You start with a random sacred scroll, and <span>can use sacred scrolls in medium or heavy armor</span>. You were charged with the care of one sacred relic.",
+  "content.makooti.catacombSaint.sacredWatcher.title": "Sacred Watcher",
+  "content.makooti.catacombSaint.sacredWatcher.description": "You start with a random sacred scroll, and <span>can use sacred scrolls in medium or heavy armor</span>. You were charged with the care of one sacred relic.",
   
   "content.makooti.catacombSaint.sword.title": "Sacred Relic: Saint Brita's Purging Sword",
   "content.makooti.catacombSaint.sword.description": "<span>D6, DR 10 to attack</span>. Deals double damage to wielders of unclean scrolls, undead, and demons. Deals triple damage on critical hits. Will attack you (DR 14 to defend) if you commit heresy, until you repent or die.",
