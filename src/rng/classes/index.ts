@@ -10,6 +10,7 @@ import { mutatedGoblin } from 'rng/heckinviv/mutatedGoblin';
 import { misbegottenRelict } from 'rng/khordal/misbegottenRelict';
 import { sunScorchedZealot } from 'rng/khordal/sunScorchedZealot';
 import { landlockedBuccaneer } from 'rng/makedatanotlore/landlockedBuccaneer';
+import { catacombSaint } from 'rng/makooti/catacombSaint';
 import { anCailleach } from 'rng/michaelmars/anCailleach'
 import { sinfulSailor } from 'rng/michaelmars/sinfulSailor'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
@@ -24,6 +25,7 @@ export const classes = {
   blightedMerman,
   brazenBlacksmith,
   cannibalCook,
+  catacombSaint,
   corpsePlunderer,
   deathWitch,
   fugitiveKnight,

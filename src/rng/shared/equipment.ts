@@ -37,7 +37,7 @@ export const hasScroll = (equipment: TableEntry[]) =>
       item.tags.includes('uncleanScroll') || item.tags.includes('sacredScroll')
   );
 
-const sharedEntry = (id: string): TableEntry => ({
+export const sharedEntry = (id: string): TableEntry => ({
   id: `${id}`,
   tags: [id],
   attribution: uncredited,
