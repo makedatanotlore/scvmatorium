@@ -24,8 +24,8 @@ const EquipmentList = ({ content, header }: Props) => {
           <FormattedHTMLMessage id={header.id} values={header.values} />
         </HeaderWrapper>
         <ListWrapper>
-          {content.map(({ title, description }) => (
-            <SmallWrapper key={`${title.id}`}>
+          {content.map(({ title, description }, index) => (
+            <SmallWrapper key={`${title.id}-${index}`}>
               <TitleWrapper>
                 <FormattedHTMLMessage id={title.id} values={title.values} />
               </TitleWrapper>
