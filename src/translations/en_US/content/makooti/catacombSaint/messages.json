@@ -1,0 +1,35 @@
+{
+  "content.makooti.catacombSaint": "Catacomb Saint",
+
+  "content.makooti.catacombSaint.blurb": "Anointed in ages past, these richly-adorned skeletons watch over the holy resting places and sacred relics of the One True Faith. Many have been branded apostates for irreconcilable differences in interpretation of scripture with current clergy, and more have been driven from their holy grounds, forced to wander the world.",
+
+  "content.makooti.catacombSaint.reformer": "You were a reformer, you have a strange notion of church doctrine, near incompatible with the current clergy.",
+  "content.makooti.catacombSaint.warrior": "You were a warrior, you brought glory in the church’s name.",
+  "content.makooti.catacombSaint.martyr": "You were a martyr, the fools wouldn’t listen, no matter how much you warned them. They killed you, but they died shortly after.",
+  "content.makooti.catacombSaint.convert": "You were a convert, you saw the Truth of the church late in life. Your story is still told as proof of faith convincing even the most stubborn to convert.",
+  "content.makooti.catacombSaint.clergy": "You were a well-loved member of the clergy, the church has forgotten you.",
+  "content.makooti.catacombSaint.relic": "You stole a relic, but died shortly after, cursed to guard it for eternity.",
+
+  "content.makooti.catacombSaint.undead.title": "Undead",
+  "content.makooti.catacombSaint.undead.description": "You are <span>literally a skeleton</span>. You do not eat, breath, sleep, or have any other functions that the living would have. You cannot become infected, but only resting can heal you, as you focus on the sacred rites that keep you together.",
+
+  "content.makooti.catacombSaint.sacredWatcher.title": "Sacred Watcher",
+  "content.makooti.catacombSaint.sacredWatcher.description": "You start with a random sacred scroll, and <span>can use sacred scrolls in medium or heavy armor</span>. You were charged with the care of one sacred relic.",
+  
+  "content.makooti.catacombSaint.sword.title": "Sacred Relic: Saint Brita's Purging Sword",
+  "content.makooti.catacombSaint.sword.description": "<span>D6, DR 10 to attack</span>. Deals double damage to wielders of unclean scrolls, undead, and demons. Deals triple damage on critical hits. Will attack you (DR 14 to defend) if you commit heresy, until you repent or die.",
+  "content.makooti.catacombSaint.miter.title": "Sacred Relic: Basilisk Miter",
+  "content.makooti.catacombSaint.miter.description": "A miter sanctified by HE, looking at it inspires awe. Those staring at it must test Presence at the start of their turn or <span>continue staring, becoming paralyzed</span> for d4 days after 3 failures in a row. After a success a creature is immune to the effect.",
+  "content.makooti.catacombSaint.water.title": "Sacred Relic: Holiest Water",
+  "content.makooti.catacombSaint.water.description": "Water that <span>burns anything</span>. Successfully splashing it (Presence) deals d8 damage this round and the next. d6+presence charges. The flask that holds the water is the relic.",
+  "content.makooti.catacombSaint.chaplet.title": "Sacred Relic: Saint Karl's Chaplet of Everlasting Life",
+  "content.makooti.catacombSaint.chaplet.description": "Has 3d6 beads. <span>Whenever you would be broken, roll d6 instead</span>. Up to that many beads break and you restore hp equal to the amount broken.",
+  "content.makooti.catacombSaint.crucifix.title": "Sacred Relic: Crucifix of the Dead",
+  "content.makooti.catacombSaint.crucifix.description": "A massive golden crucifix mounted with a small skeleton. <span>Undead tolerate you</span>, no roll required. The same cannot always be said for your companions. Heavy enough to require both hands and <span>deal d8 damage</span>, doubled against undead.",
+  "content.makooti.catacombSaint.arm.title": "Sacred Relic: The Arm of Saint Johan",
+  "content.makooti.catacombSaint.arm.description": "A gilded arm, set in a mahogany box. It <span>can be asked questions about the world</span> and will always answer truthfully, in what way an arm can. Grows tired after being asked Presence + d4 questions a day.",
+  "content.makooti.catacombSaint.shield.title": "Sacred Relic: Werna's Shield of Faith",
+  "content.makooti.catacombSaint.shield.description": "An ornamented shield that <span>reflects damage back to attackers</span>. All damage blocked by the shield and your armor is dealt back to your attacker.",
+  "content.makooti.catacombSaint.apocrypha.title": "Sacred Relic: Saint Pelle's Apocrypha",
+  "content.makooti.catacombSaint.apocrypha.description": "A heavily crossed out, edited, and written over work, writing in it can alter past or future events. Use a power and test Presence DR 16 to <span>write in the Apocrypha</span>, altering the course of past events or nudging future events on a certain course. You can’t stop the end of the world. On a success, the change becomes reality in some form or another. Failure causes a Misery. Critical failure causes the end of the world."
+}

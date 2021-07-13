@@ -12,6 +12,7 @@ import sunScorchedZealot from './khordal/sunScorchedZealot/messages.json';
 import landlockedBuccaneer from './makedatanotlore/landlockedBuccaneer/messages.json';
 import scvmatorium from './makedatanotlore/scvmatorium/messages.json';
 import scvmfurther2 from './makedatanotlore/scvmfurther2/messages.json';
+import catacombSaint from './makooti/catacombSaint/messages.json';
 import wargear from './mcglintlock/wargear/messages.json';
 import anCailleach from './michaelmars/anCailleach/messages.json';
 import sinfulSailor from './michaelmars/sinfulSailor/messages.json';
@@ -29,6 +30,7 @@ export default {
   ...blightedMerman,
   ...brazenBlacksmith,
   ...cannibalCook,
+  ...catacombSaint,
   ...corpsePlunderer,
   ...deathWitch,
   ...fugitiveKnight,

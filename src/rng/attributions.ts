@@ -10,6 +10,7 @@ import {
   heckinviv,
   khordal,
   makedatanotlore,
+  makooti,
   mcglintlock,
   michaelmars,
   neonon,
@@ -53,6 +54,13 @@ export const cannibalCook: Attribution = {
   id: 'cannibalCook',
   authors: [graytide],
   url: 'https://gray-tide.itch.io/cannibal-cook',
+};
+
+export const catacombSaint: Attribution = {
+  title: { id: 'content.makooti.catacombSaint' },
+  id: 'catacombSaint',
+  authors: [makooti],
+  url: 'https://imcclung.itch.io/catacomb-saint',
 };
 
 export const corpsePlunderer: Attribution = {
@@ -207,6 +215,7 @@ export const classAttributions = [
   blightedMerman,
   brazenBlacksmith,
   cannibalCook,
+  catacombSaint,
   corpsePlunderer,
   deathWitch,
   fugitiveKnight,
