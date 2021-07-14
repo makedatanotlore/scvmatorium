@@ -1,4 +1,5 @@
 import deathWitch from './anadversary/deathWitch/messages.json';
+import victrixLudorum from './astrolich/victrixLudorum/messages.json';
 import brazenBlacksmith from './ceph/brazenBlacksmith/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
@@ -49,5 +50,6 @@ export default {
   ...theWretchedUsurper,
   ...tormentedToymaker,
   ...uncredited,
+  ...victrixLudorum,
   ...wargear,  
 };

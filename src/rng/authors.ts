@@ -6,6 +6,12 @@ export const anadversary: Author = {
   url: 'https://anadversary.itch.io/',
 };
 
+export const astrolich: Author = {
+  id: 'astrolich',
+  name: 'Astrolich',
+  url: 'https://astrolich.itch.io/',
+};
+
 export const ceph: Author = {
   id: 'ceph',
   name: 'Ceph',

@@ -1,0 +1,21 @@
+{
+    "content.astrolich.victrixLudorum": "Victrix Ludorum",
+
+    "content.astrolich.victrixLudorum.hide.title": "Hide",
+    "content.astrolich.victrixLudorum.hide.description": "You have learned that the best way to attack your enemies is when they are looking the other way. You conceal yourself at a DR10.",
+
+    "content.astrolich.victrixLudorum.maim.title": "Maim",
+    "content.astrolich.victrixLudorum.maim.description": "You have an unconventional method of combat. When you land a critical hit, you force your enemy to roll on the broken table.",
+
+    "content.astrolich.victrixLudorum.stabbed.title": "Stabbed in the Bum",
+    "content.astrolich.victrixLudorum.stabbed.description": "Attack using your agility at DR +2. A successful blow renders the target incapable of moving.",
+
+    "content.astrolich.victrixLudorum.dirtySpear.title": "Dirty Spear",
+    "content.astrolich.victrixLudorum.dirtySpear.description": "Successful attacks with a spear infect.",
+
+    "content.astrolich.victrixLudorum.powers.title": "Powers",
+    "content.astrolich.victrixLudorum.powers.description": "You only generate d2 powers each day.",
+
+    "content.astrolich.victrixLudorum.spear.title": "Spear",
+    "content.astrolich.victrixLudorum.spear.description": "Two-handed, cannot use powers"
+}
