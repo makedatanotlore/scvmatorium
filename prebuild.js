@@ -54,8 +54,6 @@ main(
 		(contentPath, dirName) => x => { return existsSync(join(contentPath, dirName, x, "messages.json")); }
 );
 
-const test = `import ${data.value} from './${data.author}/${data.value}/messages.json';`;
-
 main(
 		'src/rng',
 		'classes/index.ts',
