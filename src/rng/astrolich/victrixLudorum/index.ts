@@ -1,6 +1,5 @@
 import { sampleSize, sample } from 'lodash/fp';
 import { victrixLudorum as attribution } from 'rng/attributions';
-import { scrolls } from 'rng/makedatanotlore/scvmatorium/equipment';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
@@ -27,17 +26,17 @@ export const victrixLudorum = (): Character => {
   const hp = rollHp(1, 8, abilities.toughness.score);
   const omens = rollOmens(1, 2);
 
-  const generalEquipment = rollStandardEquipment(false);
+  const generalEquipment = rollStandardEquipment();
   const armor = rollArmor(3, hasScroll(generalEquipment));
   const silver = rollSilver();
   const foodAndWater = rollFoodAndWater();
-  // const scroll = scrolls({min: 1, max: 2});
-  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, scrolls, silver];
+  const equipment = [foodAndWater, equipmentEntry(attribution, 'spear'), armor, ...generalEquipment, silver];
 
   const hide = titledEntry(attribution, 'hide');
   const maim = titledEntry(attribution, 'maim');
   const stabbed = titledEntry(attribution, 'stabbed');
   const dirtySpear = titledEntry(attribution, 'dirtySpear');
+  const powers = titledEntry(attribution, 'powers');
 
   return {
     tags: [attribution.id],
@@ -61,6 +60,7 @@ export const victrixLudorum = (): Character => {
 	  formatTitledEntry(maim),
 	  formatTitledEntry(stabbed),
 	  formatTitledEntry(dirtySpear),
+	  formatTitledEntry(powers),
       formatAbilities(abilities),
       {
         component: { id: 'equipmentList' },
@@ -71,7 +71,6 @@ export const victrixLudorum = (): Character => {
             formatEquipment(item, {
               presence: abilities.presence.score,
               money: { min: 20, max: 120 },
-			  scrollCount: { min: 1, max: 2 },
             })
           ),
       },

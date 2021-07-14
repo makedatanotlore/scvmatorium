@@ -13,6 +13,9 @@
     "content.astrolich.victrixLudorum.dirtySpear.title": "Dirty Spear",
     "content.astrolich.victrixLudorum.dirtySpear.description": "Successful attacks with a spear infect.",
 
+    "content.astrolich.victrixLudorum.powers.title": "Powers",
+    "content.astrolich.victrixLudorum.powers.description": "You only generate d2 powers each day.",
+
     "content.astrolich.victrixLudorum.spear.title": "Spear",
     "content.astrolich.victrixLudorum.spear.description": "Two-handed, cannot use powers"
 }

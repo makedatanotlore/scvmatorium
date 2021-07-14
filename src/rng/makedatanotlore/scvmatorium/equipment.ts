@@ -221,7 +221,3 @@ export const equipment = {
   foodAndWater,
   silver,
 };
-
-export const scrolls = entry('scrolls', ({ scrollCount }) => ({
-  amount: scrollCount === undefined ? 0 : random(scrollCount.min, scrollCount.max)!,
-}));
