@@ -20,7 +20,9 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+	"prestart": "node ./prebuild.js",
     "start": "react-scripts start",
+	"prebuild": "node ./prebuild.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
