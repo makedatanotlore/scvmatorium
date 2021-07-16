@@ -49,5 +49,5 @@ export default {
   ...theWretchedUsurper,
   ...tormentedToymaker,
   ...uncredited,
-  ...wargear,  
+  ...wargear,
 };

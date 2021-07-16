@@ -5,7 +5,7 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry} from 'rng/shared/entries';
+import { blurb, formatTableEntry, formatTitledEntry, tableEntry, titledEntry } from 'rng/shared/entries';
 import {
   formatEquipmentList,
   rollFoodAndWater,
