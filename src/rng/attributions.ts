@@ -3,6 +3,7 @@ import {
   anadversary,
   chalkdown,
   ceph,
+  gaffy,
   goatmansgoblet,
   graytide,
   greysonwhy,
@@ -26,6 +27,13 @@ export const anCailleach: Attribution = {
   id: 'anCailleach',
   authors: [michaelmars],
   url: 'https://www.drivethrurpg.com/product/349184/An-Cailleach-An-Irish-Folklore-Class-for-Mork-Borg',
+};
+
+export const antiquatedDrunkard: Attribution = {
+  title: { id: 'content.gaffy.antiquatedDrunkard' },
+  id: 'antiquatedDrunkard',
+  authors: [gaffy],
+  url: 'https://gaffy.itch.io/the-shadow-of-the-wu',
 };
 
 export const brazenBlacksmith: Attribution = {

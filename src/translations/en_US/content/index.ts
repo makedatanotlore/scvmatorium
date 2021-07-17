@@ -1,6 +1,7 @@
 import deathWitch from './anadversary/deathWitch/messages.json';
 import brazenBlacksmith from './ceph/brazenBlacksmith/messages.json';
 import blightedMerman from './chalkdown/blightedMerman/messages.json';
+import antiquatedDrunkard from './gaffy/antiquatedDrunkard/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
 import theWretchedUsurper from './goatmansgoblet/theWretchedUsurper/messages.json';
 import cannibalCook from './graytide/cannibalCook/messages.json';
@@ -26,6 +27,7 @@ import nachthex from './stregaflora/nachthex/messages.json';
 
 export default {
   ...anCailleach,
+  ...antiquatedDrunkard,
   ...betrayedPhantom,
   ...blightedMerman,
   ...brazenBlacksmith,

@@ -1,0 +1,31 @@
+{
+  "content.gaffy.antiquatedDrunkard": "Antiquated Drunkard",
+  "content.gaffy.antiquatedDrunkard.blurb": "",
+
+  "content.gaffy.antiquatedDrunkard.general": "You were once someone important, you used to be a great general to a nation whose name was lost in timea.",
+  "content.gaffy.antiquatedDrunkard.wealthy": "You were once someone important, you used to be Part of a wealthy family, they however saw you for the useless slob you are and threw you out to the streets (Start with an extra d6 x 10 of silver).",
+  "content.gaffy.antiquatedDrunkard.clergy": "You were once someone important, you used to be A member of the clergy that was found heretical once HE was shown to know the fate of this world.",
+  "content.gaffy.antiquatedDrunkard.musician": "You were once someone important, you used to be A famous musician, traveling from town to town. One night of drunken antics has set you permanently on the wrong side of the law.",
+  "content.gaffy.antiquatedDrunkard.artist": "You were once someone important, you used to be An artist of great esteem, that is until your art was deemed blasphemous and a price was put on your head.",
+  "content.gaffy.antiquatedDrunkard.forgotten": "You were once someone important, you used to be You can’t quite remember, you’re almost positive you’ve always been a drunken piece of shit.",
+
+  "content.gaffy.antiquatedDrunkard.drunk.title": "Drunk",
+  "content.gaffy.antiquatedDrunkard.drunk.description": "Before the next time you rest or get better you must consume one days worth of food and water or you become hungover. While drunk you may consume more spirits for multiple effects, for each additional spirit consumed you get an additional +1 Strength.",
+  "content.gaffy.antiquatedDrunkard.hungover.title": "Hungover",
+  "content.gaffy.antiquatedDrunkard.hungover.description": "You wake up with a splitting headache, your body is slow to react, and you have no energy. Until you use a healing item to cure your hangover (You do not regain health when curing your hangover) all abilities are -1 (unless they were already worse) For each extra level of drunkenness you had before becoming hungover you take 1 damage. This can kill you.",
+
+  "content.gaffy.antiquatedDrunkard.potables": "Abilities",
+  "content.gaffy.antiquatedDrunkard.tableDescription": "When starting roll for a spirit. When getting better you may roll for a spirit to see what you begin brewing. This spirit will be ready the next time you get better.",
+  "content.gaffy.antiquatedDrunkard.wine.title": "Wine of the Death Fruit",
+  "content.gaffy.antiquatedDrunkard.wine.description": "d6+1 servings. A wine that grows stronger with time. Strength +2 (each time you get better increase its potency by +2)",
+  "content.gaffy.antiquatedDrunkard.tequila.title": "God’s Tears Tequila",
+  "content.gaffy.antiquatedDrunkard.tequila.description": "d6+1 servings. A sweet spirit made from flows that grow from the corpse’s of the innocent. Heal 2d6 +2 toughness",
+  "content.gaffy.antiquatedDrunkard.stout.title": "Skullcrack Stout",
+  "content.gaffy.antiquatedDrunkard.stout.description": "d8+1 servings. A beer with a secret ingredient, Brains! +d6 Damage, on the added d6 if you roll a 6, add it to your total and reroll it.",
+  "content.gaffy.antiquatedDrunkard.whiskey.title": "Wormwood Whiskey",
+  "content.gaffy.antiquatedDrunkard.whiskey.description": "d6+1 servings. A dark liquor made from the wood of a tree that bleeds like man. Roll d6 1: You swallow a woodworm+2 Presence when using scrolls. 2-6: You are immune to infection.",
+  "content.gaffy.antiquatedDrunkard.brandy.title": "Blood Blossom Brandy",
+  "content.gaffy.antiquatedDrunkard.brandy.description": "d6+1 servings. A complicated spirit infused with flowers known to hold secrets of the future. +d6 omens (these are temporary and are lost the next time you rest or get better)",
+  "content.gaffy.antiquatedDrunkard.moonshine.title": "Moonshine of The Mad Gods",
+  "content.gaffy.antiquatedDrunkard.moonshine.description": "d10+1 servings. You blackout and a force from beyond uses you as a vessel to brew their choice beverage. You can survive up to -4 damage."
+}

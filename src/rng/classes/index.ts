@@ -1,6 +1,7 @@
 import { deathWitch } from 'rng/anadversary/deathWitch';
 import { brazenBlacksmith } from 'rng/ceph/brazenBlacksmith';
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
+import { antiquatedDrunkard } from 'rng/gaffy/antiquatedDrunkard';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
 import { cannibalCook } from 'rng/graytide/cannibalCook';
@@ -20,24 +21,25 @@ import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
 
 export const classes = {
-  anCailleach,
-  betrayedPhantom,
-  blightedMerman,
-  brazenBlacksmith,
-  cannibalCook,
-  catacombSaint,
-  corpsePlunderer,
-  deathWitch,
-  fugitiveKnight,
-  landlockedBuccaneer,
-  misbegottenRelict,
-  mutatedGoblin,
-  nachthex,
-  psyberDevangelist,
-  rottingRecalcitrant,
-  sinfulSailor,
-  sunScorchedZealot,
-  suitorKnightOfKergus,
-  theWretchedUsurper,
-  tormentedToymaker,
+//   anCailleach,
+antiquatedDrunkard,
+//   betrayedPhantom,
+//   blightedMerman,
+//   brazenBlacksmith,
+//   cannibalCook,
+//   catacombSaint,
+//   corpsePlunderer,
+//   deathWitch,
+//   fugitiveKnight,
+//   landlockedBuccaneer,
+//   misbegottenRelict,
+//   mutatedGoblin,
+//   nachthex,
+//   psyberDevangelist,
+//   rottingRecalcitrant,
+//   sinfulSailor,
+//   sunScorchedZealot,
+//   suitorKnightOfKergus,
+//   theWretchedUsurper,
+//   tormentedToymaker,
 };
