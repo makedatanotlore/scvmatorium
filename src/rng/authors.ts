@@ -18,6 +18,12 @@ export const chalkdown: Author = {
   url: 'https://chalkdown.itch.io/',
 };
 
+export const gaffy: Author = {
+  id: 'gaffy',
+  name: 'Luis Bishop Lopez',
+  url: 'https://gaffy.itch.io/',
+};
+
 export const goatmansgoblet: Author = {
   id: 'goatmansgoblet',
   name: 'Brian Yaksha',

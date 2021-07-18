@@ -1,6 +1,7 @@
 import { deathWitch } from 'rng/anadversary/deathWitch';
 import { brazenBlacksmith } from 'rng/ceph/brazenBlacksmith';
 import { blightedMerman } from 'rng/chalkdown/blightedMerman';
+import { antiquatedDrunkard } from 'rng/gaffy/antiquatedDrunkard';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
 import { cannibalCook } from 'rng/graytide/cannibalCook';
@@ -21,6 +22,7 @@ import { nachthex } from 'rng/stregaflora/nachthex';
 
 export const classes = {
   anCailleach,
+  antiquatedDrunkard,
   betrayedPhantom,
   blightedMerman,
   brazenBlacksmith,
