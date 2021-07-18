@@ -135,7 +135,7 @@ export const rollFoodAndWater = () => {
   return sample(tables.equipment.foodAndWater)!;
 };
 
-export const rollStandardEquipment = (includeScrolls=true) => {
+export const rollStandardEquipment = (includeScrolls = true) => {
   const equipmentList = [
     ...sampleSize(21, tables.equipment.general),
     sharedEntry('shield'),

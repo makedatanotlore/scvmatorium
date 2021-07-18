@@ -24,7 +24,7 @@ import { Character, TableEntry } from 'types/character';
 export const equipmentEntry = (id: string): TableEntry => ({
   id: `graytide-${id}`,
   tags: ['graytide', 'cannibalCook', 'equipment', id],
-  attribution: attribution,
+  attribution,
   content: {
     tags: ['graytide', 'cannibalCook', 'equipment', id],
     title: {

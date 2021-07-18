@@ -11,11 +11,11 @@ const entryFn = (x: string) => equipmentEntry(attribution, x, ({ presence }) => 
 }));
 
 export const d2Weapons = [
-  'blowgun',  
+  'blowgun',
   'bola',
   'bullwhip',
   'hairPin',
-  'letterOpener',  
+  'letterOpener',
 ].map(entryFn);
 
 export const d4Weapons = [
@@ -55,7 +55,7 @@ export const d4Weapons = [
 
 export const d6Weapons = [
   'assegai',
-  'boatpaddle',  
+  'boatpaddle',
   'broadaxe',
   'cudgel',
   'cutlass',

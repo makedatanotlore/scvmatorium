@@ -77,7 +77,7 @@ export const tormentedToymaker = (): Character => {
           },
           ...toys,
         ],
-      },      
+      },
       formatAbilities(abilities),
       formatEquipmentList(equipment, abilities.presence.score, silverRange),
     ],

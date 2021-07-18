@@ -1,18 +1,18 @@
 import { terriblerBrokenerBadder as attribution } from 'rng/attributions';
 import { Attribution, TableEntry } from 'types/character';
 
-const entry = (attribution: Attribution, tag: string, titleId: string, id: string): TableEntry => ({
-  id: `${attribution.id}-${id}`,
-  tags: [attribution.authors[0].id, attribution.id, tag, id],
-  attribution,
+const entry = (attr: Attribution, tag: string, titleId: string, id: string): TableEntry => ({
+  id: `${attr.id}-${id}`,
+  tags: [attr.authors[0].id, attr.id, tag, id],
+  attr,
   content: {
-    tags: [attribution.authors[0].id, attribution.id, tag, id],
+    tags: [attr.authors[0].id, attr.id, tag, id],
     title: {
       id: `character.stats.standard.${titleId}`,
       values: {},
     },
     description: {
-      id: `content.${attribution.authors[0].id}.${attribution.id}.${id}`,
+      id: `content.${attr.authors[0].id}.${attr.id}.${id}`,
       values: {},
     },
   },
@@ -119,7 +119,7 @@ export const badderHabits = [
   'disorganized',
   'fascinatedByFilth',
   // scvmfurther2 already has bully as a trait
-  // 'bully',  
+  // 'bully',
   'dontListen',
   'singDuringCombat',
   'drunkAtBreakfast',
