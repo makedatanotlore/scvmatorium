@@ -23,7 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea/
-
-#auto-generated files
-src/rng/classes/index.ts
-src/translations/en_US/content/index.ts
