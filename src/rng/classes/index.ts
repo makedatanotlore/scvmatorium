@@ -4,6 +4,7 @@ import { blightedMerman } from 'rng/chalkdown/blightedMerman';
 import { suitorKnightOfKergus } from 'rng/goatmansgoblet/suitorKnightOfKergus';
 import { theWretchedUsurper } from 'rng/goatmansgoblet/theWretchedUsurper';
 import { cannibalCook } from 'rng/graytide/cannibalCook';
+import { catacombSaint } from 'rng/makooti/catacombSaint';
 import { psyberDevangelist } from 'rng/greysonwhy/psyberDevangelist';
 import { corpsePlunderer } from 'rng/harkenstone/corpsePlunderer';
 import { mutatedGoblin } from 'rng/heckinviv/mutatedGoblin';
@@ -24,6 +25,7 @@ export const classes = {
   blightedMerman,
   brazenBlacksmith,
   cannibalCook,
+  catacombSaint,
   corpsePlunderer,
   deathWitch,
   fugitiveKnight,

@@ -4,6 +4,7 @@ import blightedMerman from './chalkdown/blightedMerman/messages.json';
 import suitorKnightOfKergus from './goatmansgoblet/suitorKnightOfKergus/messages.json';
 import theWretchedUsurper from './goatmansgoblet/theWretchedUsurper/messages.json';
 import cannibalCook from './graytide/cannibalCook/messages.json';
+import catacombSaint from './makooti/catacombSaint/messages.json';
 import psyberDevangelist from './greysonwhy/psyberDevangelist/messages.json';
 import corpsePlunderer from './harkenstone/corpsePlunderer/messages.json';
 import mutatedGoblin from './heckinviv/mutatedGoblin/messages.json';
@@ -29,6 +30,7 @@ export default {
   ...blightedMerman,
   ...brazenBlacksmith,
   ...cannibalCook,
+  ...catacombSaint,
   ...corpsePlunderer,
   ...deathWitch,
   ...fugitiveKnight,

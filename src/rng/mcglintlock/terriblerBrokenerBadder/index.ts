@@ -4,7 +4,7 @@ import { Attribution, TableEntry } from 'types/character';
 const entry = (attr: Attribution, tag: string, titleId: string, id: string): TableEntry => ({
   id: `${attr.id}-${id}`,
   tags: [attr.authors[0].id, attr.id, tag, id],
-  attr,
+  attribution: attr,
   content: {
     tags: [attr.authors[0].id, attr.id, tag, id],
     title: {
