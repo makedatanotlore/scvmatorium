@@ -23,6 +23,7 @@ import rottingRecalcitrant from './ripleyc/rottingRecalcitrant/messages.json';
 import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import uncredited from './shared/uncredited/messages.json';
 import nachthex from './stregaflora/nachthex/messages.json';
+import indomitableMountaineer from './rugosekohn/indomitableMountaineer/messages.json';
 
 export default {
   ...anCailleach,
@@ -34,6 +35,7 @@ export default {
   ...corpsePlunderer,
   ...deathWitch,
   ...fugitiveKnight,
+  ...indomitableMountaineer,
   ...misbegottenRelict,
   ...mutatedGoblin,
   ...landlockedBuccaneer,

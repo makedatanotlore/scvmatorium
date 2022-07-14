@@ -1,0 +1,28 @@
+{
+  "content.rugosekohn.indomitableMountaineer": "Indomitable Mountaineer",
+  "content.rugosekohn.indomitableMountaineer.blurb": "Fearless and brash, the indomitable mountaineer can be found scaling cliffs, summiting peaks, and flaunting their mastery of nature across the dying world.",
+
+  "content.rugosekohn.indomitableMountaineer.alpinist.title": "Cunning Alpinist",
+  "content.rugosekohn.indomitableMountaineer.alpinist.description": "No precipice too sheer, no spire too high; you can climb almost anything with the greatest of ease. All climbing tests have their DR reduced by 2.",
+  "content.rugosekohn.indomitableMountaineer.circles.title": "Going in Circles",
+  "content.rugosekohn.indomitableMountaineer.circles.description": "Your mastery of the natural world affords you to always know your way. Getting lost or losing your prey is never an issue, as navigation and tracking come easy. When searching for the right route your effective Presence is +3.",
+  "content.rugosekohn.indomitableMountaineer.looksBad.title": "That Looks Bad",
+  "content.rugosekohn.indomitableMountaineer.looksBad.description": "Over your years of mountaineering you’ve learned how to treat wounds in the field with aplomb. You can mend the most grievous of wounds with a DR8 Toughness test as though you have a medicine chest (MÖRK BORG 25).",
+  "content.rugosekohn.indomitableMountaineer.luckyBastard.title": "Lucky Bastard",
+  "content.rugosekohn.indomitableMountaineer.luckyBastard.description": "They saw you plunge over the edge to your certain death, but somehow you managed to break your fall. Damage from falling is always cut in half and rounded down.",
+  "content.rugosekohn.indomitableMountaineer.bushConnoisseur.title": "Bush Connoisseur",
+  "content.rugosekohn.indomitableMountaineer.bushConnoisseur.description": "The world is your oyster—in a culinary sense. Food is always plentiful when you know where to look and you have a knack for finding edible seeds and berries.",
+  "content.rugosekohn.indomitableMountaineer.macgyver.title": "Macgyver That Shit",
+  "content.rugosekohn.indomitableMountaineer.macgyver.description": "A mountaineer is only as good as their gear. Maintainence can be a real chore while on a towering peak and the rigors of climbing can cause things to wear out. Bodge broken equipment to get one more use out of it with a DR8 Agility test.",
+
+  "content.rugosekohn.indomitableMountaineer.firstClimb.title": "Your first climb was when…",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.terion.description": "you had to claw your way up Terion after being washed out to sea.",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.orphaned.description": "you were orphaned on the frozen peaks of Kergüs and the icy range became your family.",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.falseProphet.description": "a false prophet left you for dead in a Bergen Chrypt cave, but you found a way down.",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.sarkash.description": "the terrors of the forest drove you to seek refuge in the towering trees of the Sarkash.",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.fathmu.description": "Fathmu condemned you to die in his deepest pits, but you scaled the prison wall to freedom.",
+  "content.rugosekohn.indomitableMountaineer.firstClimb.galgenbeck.description": "the steeples and towers of Galgenbeck were your way out of the effluvia of the gutter.",
+
+  "content.rugosekohn.indomitableMountaineer.mountainGoat.title": "Bellicose Mountain Goat",
+  "content.rugosekohn.indomitableMountaineer.mountainGoat.description": "({hp} HP, horny headbutt d6, 1-in-6 chance it eats a random piece of equipment)"
+}
