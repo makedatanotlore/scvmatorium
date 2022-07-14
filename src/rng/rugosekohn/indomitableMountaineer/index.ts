@@ -5,7 +5,7 @@ import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
 import { formatHabit } from 'rng/shared/habits';
 import { formatTrait } from 'rng/shared/traits';
-import { blurb, formatTitledEntry, titledEntry } from 'rng/shared/entries';
+import { blurb, equipmentEntry, formatTableEntry, formatTitledEntry, titledEntry, tableEntry } from 'rng/shared/entries';
 import {
   formatEquipmentList,
   hasScroll,
@@ -19,61 +19,17 @@ import { rollHp, formatHp } from 'rng/shared/hp';
 import { formatName } from 'rng/shared/names';
 import { rollOmens, formatOmens } from 'rng/shared/omens';
 import tables from 'rng/tables';
-import { Character, GenerateValuesFn, TableEntry, TableEntryBig } from 'types/character';
+import { Character } from 'types/character';
 
-const entry = (
-  id: string,
-): TableEntryBig => ({
-  id: `indomitableMountaineer-${id}`,
-  tags: ['rugosekohn', 'indomitableMountaineer', id],
-  attribution: attribution,
-  content: {
-    component: { id: 'plainBox' },
-    header: {
-      id: `content.rugosekohn.indomitableMountaineer.firstClimb.title`,
-      values: {},
-    },
-    content: [
-      {
-        tags: ['rugosekohn', 'indomitableMountaineer', id],
-        title: {
-          id: `content.rugosekohn.indomitableMountaineer.firstClimb.title`,
-          values: {},
-        },
-        description: {
-          id: `content.rugosekohn.indomitableMountaineer.firstClimb.${id}.description`,
-          values: {},
-        },
-      },
-    ],
-  },
-});
-
-const animalEntry = (id: string, generateValues?: GenerateValuesFn): TableEntry => ({
-  id: `indomitableMountaineer-${id}`,
-  tags: ['rugosekohn', 'indomitableMountaineer', id],
-  attribution: attribution,
-  content: {
-    tags: ['rugosekohn', 'indomitableMountaineer', id],
-    title: {
-      id: `content.rugosekohn.indomitableMountaineer.${id}.title`,
-      values: {},
-    },
-    description: {
-      id: `content.rugosekohn.indomitableMountaineer.${id}.description`,
-      values: {},
-    },
-  },
-  generateValues,
-});
-
-const goat = animalEntry('mountainGoat', () => ({ hp: random(1, 4) + 1 }));
 
 export const indomitableMountaineer = (): Character => {
   const abilities = rollAbilities(2, 0, -2, 0);
   const hp = rollHp(1, 8, abilities.toughness.score);
   const omens = rollOmens(1, 3);
 
+  const goat = equipmentEntry(attribution, 'mountainGoat', () => ({ hp: random(1, 4) + 1 }));
+  const rope = equipmentEntry(attribution, 'rope');
+  const grapplingHook = equipmentEntry(attribution, 'grapplingHook');
   const generalEquipment = rollStandardEquipment()
     .map((item) =>
 	  ['scvmatorium-scabbyCat', 'scvmatorium-tinyCobra', 'scvmatorium-warRooster', 'scvmatorium-vampreyLamprey'].includes(item.id) ? goat : item
@@ -84,7 +40,7 @@ export const indomitableMountaineer = (): Character => {
   const silver = rollSilver();
   const silverRange = {min: 40, max: 240};
   const foodAndWater = rollFoodAndWater();
-  const equipment = [foodAndWater, weapon, armor, silver, ...generalEquipment];
+  const equipment = [foodAndWater, weapon, armor, silver, ...generalEquipment, rope, grapplingHook];
 
   const specialty = [
     'alpinist',
@@ -101,7 +57,7 @@ export const indomitableMountaineer = (): Character => {
     'sarkash',
     'fathmu',
     'galgenbeck',
-  ].map((x) => entry(x));
+  ].map((x) => tableEntry(attribution, x));
 
   return {
     tags: [attribution.id],
@@ -119,13 +75,13 @@ export const indomitableMountaineer = (): Character => {
         header: { id: 'character.stats.titles.introduction', values: {} },
         content: [
           blurb(attribution),
+	      formatTableEntry(sample(firstClimb)!),
           ...sampleSize(2, tables.traits).map((trait) => formatTrait(trait)),
           formatBody(sample(tables.bodies)!),
           formatHabit(sample(tables.habits)!),
         ],
       },
       ...sampleSize(2, specialty).map((spec) => formatTitledEntry(spec)),
-      formatTitledEntry(sample(firstClimb)!),
       formatAbilities(abilities),
       formatEquipmentList(equipment, abilities.presence.score, silverRange)
     ],
