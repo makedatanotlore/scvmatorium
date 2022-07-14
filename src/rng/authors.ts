@@ -102,6 +102,12 @@ export const ripleyc: Author = {
   url: 'https://ripleyc.itch.io/',
 };
 
+export const rugosekohn: Author = {
+  id: 'rugosekohn',
+  name: 'Rugose Kohn',
+  url: 'https://rugose-kohn.itch.io/',
+}
+
 export const sashadeath: Author = {
   id: 'sashadeath',
   name: 'Sasha De\'ath',

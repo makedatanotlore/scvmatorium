@@ -17,6 +17,7 @@ import {
   peppermintBones,
   reverendunclebastard,
   ripleyc,
+  rugosekohn,
   sashadeath,
   stregaflora,
 } from 'rng/authors';
@@ -82,6 +83,13 @@ export const fugitiveKnight: Attribution = {
   id: 'fugitiveKnight',
   authors: [neonon],
   url: 'https://neonon.itch.io/mork-borg-fugitive-knight',
+};
+
+export const indomitableMountaineer: Attribution = {
+  title: { id: 'content.rugosekohn.indomitableMountaineer' },
+  id: 'indomitableMountaineer',
+  authors: [rugosekohn],
+  url: 'https://rugose-kohn.itch.io/indomitable-mountaineer',
 };
 
 export const landlockedBuccaneer: Attribution = {
@@ -209,6 +217,7 @@ export const contentAttributions = [
   terriblerBrokenerBadder,
   wargear,
 ];
+
 export const classAttributions = [
   anCailleach,
   betrayedPhantom,
@@ -219,6 +228,7 @@ export const classAttributions = [
   corpsePlunderer,
   deathWitch,
   fugitiveKnight,
+  indomitableMountaineer,
   landlockedBuccaneer,
   misbegottenRelict,
   mutatedGoblin,

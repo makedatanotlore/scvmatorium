@@ -16,6 +16,7 @@ import { sinfulSailor } from 'rng/michaelmars/sinfulSailor'
 import { fugitiveKnight } from 'rng/neonon/fugitiveKnight';
 import { tormentedToymaker } from 'rng/reverendunclebastard/tormentedToymaker';
 import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
+import { indomitableMountaineer } from 'rng/rugosekohn/indomitableMountaineer';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
 
@@ -29,6 +30,7 @@ export const classes = {
   corpsePlunderer,
   deathWitch,
   fugitiveKnight,
+  indomitableMountaineer,
   landlockedBuccaneer,
   misbegottenRelict,
   mutatedGoblin,
