@@ -24,6 +24,7 @@ import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import uncredited from './shared/uncredited/messages.json';
 import nachthex from './stregaflora/nachthex/messages.json';
 import indomitableMountaineer from './rugosekohn/indomitableMountaineer/messages.json';
+import desperateFarmhand from './raptorshadow/desperateFarmhand/messages.json'
 
 export default {
   ...anCailleach,
@@ -34,6 +35,7 @@ export default {
   ...catacombSaint,
   ...corpsePlunderer,
   ...deathWitch,
+  ...desperateFarmhand,
   ...fugitiveKnight,
   ...indomitableMountaineer,
   ...misbegottenRelict,

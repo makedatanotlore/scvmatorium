@@ -90,6 +90,11 @@ export const peppermintBones: Author = {
   url: 'https://metalskull-games.itch.io/',
 };
 
+export const raptorshadow: Author = {
+  id: 'raptorshadow',
+  name: 'Bird Silhouette Games',
+  url: 'https://birdsilhouette.itch.io/',
+};
 export const reverendunclebastard: Author = {
   id: 'reverendunclebastard',
   name: 'Reverend Uncle Bastard',
