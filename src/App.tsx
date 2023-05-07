@@ -4,10 +4,8 @@ import { store } from 'ducks/store';
 import Main from 'views/Main';
 
 function App() {
-  return (
-    <Provider store={store}>
-      <Main />
-    </Provider>
+  // @ts-ignore
+    return (<Provider store={store}><Main /></Provider>
   );
 }
 

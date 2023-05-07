@@ -3,20 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.11.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "lodash": "^4.17.15",
-    "react": "^16.13.1",
-    "react-collapsible": "^2.8.1",
-    "react-dom": "^16.13.1",
-    "react-intl": "^3.11.0",
-    "react-intl-redux": "^2.2.0",
-    "react-redux": "^7.2.0",
-    "react-scripts": "3.4.3",
-    "react-to-print": "^2.9.0",
-    "redux": "^4.0.5",
-    "styled-components": "^5.2.0",
-    "tslint": "^6.1.2"
+    "react": "^18.2.0",
+    "react-collapsible": "^2.10.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^3.4.2",
+    "react-intl-redux": "^2.3.0",
+    "react-redux": "^8.0.5",
+    "react-scripts": "5.0.1",
+    "react-to-print": "^2.14.12",
+    "redux": "^4.2.1",
+    "styled-components": "^6.0.0-rc.1",
+    "babel-plugin-styled-components": "^2.1.1",
+    "tslint": "^6.1.2",
+    "sanitize-html": "^2.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,18 +42,15 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/lodash": "^4.14.150",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-intl-redux": "^0.1.14",
-    "@types/react-redux": "^7.1.9",
-    "@types/styled-components": "^4.4.2",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^20.1.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@types/react-intl-redux": "^0.1.16",
+    "@types/react-redux": "^7.1.25",
+    "@types/styled-components": "^5.1.26",
     "redux-devtools-extension": "^2.13.8",
-    "typescript": "^4.7.4"
+    "@types/sanitize-html": "^2.9.0",
+    "typescript": "^5.0.4"
   }
 }
