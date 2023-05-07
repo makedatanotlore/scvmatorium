@@ -1,5 +1,5 @@
 import { sampleSize, sample, random } from 'lodash/fp';
-import { catacombSaint as attribution } from 'rng/attributions';
+import { desperateFarmhand as attribution } from 'rng/attributions';
 import { formatAbilities, rollAbilities } from 'rng/shared/abilities';
 import { formatBody } from 'rng/shared/bodies';
 import { formatClass } from 'rng/shared/class';
