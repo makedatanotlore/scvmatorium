@@ -26,7 +26,7 @@ import nachthex from './stregaflora/nachthex/messages.json';
 import indomitableMountaineer from './rugosekohn/indomitableMountaineer/messages.json';
 import desperateFarmhand from './raptorshadow/desperateFarmhand/messages.json'
 
-export default {
+const content = {
   ...anCailleach,
   ...betrayedPhantom,
   ...blightedMerman,
@@ -54,4 +54,5 @@ export default {
   ...tormentedToymaker,
   ...uncredited,
   ...wargear,
-};
+}
+export default content;
