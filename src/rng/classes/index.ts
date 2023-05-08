@@ -19,6 +19,7 @@ import { rottingRecalcitrant } from 'rng/ripleyc/rottingRecalcitrant';
 import { indomitableMountaineer } from 'rng/rugosekohn/indomitableMountaineer';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
+import { desperateFarmhand } from 'rng/raptorshadow/desperateFarmhand';
 
 export const classes = {
   anCailleach,
@@ -29,6 +30,7 @@ export const classes = {
   catacombSaint,
   corpsePlunderer,
   deathWitch,
+  desperateFarmhand,
   fugitiveKnight,
   indomitableMountaineer,
   landlockedBuccaneer,

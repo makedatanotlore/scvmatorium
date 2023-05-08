@@ -15,6 +15,7 @@ import {
   michaelmars,
   neonon,
   peppermintBones,
+  raptorshadow,
   reverendunclebastard,
   ripleyc,
   rugosekohn,
@@ -76,6 +77,13 @@ export const deathWitch: Attribution = {
   id: 'deathWitch',
   authors: [anadversary],
   url: 'https://anadversary.itch.io/death-witch',
+};
+
+export const desperateFarmhand: Attribution = {
+  title: { id: 'content.raptorshadow.desperateFarmhand' },
+  id: 'desperateFarmhand',
+  authors: [raptorshadow],
+  url: 'https://birdsilhouette.itch.io/the-desperate-farmhand-zine',
 };
 
 export const fugitiveKnight: Attribution = {
@@ -227,6 +235,7 @@ export const classAttributions = [
   catacombSaint,
   corpsePlunderer,
   deathWitch,
+  desperateFarmhand,
   fugitiveKnight,
   indomitableMountaineer,
   landlockedBuccaneer,

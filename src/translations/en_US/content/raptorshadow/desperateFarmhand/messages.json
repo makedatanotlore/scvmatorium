@@ -1,0 +1,30 @@
+{
+    "content.raptorshadow.desperateFarmhand": "Desperate Farmhand",
+  
+    "content.raptorshadow.desperateFarmhand.blurb": "The yields: ever lower. The work: ever harder. The pay? What? Get back to work before I thrash you!",
+  
+    "content.raptorshadow.desperateFarmhand.stable": "Your bed was in the stable. Neigh.",
+    "content.raptorshadow.desperateFarmhand.kennel": "Your bed was in the kennel. Woof.",
+    "content.raptorshadow.desperateFarmhand.field": "Your bed was in the field. Moo.",
+    "content.raptorshadow.desperateFarmhand.barn": "Your bed was in the barn. Hoot.",
+    "content.raptorshadow.desperateFarmhand.village": "Your bed was in the village. Hope you can affort rent.",
+  
+    "content.raptorshadow.desperateFarmhand.pitchfork.title": "Pitchfork",
+    "content.raptorshadow.desperateFarmhand.pitchfork.description": "d6 damage",
+  
+    "content.raptorshadow.desperateFarmhand.wellies.title": "Wellingtons",
+    "content.raptorshadow.desperateFarmhand.wellies.description": "tier 1 armor (-d2 incoming damage). Can move through mud, muck, and other awful ground unchallenged",
+    
+    "content.raptorshadow.desperateFarmhand.horsefeed.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.horsefeed.description": "A sack of horse feed.",
+    "content.raptorshadow.desperateFarmhand.hatred.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.hatred.description": "A cynical hatred of landowners (DR10 when attacking the rich, this includes rhetorically).",
+    "content.raptorshadow.desperateFarmhand.books.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.books.description": "A stash of books from the master's library.",
+    "content.raptorshadow.desperateFarmhand.brandy.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.brandy.description": "A rare bottle of fine brandy.",
+    "content.raptorshadow.desperateFarmhand.letters.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.letters.description": "Letters proving you are the son of a wealthy noble.",
+    "content.raptorshadow.desperateFarmhand.sheep.title": "You left the farm with:",
+    "content.raptorshadow.desperateFarmhand.sheep.description": "A herd of 6 sheep (they refuse your instructions, shit everywhere, and bleat incessantly; but they will get in the way of any killing blow against you or your companions)."
+  }
