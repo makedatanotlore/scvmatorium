@@ -15,9 +15,21 @@ export const Header = styled.div`
   justify-content: space-between;
   color: ${({ theme }) => theme.text.inverted};
   font-weight: 700;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   align-items: center;
 
+  ${mediaQuery.phone}{
+    padding: 0.5rem;
+  }
+`;
+
+export const Subheader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  color: ${({ theme }) => theme.text.inverted};
+  font-weight: 700;
+  padding: 0.5rem;
+  align-items: center;
 
   ${mediaQuery.phone}{
     padding: 0.1rem;
@@ -35,8 +47,8 @@ export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 0.5rem;
   font-size: 1em;
+  padding: 0.5rem;
 
   ${mediaQuery.phone}{
     font-size: 0.85em;

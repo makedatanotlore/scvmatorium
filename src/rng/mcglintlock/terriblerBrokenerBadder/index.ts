@@ -124,14 +124,17 @@ export const badderHabits = [
   'singDuringCombat',
   'drunkAtBreakfast',
   'overrelyOnothers',
-  'preferToBeNude',
+  // feels a bit too sexual for MB
+  // 'preferToBeNude',
   'alwaysVictim',
   'poseTheDead',
   'cheater',
-  'beatSelf',
+  // i feel this might be problematic in the same way as bipolar in MB's first printing
+  // 'beatSelf',
   'easiestWay',
   'eatUntilSick',
-  'publicUrinator',
+  // feels a bit too sexual for MB
+  // 'publicUrinator',
   'abhorSilence',
   'doubleCrosser',
   'dirtyFighter',

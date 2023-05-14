@@ -1,7 +1,7 @@
 {
   "content.anadversary.deathWitch": "Death Witch",
 
-  "content.anadversary.deathWitch.blurb": "<strong>What? Do you have a Death Witch?</strong><p>The unclean blessing on Nechrubel is on you. <strong>WORK IT!</strong>",
+  "content.anadversary.deathWitch.blurb": "<strong>What? Do you have a Death Witch?</strong>The unclean blessing on Nechrubel is on you. <strong>WORK IT!</strong>",
 
   "content.anadversary.deathWitch.powers.title": "Powers",
   "content.anadversary.deathWitch.powers.description": "<span>Roll Presence + d6 every morning for daily powers</span>. Due to study and unholy devotion, when reading an Unclean Scroll test Presence DR10. If you succeed, the power is cast and you subtract one from your daily total. If you fail, the power does not work, you take no damage, but have to wait d6x10 minutes to cast again. Normal DR and effects when reading Sacred Scrolls.",

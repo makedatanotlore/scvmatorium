@@ -16,6 +16,7 @@ import {
   neonon,
   nyhur,
   peppermintBones,
+  raptorshadow,
   reverendunclebastard,
   ripleyc,
   rugosekohn,
@@ -86,6 +87,13 @@ export const deathWitch: Attribution = {
   url: 'https://anadversary.itch.io/death-witch',
 };
 
+export const desperateFarmhand: Attribution = {
+  title: { id: 'content.raptorshadow.desperateFarmhand' },
+  id: 'desperateFarmhand',
+  authors: [raptorshadow],
+  url: 'https://birdsilhouette.itch.io/the-desperate-farmhand-zine',
+};
+
 export const fugitiveKnight: Attribution = {
   title: { id: 'content.neonon.fugitiveKnight' },
   id: 'fugitiveKnight',
@@ -147,6 +155,13 @@ export const scvmatorium: Attribution = {
   id: 'scvmatorium',
   authors: [makedatanotlore],
   url: 'https://docs.google.com/document/d/1VPsCnoa4SDvoNTpUYR_oTwMz4kksyiV0iaEePjreHlc/edit?usp=sharing',
+};
+
+export const moreNames: Attribution = {
+  title: { id: 'content.mcglintlock.moreNames' },
+  id: 'moreNames',
+  authors: [mcglintlock],
+  url: 'https://discord.com/channels/587764299834064933/683439768624955451/1107311190251687967',
 };
 
 export const scvmfurther2: Attribution = {
@@ -224,6 +239,7 @@ export const contentAttributions = [
   scvmfurther2,
   terriblerBrokenerBadder,
   wargear,
+  moreNames
 ];
 
 export const classAttributions = [
@@ -236,6 +252,7 @@ export const classAttributions = [
   catacombSaint,
   corpsePlunderer,
   deathWitch,
+  desperateFarmhand,
   fugitiveKnight,
   indomitableMountaineer,
   landlockedBuccaneer,

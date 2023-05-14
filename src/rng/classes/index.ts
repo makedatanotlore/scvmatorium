@@ -20,6 +20,7 @@ import { indomitableMountaineer } from 'rng/rugosekohn/indomitableMountaineer';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
 import { absolvedHeretic } from 'rng/nyhur/absolvedHeretic';
+import { desperateFarmhand } from 'rng/raptorshadow/desperateFarmhand';
 
 export const classes = {
   absolvedHeretic,
@@ -31,6 +32,7 @@ export const classes = {
   catacombSaint,
   corpsePlunderer,
   deathWitch,
+  desperateFarmhand,
   fugitiveKnight,
   indomitableMountaineer,
   landlockedBuccaneer,
