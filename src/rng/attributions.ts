@@ -117,7 +117,7 @@ export const nachthex: Attribution = {
   title: { id: 'content.stregaflora.nachthex' },
   id: 'nachthex',
   authors: [stregaflora],
-  url: 'https://stregaflora.itch.io/nachthex',
+  url: 'https://stregadesign.itch.io/nachthex',
 };
 
 export const psyberDevangelist: Attribution = {

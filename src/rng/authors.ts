@@ -117,5 +117,5 @@ export const sashadeath: Author = {
 export const stregaflora: Author = {
   id: 'stregaflora',
   name: 'StregaFlora',
-  url: 'https://stregaflora.itch.io/',
+  url: 'https://stregadesign.itch.io/',
 };
