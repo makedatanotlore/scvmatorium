@@ -84,6 +84,12 @@ export const neonon: Author = {
   url: 'https://neonon.itch.io/',
 };
 
+export const nyhur: Author = {
+  id: 'nyhur',
+  name: 'Nyhur',
+  url: 'https://linktr.ee/nyhur',
+};
+
 export const peppermintBones: Author = {
   id: 'peppermintBones',
   name: 'Johnny Carhat',

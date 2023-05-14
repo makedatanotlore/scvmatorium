@@ -24,8 +24,10 @@ import betrayedPhantom from './sashadeath/betrayedPhantom/messages.json';
 import uncredited from './shared/uncredited/messages.json';
 import nachthex from './stregaflora/nachthex/messages.json';
 import indomitableMountaineer from './rugosekohn/indomitableMountaineer/messages.json';
+import absolvedHeretic from './nyhur/absolvedHeretic/messages.json';
 
 export default {
+  ...absolvedHeretic,
   ...anCailleach,
   ...betrayedPhantom,
   ...blightedMerman,

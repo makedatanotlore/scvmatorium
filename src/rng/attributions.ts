@@ -14,6 +14,7 @@ import {
   mcglintlock,
   michaelmars,
   neonon,
+  nyhur,
   peppermintBones,
   reverendunclebastard,
   ripleyc,
@@ -21,6 +22,13 @@ import {
   sashadeath,
   stregaflora,
 } from 'rng/authors';
+
+export const absolvedHeretic: Attribution = {
+  title: { id: 'content.nyhur.absolvedHeretic' },
+  id: 'absolvedHeretic',
+  authors: [nyhur],
+  url: 'https://nyhur.itch.io/absolved-heretic',
+};
 
 export const anCailleach: Attribution = {
   title: { id: 'content.michaelmars.anCailleach' },
@@ -219,6 +227,7 @@ export const contentAttributions = [
 ];
 
 export const classAttributions = [
+  absolvedHeretic,
   anCailleach,
   betrayedPhantom,
   blightedMerman,
