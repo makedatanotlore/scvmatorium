@@ -1,3 +1,5 @@
 import { names as scvmatoriumNames } from 'rng/makedatanotlore/scvmatorium/names';
+import { names as moreNames } from 'rng/mcglintlock/moreNames/names';
 
-export default [...scvmatoriumNames];
+const names = [...scvmatoriumNames, ...moreNames];
+export default names;

@@ -149,6 +149,13 @@ export const scvmatorium: Attribution = {
   url: 'https://docs.google.com/document/d/1VPsCnoa4SDvoNTpUYR_oTwMz4kksyiV0iaEePjreHlc/edit?usp=sharing',
 };
 
+export const moreNames: Attribution = {
+  title: { id: 'content.mcglintlock.moreNames' },
+  id: 'moreNames',
+  authors: [mcglintlock],
+  url: 'https://discord.com/channels/587764299834064933/683439768624955451/1107311190251687967',
+};
+
 export const scvmfurther2: Attribution = {
   title: { id: 'content.makedatanotlore.scvmfurther2' },
   id: 'scvmfurther2',
@@ -224,6 +231,7 @@ export const contentAttributions = [
   scvmfurther2,
   terriblerBrokenerBadder,
   wargear,
+  moreNames
 ];
 
 export const classAttributions = [

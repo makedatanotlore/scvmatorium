@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Attribution } from 'types/character';
 import clsx from 'clsx';
 import { FormattedHTMLMessage, useIntl } from 'react-intl';
-import { FlexWrapper, Header, useStyles, ContentWrapper, HeaderLabelWrapper } from './styled';
+import { FlexWrapper, useStyles, ContentWrapper, HeaderLabelWrapper, Subheader } from './styled';
 import Checkbox from '@material-ui/core/Checkbox';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
 
 type Props = {
   label: string;
@@ -16,7 +14,7 @@ type Props = {
   selected?: string[];
 };
 
-const Section = ({ label, attributions, updateFn, updateAllFn, selected = [], closeFn }: Props) => {
+const Section = ({ label, attributions, updateFn, updateAllFn, selected = [] }: Props) => {
   const { formatMessage } = useIntl();
   const [allSelected, setAllSelected] = useState(attributions.map(({id}) => selected.includes(id) ).every((isSelected) => isSelected))
   const [someSelected, setSomeSelected] = useState(attributions.map(({id}) => selected.includes(id) ).some((isSelected) => isSelected))
@@ -47,15 +45,9 @@ const Section = ({ label, attributions, updateFn, updateAllFn, selected = [], cl
     }
   };
 
-  const handleClose = () => {
-    if (closeFn) {
-      closeFn()
-    }
-  };
-
   return (
     <FlexWrapper>
-      <Header>
+      <Subheader>
         <HeaderLabelWrapper>
           {updateAllFn && <Checkbox
               disableRipple
@@ -74,11 +66,7 @@ const Section = ({ label, attributions, updateFn, updateAllFn, selected = [], cl
           />}
           {label}
         </HeaderLabelWrapper>
-        {closeFn && (
-          <IconButton className={styles.closeButton} onClick={handleClose} aria-label="close-class-list">
-            <CloseIcon />
-          </IconButton>
-      )}</Header>
+      </Subheader>
       {attributions.map((attribution) => {
         const title = formatMessage(attribution.title);
 
