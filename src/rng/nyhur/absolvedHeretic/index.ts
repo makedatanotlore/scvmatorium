@@ -47,9 +47,9 @@ export const absolvedHeretic = (): Character => {
     'keepsakeMask',
     'keepsakeChains',
     'keepsakeCollar',
-  ]
+  ];
   const hereticalAbility = [
-    sample(keepsake),
+    sample(keepsake)!,
     'veteran',
     'tongue',
     'mark',
