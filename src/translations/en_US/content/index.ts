@@ -26,8 +26,10 @@ import nachthex from './stregaflora/nachthex/messages.json';
 import indomitableMountaineer from './rugosekohn/indomitableMountaineer/messages.json';
 import desperateFarmhand from './raptorshadow/desperateFarmhand/messages.json'
 import moreNames from "./mcglintlock/moreNames/messages.json";
+import absolvedHeretic from './nyhur/absolvedHeretic/messages.json';
 
 const content = {
+  ...absolvedHeretic,
   ...anCailleach,
   ...betrayedPhantom,
   ...blightedMerman,

@@ -14,6 +14,7 @@ import {
   mcglintlock,
   michaelmars,
   neonon,
+  nyhur,
   peppermintBones,
   raptorshadow,
   reverendunclebastard,
@@ -22,6 +23,13 @@ import {
   sashadeath,
   stregaflora,
 } from 'rng/authors';
+
+export const absolvedHeretic: Attribution = {
+  title: { id: 'content.nyhur.absolvedHeretic' },
+  id: 'absolvedHeretic',
+  authors: [nyhur],
+  url: 'https://nyhur.itch.io/absolved-heretic',
+};
 
 export const anCailleach: Attribution = {
   title: { id: 'content.michaelmars.anCailleach' },
@@ -125,7 +133,7 @@ export const nachthex: Attribution = {
   title: { id: 'content.stregaflora.nachthex' },
   id: 'nachthex',
   authors: [stregaflora],
-  url: 'https://stregaflora.itch.io/nachthex',
+  url: 'https://stregadesign.itch.io/nachthex',
 };
 
 export const psyberDevangelist: Attribution = {
@@ -235,6 +243,7 @@ export const contentAttributions = [
 ];
 
 export const classAttributions = [
+  absolvedHeretic,
   anCailleach,
   betrayedPhantom,
   blightedMerman,

@@ -1,0 +1,30 @@
+{
+    "content.nyhur.absolvedHeretic": "Absolved Heretic",
+    "content.nyhur.absolvedHeretic.blurb": "<strong>You were imprisoned</strong> by the Inquisition in the wretched cells under the Cathedral of Two-Headed Basilisks in Galgenbeck. The suffocating incense, the trance-inducing litanies. For how long did you endured famine, torture and humiliation? Finally, the arch-priestess absolved your sins and your broken body was cast in the streets.",
+  
+    "content.nyhur.absolvedHeretic.toughness.title": "Pain is Dear Old Friend",
+    "content.nyhur.absolvedHeretic.toughness.description": "All Toughness tests have their DR reduced by 2.",
+  
+    "content.nyhur.absolvedHeretic.keepsakeMask.title": "A Keepsake from Your Cell",
+    "content.nyhur.absolvedHeretic.keepsakeMask.description": "<strong>Iron Mask.</strong> This is now part of your body and cannot be removed. Presence rolls based on sight and hearing have +2 DR, but you are immune to the double damage caused by a fumble defense roll. ",
+    "content.nyhur.absolvedHeretic.keepsakeChains.title": "A Keepsake from Your Cell",
+    "content.nyhur.absolvedHeretic.keepsakeChains.description": "<strong>Shackle and chains.</strong> This is now part of your body and cannot be removed. Can be used like a flail (d8).",
+    "content.nyhur.absolvedHeretic.keepsakeCollar.title": "A Keepsake from Your Cell",
+    "content.nyhur.absolvedHeretic.keepsakeCollar.description": "<strong>Spiked Collar. </strong> This is now part of your body and cannot be removed. When testing Presence, you can cause yourself 1d2 damage to add +2 to the roll.",
+    "content.nyhur.absolvedHeretic.veteran.title": "Torture Veteran",
+    "content.nyhur.absolvedHeretic.veteran.description": "You are immune to infection and heal +1 HP during a night's sleep. You can also easily <span>dislocate</span> and relocate any of your joints.",
+    "content.nyhur.absolvedHeretic.tongue.title": "A Tongue for Litanies",
+    "content.nyhur.absolvedHeretic.tongue.description": "While travelling, resting, and sleeping you constantly mumble <span>litanies</span> preventing evil from sneaking up on you. Additionally, you test Presence DR10 when reading sacred scrolls.",
+    "content.nyhur.absolvedHeretic.mark.title": "Mark of The Heretic",
+    "content.nyhur.absolvedHeretic.mark.description": "Carved on your forehead or chest, this <span>symbol</span> intimidates whoever recognizes it giving you +2 to Presence rolls when interacting.",
+    "content.nyhur.absolvedHeretic.eye.title": "Third Eye",
+    "content.nyhur.absolvedHeretic.eye.description": "You lost your sight and can only perceive what is nearby you. DR16 attack and defense against distant foes. However, your third eye has opened, and <span>now you see</span> demons and undead like beacons in darkness. Attack and Defense against them is DR8.",
+    "content.nyhur.absolvedHeretic.cat.title": "Cat o' Nine Tails",
+    "content.nyhur.absolvedHeretic.cat.description": "You were never absolved but managed to escape. This <span>hooked flail</span> (1d6) belonged to your jailor. When dealing damage to an enemy you can test Strength with DR equal to the enemy's morale. If you succeed the enemy must test morale.",
+
+    "content.nyhur.absolvedHeretic.suicide": "Heretical sin: suicide.",
+    "content.nyhur.absolvedHeretic.desecration": "Heretical sin: desecration.",
+    "content.nyhur.absolvedHeretic.blasphemy": "Heretical sin: blasphemy.",
+    "content.nyhur.absolvedHeretic.obstruction": "Heretical sin: tried to prevent the fulfillment of a Verhu prophecy.",
+    "content.nyhur.absolvedHeretic.none": "Heretical sin: none - you were innocent."
+  }

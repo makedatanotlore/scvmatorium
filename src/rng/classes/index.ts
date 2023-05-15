@@ -20,8 +20,10 @@ import { indomitableMountaineer } from 'rng/rugosekohn/indomitableMountaineer';
 import { betrayedPhantom } from 'rng/sashadeath/betrayedPhantom';
 import { nachthex } from 'rng/stregaflora/nachthex';
 import { desperateFarmhand } from 'rng/raptorshadow/desperateFarmhand';
+import { absolvedHeretic } from 'rng/nyhur/absolvedHeretic';
 
 export const classes = {
+  absolvedHeretic,
   anCailleach,
   betrayedPhantom,
   blightedMerman,
